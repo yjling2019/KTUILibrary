@@ -19,14 +19,17 @@ Pod::Spec.new do |s|
 
   s.description      = 'KOTU\'s UI Library.'
 
-  s.homepage         = 'https://github.com/KOTU/KTUILibrary'
+  s.homepage         = 'https://github.com/yjling2019/KTUILibrary'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'KOTU' => 'yjling2019@gmail.com' }
-  s.source           = { :git => 'https://github.com/KOTU/KTUILibrary.git', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/yjling2019/KTUILibrary.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-  s.source_files = 'KTUILibrary/Classes/**/*.{h,m}'
 
+  s.subspec 'Base' do |base|
+    base.source_files = 'KTUILibrary/Base/Classes/*'
+  end
+  
   s.subspec 'EdgesLabel' do |edgesLabel|
     edgesLabel.source_files = 'KTUILibrary/EdgesLabel/Classes/**/*.{h,m}'
   end
@@ -38,6 +41,7 @@ Pod::Spec.new do |s|
   s.subspec 'ImageLabel' do |imageLabel|
     imageLabel.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
     imageLabel.dependency 'Masonry'
+    imageLabel.dependency 'KTUILibrary/Base'
   end
   
 end

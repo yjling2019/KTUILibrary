@@ -1,11 +1,14 @@
 PODS:
   - KTUILibrary (1.0.0):
+    - KTUILibrary/Base (= 1.0.0)
     - KTUILibrary/EdgesLabel (= 1.0.0)
     - KTUILibrary/EdgesTextField (= 1.0.0)
     - KTUILibrary/ImageLabel (= 1.0.0)
+  - KTUILibrary/Base (1.0.0)
   - KTUILibrary/EdgesLabel (1.0.0)
   - KTUILibrary/EdgesTextField (1.0.0)
   - KTUILibrary/ImageLabel (1.0.0):
+    - KTUILibrary/Base
     - Masonry
   - Masonry (1.1.0)
   - SDWebImage (5.12.1):
@@ -26,7 +29,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KTUILibrary: 221d97d1b9aa907e7099167e586186a92a0129d1
+  KTUILibrary: 457c65edeaeddffefdf584f4b0bebf21817d8322
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
 
