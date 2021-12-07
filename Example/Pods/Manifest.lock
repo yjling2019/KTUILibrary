@@ -1,0 +1,35 @@
+PODS:
+  - KTUILibrary (1.0.0):
+    - KTUILibrary/EdgesLabel (= 1.0.0)
+    - KTUILibrary/EdgesTextField (= 1.0.0)
+    - KTUILibrary/ImageLabel (= 1.0.0)
+  - KTUILibrary/EdgesLabel (1.0.0)
+  - KTUILibrary/EdgesTextField (1.0.0)
+  - KTUILibrary/ImageLabel (1.0.0):
+    - Masonry
+  - Masonry (1.1.0)
+  - SDWebImage (5.12.1):
+    - SDWebImage/Core (= 5.12.1)
+  - SDWebImage/Core (5.12.1)
+
+DEPENDENCIES:
+  - KTUILibrary (from `../`)
+  - SDWebImage
+
+SPEC REPOS:
+  trunk:
+    - Masonry
+    - SDWebImage
+
+EXTERNAL SOURCES:
+  KTUILibrary:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  KTUILibrary: 221d97d1b9aa907e7099167e586186a92a0129d1
+  Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
+  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+
+PODFILE CHECKSUM: 6b15c862efa7b6e86a8768b49329f9c193516aed
+
+COCOAPODS: 1.10.1

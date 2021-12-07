@@ -1,0 +1,41 @@
+{
+  "name": "KTUILibrary",
+  "version": "1.0.0",
+  "summary": "KOTU's UI Library.",
+  "description": "KOTU's UI Library.",
+  "homepage": "https://github.com/KOTU/KTUILibrary",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "KOTU": "yjling2019@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/KOTU/KTUILibrary.git",
+    "tag": "1.0.0"
+  },
+  "platforms": {
+    "ios": "9.0"
+  },
+  "source_files": "KTUILibrary/Classes/**/*.{h,m}",
+  "subspecs": [
+    {
+      "name": "EdgesLabel",
+      "source_files": "KTUILibrary/EdgesLabel/Classes/**/*.{h,m}"
+    },
+    {
+      "name": "EdgesTextField",
+      "source_files": "KTUILibrary/EdgesTextField/Classes/**/*.{h,m}"
+    },
+    {
+      "name": "ImageLabel",
+      "source_files": "KTUILibrary/ImageLabel/Classes/**/*.{h,m}",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    }
+  ]
+}

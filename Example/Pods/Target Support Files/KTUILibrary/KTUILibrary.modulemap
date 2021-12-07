@@ -1,0 +1,6 @@
+framework module KTUILibrary {
+  umbrella header "KTUILibrary-umbrella.h"
+
+  export *
+  module * { export * }
+}
