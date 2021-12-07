@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTUILibrary'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of KTUILibrary.'
+  s.version          = '1.0.0'
+  s.summary          = 'KOTU\'s UI Library.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,26 +17,27 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'KOTU\'s UI Library.'
 
   s.homepage         = 'https://github.com/KOTU/KTUILibrary'
-  # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'KOTU' => 'yjling2019@gmail.com' }
   s.source           = { :git => 'https://github.com/KOTU/KTUILibrary.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.ios.deployment_target = '9.0'
+  s.source_files = 'KTUILibrary/Classes/**/*.{h,m}'
 
-  s.source_files = 'KTUILibrary/Classes/**/*'
+  s.subspec 'EdgesLabel' do |edgesLabel|
+    edgesLabel.source_files = 'KTUILibrary/EdgesLabel/Classes/**/*.{h,m}'
+  end
   
-  # s.resource_bundles = {
-  #   'KTUILibrary' => ['KTUILibrary/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
-  # s.dependency 'AFNetworking', '~> 2.3'
+  s.subspec 'EdgesTextField' do |edgesTextField|
+    edgesTextField.source_files = 'KTUILibrary/EdgesTextField/Classes/**/*.{h,m}'
+  end
+  
+  s.subspec 'ImageLabel' do |imageLabel|
+    imageLabel.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
+    imageLabel.dependency 'Masonry'
+  end
+  
 end
