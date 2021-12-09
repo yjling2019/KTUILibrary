@@ -18,6 +18,7 @@
 {
     KTViewController *rootVC = [[KTViewController alloc] init];
     NavigationController *nav = [[NavigationController alloc] initWithRootViewController:rootVC];
+    self.window.backgroundColor = [UIColor whiteColor];
     self.window.rootViewController = nav;
     [self.window makeKeyAndVisible];
     
