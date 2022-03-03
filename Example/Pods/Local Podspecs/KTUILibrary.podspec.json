@@ -24,6 +24,30 @@
       "source_files": "KTUILibrary/Base/Classes/*"
     },
     {
+      "name": "Navigation",
+      "source_files": "KTUILibrary/Navigation/**/*.{h,m}",
+      "dependencies": {
+        "KVOController": [
+
+        ],
+        "Masonry": [
+
+        ],
+        "KTUILibrary/Base": [
+
+        ]
+      }
+    },
+    {
+      "name": "Tabbar",
+      "source_files": "KTUILibrary/Tabbar/**/*.{h,m}",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
+    },
+    {
       "name": "EdgesLabel",
       "source_files": "KTUILibrary/EdgesLabel/Classes/**/*.{h,m}"
     },

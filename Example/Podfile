@@ -5,10 +5,4 @@ platform :ios, '9.0'
 target 'KTUILibrary_Example' do
   pod 'KTUILibrary', :path => '../'
   pod 'SDWebImage'
-
-  target 'KTUILibrary_Tests' do
-    inherit! :search_paths
-
-    
-  end
 end

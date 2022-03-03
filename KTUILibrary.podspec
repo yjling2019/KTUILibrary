@@ -26,22 +26,34 @@ Pod::Spec.new do |s|
 
   s.ios.deployment_target = '9.0'
 
-  s.subspec 'Base' do |base|
-    base.source_files = 'KTUILibrary/Base/Classes/*'
+  s.subspec 'Base' do |sp|
+	  sp.source_files = 'KTUILibrary/Base/Classes/*'
   end
   
-  s.subspec 'EdgesLabel' do |edgesLabel|
-    edgesLabel.source_files = 'KTUILibrary/EdgesLabel/Classes/**/*.{h,m}'
+  s.subspec 'Navigation' do |sp|
+	  sp.source_files = 'KTUILibrary/Navigation/**/*.{h,m}'
+	  sp.dependency 'KVOController'
+	  sp.dependency 'Masonry'
+	  sp.dependency 'KTUILibrary/Base'
   end
   
-  s.subspec 'EdgesTextField' do |edgesTextField|
-    edgesTextField.source_files = 'KTUILibrary/EdgesTextField/Classes/**/*.{h,m}'
+  s.subspec 'Tabbar' do |sp|
+	  sp.source_files = 'KTUILibrary/Tabbar/**/*.{h,m}'
+		sp.dependency 'Masonry'
   end
   
-  s.subspec 'ImageLabel' do |imageLabel|
-    imageLabel.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
-    imageLabel.dependency 'Masonry'
-    imageLabel.dependency 'KTUILibrary/Base'
+  s.subspec 'EdgesLabel' do |sp|
+	  sp.source_files = 'KTUILibrary/EdgesLabel/Classes/**/*.{h,m}'
+  end
+  
+  s.subspec 'EdgesTextField' do |sp|
+	  sp.source_files = 'KTUILibrary/EdgesTextField/Classes/**/*.{h,m}'
+  end
+  
+  s.subspec 'ImageLabel' do |sp|
+	  sp.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
+	  sp.dependency 'Masonry'
+	  sp.dependency 'KTUILibrary/Base'
   end
   
 end
