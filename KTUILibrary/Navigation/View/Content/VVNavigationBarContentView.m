@@ -11,7 +11,7 @@
 #import "VVButtonBarButton.h"
 #import <Masonry/Masonry.h>
 #import <KVOController/KVOController.h>
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 
 //#import <vv_rootlib_ios/TDScope.h>
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>

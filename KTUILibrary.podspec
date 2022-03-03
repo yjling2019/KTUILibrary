@@ -35,25 +35,27 @@ Pod::Spec.new do |s|
 	  sp.dependency 'KVOController'
 	  sp.dependency 'Masonry'
 	  sp.dependency 'KTUILibrary/Base'
+	  sp.dependency 'KTFoundation'
   end
   
   s.subspec 'Tabbar' do |sp|
-	  sp.source_files = 'KTUILibrary/Tabbar/**/*.{h,m}'
-		sp.dependency 'Masonry'
+	sp.source_files = 'KTUILibrary/Tabbar/**/*.{h,m}'
+	sp.dependency 'Masonry'
+	sp.dependency 'KTFoundation'
   end
   
   s.subspec 'EdgesLabel' do |sp|
-	  sp.source_files = 'KTUILibrary/EdgesLabel/Classes/**/*.{h,m}'
+	sp.source_files = 'KTUILibrary/EdgesLabel/Classes/**/*.{h,m}'
   end
   
   s.subspec 'EdgesTextField' do |sp|
-	  sp.source_files = 'KTUILibrary/EdgesTextField/Classes/**/*.{h,m}'
+	sp.source_files = 'KTUILibrary/EdgesTextField/Classes/**/*.{h,m}'
   end
   
   s.subspec 'ImageLabel' do |sp|
-	  sp.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
-	  sp.dependency 'Masonry'
-	  sp.dependency 'KTUILibrary/Base'
+	sp.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
+	sp.dependency 'Masonry'
+	sp.dependency 'KTUILibrary/Base'
   end
   
 end

@@ -35,6 +35,9 @@
         ],
         "KTUILibrary/Base": [
 
+        ],
+        "KTFoundation": [
+
         ]
       }
     },
@@ -43,6 +46,9 @@
       "source_files": "KTUILibrary/Tabbar/**/*.{h,m}",
       "dependencies": {
         "Masonry": [
+
+        ],
+        "KTFoundation": [
 
         ]
       }

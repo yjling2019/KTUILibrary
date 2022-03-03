@@ -15,7 +15,7 @@
 //#import <vv_rootlib_ios/TDScope.h>
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>
 #import <Masonry/Masonry.h>
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 
 @interface VVBarBackgroundView ()
 

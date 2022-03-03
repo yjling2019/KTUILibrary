@@ -9,7 +9,7 @@
 #import "VVButtonBarButton.h"
 #import "VVBarButtonItem.h"
 #import <Masonry/Masonry.h>
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>
 //#import <vv_rootlib_ios/NSDictionary+DataProtect.h>
 

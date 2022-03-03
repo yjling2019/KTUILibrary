@@ -10,11 +10,6 @@
 #endif
 #endif
 
-#import "KTMacros.h"
-#import "KTMetamacros.h"
-#import "KTQuickMacros.h"
-#import "KTScope.h"
-#import "KTSingle.h"
 #import "KTEdgesLabel.h"
 #import "KTEdgesTextField.h"
 #import "KTImageLabel.h"

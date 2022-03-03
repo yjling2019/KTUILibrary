@@ -1,4 +1,10 @@
 PODS:
+  - KTFoundation (0.1.0):
+    - KTFoundation/Category (= 0.1.0)
+    - KTFoundation/Macros (= 0.1.0)
+  - KTFoundation/Category (0.1.0):
+    - KTFoundation/Macros
+  - KTFoundation/Macros (0.1.0)
   - KTUILibrary (1.0.0):
     - KTUILibrary/Base (= 1.0.0)
     - KTUILibrary/EdgesLabel (= 1.0.0)
@@ -13,10 +19,12 @@ PODS:
     - KTUILibrary/Base
     - Masonry
   - KTUILibrary/Navigation (1.0.0):
+    - KTFoundation
     - KTUILibrary/Base
     - KVOController
     - Masonry
   - KTUILibrary/Tabbar (1.0.0):
+    - KTFoundation
     - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
@@ -29,6 +37,8 @@ DEPENDENCIES:
   - SDWebImage
 
 SPEC REPOS:
+  https://github.com/CocoaPods/Specs.git:
+    - KTFoundation
   trunk:
     - KVOController
     - Masonry
@@ -39,11 +49,12 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KTUILibrary: 28f5556f2c1ff64c9488780e9184c2f0caf28347
+  KTFoundation: 8428d913e636f89554c61e6996935672fb9886a0
+  KTUILibrary: 8b478480433e638ecd839aeae4ffc6f6fc58133f
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
 
-PODFILE CHECKSUM: 90537b1a8b1a44976b4b05160ad24a2ca073c6be
+PODFILE CHECKSUM: 87e28ad89235f68e343b0dee84dcf43164225b15
 
 COCOAPODS: 1.11.2

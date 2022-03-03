@@ -8,7 +8,7 @@
 
 #import "VVBarBackgroundShadowView.h"
 #import "VVNavigationItem.h"
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>
 #import <Masonry/Masonry.h>
 //#import <vv_rootlib_ios/UIColor+TDHelp.h>

@@ -11,7 +11,7 @@
 #import "VVEmptyNavigationBar.h"
 //#import <vv_bodylib_ios/VVDelay.h>
 //#import "VVPopupManager_N.h"
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 #import <objc/runtime.h>
 
 static NSString *const kOriginDelegate = @"kOriginDelegate";

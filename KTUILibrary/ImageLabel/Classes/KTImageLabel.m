@@ -8,7 +8,7 @@
 
 #import "KTImageLabel.h"
 #import <Masonry/Masonry.h>
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 
 static KTImageDownloadBlock imageDownloader = nil;
 

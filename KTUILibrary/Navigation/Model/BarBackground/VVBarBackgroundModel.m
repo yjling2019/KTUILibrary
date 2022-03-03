@@ -10,7 +10,7 @@
 //#import <vv_rootlib_ios/UIColor+TDHelp.h>
 //#import <vv_rootlib_ios/TDScope.h>
 //#import <vv_rootlib_ios/VVColorManager.h>
-#import "KTMacros.h"
+#import <KTFoundation/KTMacros.h>
 
 @interface VVBarBackgroundModel ()
 

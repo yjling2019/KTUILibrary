@@ -1,0 +1,6 @@
+framework module KTFoundation {
+  umbrella header "KTFoundation-umbrella.h"
+
+  export *
+  module * { export * }
+}
