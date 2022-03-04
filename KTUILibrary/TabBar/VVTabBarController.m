@@ -21,6 +21,16 @@
 
 @implementation VVTabBarController
 
+@synthesize selectedIndex = _selectedIndex;
+
+- (instancetype)init
+{
+	if (self = [super init]) {
+		_selectedIndex = 0;
+	}
+	return self;
+}
+
 - (void)refreshWithViewControllers:(NSArray<__kindof UIViewController *> *)vcs
                       tabBarModels:(NSArray<VVTabBarModel *> *)tabBarModels
                  middleTabBarModel:(nullable VVMiddleTabBarModel *)middleTabBarModel

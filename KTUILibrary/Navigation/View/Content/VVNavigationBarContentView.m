@@ -101,8 +101,8 @@
 	}];
 
     NSArray<NSString *> *keyPaths = @[
-        @"alpha",
-        @"barBGModel.darkColor"
+        @"model.alpha",
+        @"model.barBGModel.darkColor"
     ];
 	[self.KVOController observe:self
 					   keyPaths:keyPaths
