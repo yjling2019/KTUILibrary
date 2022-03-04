@@ -12,6 +12,7 @@
 #import <Masonry/Masonry.h>
 #import <KVOController/KVOController.h>
 #import <KTFoundation/KTMacros.h>
+#import <KVOController/KVOController.h>
 
 //#import <vv_rootlib_ios/TDScope.h>
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>
@@ -42,15 +43,15 @@
     if (self) {
         [self setUpUI];
         
-        @weakify(self)
-#warning TODO 0303
-//		[self.KVOController observe:]
+		@weakify(self);
+		[self.KVOController observe:self
+							keyPath:@"model"
+							options:NSKeyValueObservingOptionNew
+							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+			@strongify(self);
+			[self addObservers];
+		}];
 		
-//        [self vv_addObserverOptionsNewForKeyPath:@"model" block:^{
-//            @strongify(self)
-//            [self addObservers];
-//        }];
-
         self.barButtonItems = [NSMapTable strongToStrongObjectsMapTable];
     }
     return self;
@@ -92,43 +93,51 @@
 
 - (void)addObservers
 {
-#warning TODO O303
-//    @weakify(self)
-//    [self.model vv_addObserverForKeyPath:@"title"
-//                                 options:NSKeyValueObservingOptionNew
-//                                 context:(__bridge void * _Nullable)self
-//                               withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpAlpha];
-//        [self setUpTitle];
-//    }];
-//
-//    NSArray<NSString *> *keyPaths = @[
-//        @"alpha",
-//        @"barBGModel.darkColor"
-//    ];
-//    [self.model vv_addObserverForKeyPaths:keyPaths options:NSKeyValueObservingOptionNew context:(__bridge void * _Nullable)self withDetailBlock:^(NSString * _Nonnull keyPath, NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpAlpha];
-//    }];
-//
-//    [self.model vv_addObserverOptionsNewForKeyPath:@"backBarButtonItem" block:^{
-//        @strongify(self)
-//        [self arrangeBackBarButtonItem];
-//        [self setUpTitle];
-//    }];
-//
-//    [self.model vv_addObserverOptionsNewForKeyPath:@"rightBarButtonItem" block:^{
-//        @strongify(self)
-//        [self arrangeRightBarButtonItem];
-//        [self setUpTitle];
-//    }];
-//
-//    [self.model vv_addObserverOptionsNewForKeyPath:@"rightBarButtonItems" block:^{
-//        @strongify(self)
-//        [self arrangeRightBarButtonItems];
-//        [self setUpTitle];
-//    }];
+	@weakify(self);
+	[self.KVOController observe:self keyPath:@"model.title" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		[self setUpAlpha];
+		[self setUpTitle];
+	}];
+
+    NSArray<NSString *> *keyPaths = @[
+        @"alpha",
+        @"barBGModel.darkColor"
+    ];
+	[self.KVOController observe:self
+					   keyPaths:keyPaths
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self setUpAlpha];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"model.backBarButtonItem"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self arrangeBackBarButtonItem];
+		[self setUpTitle];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"model.rightBarButtonItem"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self arrangeRightBarButtonItem];
+		[self setUpTitle];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"model.rightBarButtonItems"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self arrangeRightBarButtonItems];
+		[self setUpTitle];
+	}];
 }
 
 - (void)setUpAlpha

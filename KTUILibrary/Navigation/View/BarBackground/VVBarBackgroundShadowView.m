@@ -13,6 +13,7 @@
 #import <Masonry/Masonry.h>
 //#import <vv_rootlib_ios/UIColor+TDHelp.h>
 //#import <vv_rootlib_ios/VVColorManager.h>
+#import <KVOController/KVOController.h>
 
 @interface VVBarBackgroundShadowView ()
 
@@ -27,13 +28,15 @@
     self = [super initWithFrame:frame];
     if (self) {
         [self setUpUI];
-        
-#warning TODO 0303
-//        @weakify(self)
-//        [self vv_addObserverOptionsNewForKeyPath:@"model" block:^{
-//            @strongify(self)
-//            [self addObservers];
-//        }];
+			
+		@weakify(self);
+		[self.KVOController observe:self
+							keyPath:@"model"
+							options:NSKeyValueObservingOptionNew
+							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+			@strongify(self);
+			[self addObservers];
+		}];
     }
     return self;
 }
@@ -60,17 +63,15 @@
 }
 
 - (void)addObservers
-{
-#warning TODO 0303
-	
-//    @weakify(self)
-//    [self.model.barBGModel vv_addObserverForKeyPath:@"dividingStyle"
-//                                            options:NSKeyValueObservingOptionNew
-//                                            context:(__bridge void * _Nullable)self
-//                                          withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpDividingStyle];
-//    }];
+{	
+	@weakify(self);
+	[self.KVOController observe:self
+						keyPath:@"model.barBGModel.dividingStyle"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self setUpDividingStyle];
+	}];
 }
 
 - (void)setUpDividingStyle

@@ -12,6 +12,7 @@
 #import <KTFoundation/KTMacros.h>
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>
 //#import <vv_rootlib_ios/NSDictionary+DataProtect.h>
+#import <KVOController/KVOController.h>
 
 static NSString * const VVButtonBarButtonString = @"VVButtonBarButtonString";
 
@@ -37,12 +38,14 @@ static NSString * const VVButtonBarButtonString = @"VVButtonBarButtonString";
         [self setUpConstraints];
         [self bindUIActions];
         
-#warning TODO 0303
-        @weakify(self)
-//        [self vv_addObserverOptionsNewForKeyPath:@"buttonItem" block:^{
-//            @strongify(self)
-//            [self addObservers];
-//        }];
+		@weakify(self);
+		[self.KVOController observe:self
+							keyPath:@"model"
+							options:NSKeyValueObservingOptionNew
+							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+			@strongify(self);
+			[self addObservers];
+		}];
     }
     return self;
 }
@@ -115,41 +118,58 @@ static NSString * const VVButtonBarButtonString = @"VVButtonBarButtonString";
 
 - (void)addObservers
 {
+#warning TODO context
     static int count = 1;
     NSString *string = [NSString stringWithFormat:@"%@_%@", VVButtonBarButtonString, @(count)];
     void *context = (__bridge void *)string;
     
-#warning TODO 0303
+	@weakify(self);
+	[self.KVOController observe:self
+						keyPath:@"buttonItem.statusBarStyle"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self setUpImageAndLabel];
+	}];
 	
-//    @weakify(self)
-//    [self.buttonItem vv_addObserverForKeyPath:@"statusBarStyle"
-//                                      options:NSKeyValueObservingOptionNew
-//                                      context:context
-//                                    withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpImageAndLabel];
-//    }];
-//
-//    [self.buttonItem  vv_addObserverForKeyPath:@"enabled"
-//                                         options:NSKeyValueObservingOptionNew
-//                                         context:context
-//                                       withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        self.enabled = self.buttonItem.enabled;
-//    }];
-//
-//    [self.buttonItem vv_addObserverForKeyPaths:@[@"text",
-//                                                 @"darkImage",
-//                                                 @"lightImage"] options:NSKeyValueObservingOptionNew context:context withDetailBlock:^(NSString * _Nonnull keyPath, NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self);
-//        if ([keyPath isEqualToString:@"text"]) {
-//            self.buttonItem.lightAttrText = nil;
-//            self.buttonItem.darkAttrText = nil;
-//        }
-//        [self setUpImageAndLabel];
-//    }];
-//
-//    count = count + 1;
+	[self.KVOController observe:self
+						keyPath:@"buttonItem.enabled"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		self.enabled = self.buttonItem.enabled;
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"buttonItem.text"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		self.enabled = self.buttonItem.enabled;
+		self.buttonItem.lightAttrText = nil;
+		self.buttonItem.darkAttrText = nil;
+		[self setUpImageAndLabel];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"buttonItem.darkImage"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		self.enabled = self.buttonItem.enabled;
+		[self setUpImageAndLabel];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"buttonItem.lightImage"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		self.enabled = self.buttonItem.enabled;
+		[self setUpImageAndLabel];
+	}];
+	
+    count = count + 1;
 }
 
 #pragma mark - 懒加载

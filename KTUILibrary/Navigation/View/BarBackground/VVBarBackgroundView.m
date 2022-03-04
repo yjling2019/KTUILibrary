@@ -16,6 +16,7 @@
 //#import <vv_rootlib_ios/NSObject+VVKVOHelper.h>
 #import <Masonry/Masonry.h>
 #import <KTFoundation/KTMacros.h>
+#import <KVOController/KVOController.h>
 
 @interface VVBarBackgroundView ()
 
@@ -40,12 +41,14 @@
     if (self) {
         [self setUpUI];
         
-#warning TODO 0303
-//        @weakify(self)
-//        [self vv_addObserverOptionsNewForKeyPath:@"model" block:^{
-//            @strongify(self)
-//            [self addObservers];
-//        }];
+		@weakify(self);
+		[self.KVOController observe:self
+							keyPath:@"model"
+							options:NSKeyValueObservingOptionNew
+							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+			@strongify(self);
+			[self addObservers];
+		}];
     }
     return self;
 }
@@ -89,39 +92,38 @@
 
 - (void)addObservers
 {
-#warning TODO 0303
-//    @weakify(self)
-//    [self.model vv_addObserverForKeyPath:@"alpha"
-//                                 options:NSKeyValueObservingOptionNew
-//                                 context:(__bridge void * _Nullable)self
-//                               withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpAlpha];
-//    }];
-//
-//    [self.model vv_addObserverForKeyPath:@"translucent"
-//                                 options:NSKeyValueObservingOptionNew
-//                                 context:(__bridge void * _Nullable)self
-//                               withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpTranslucent];
-//    }];
-//
-//    [self.model.barBGModel vv_addObserverForKeyPath:@"bgImage"
-//                                            options:NSKeyValueObservingOptionNew
-//                                            context:(__bridge void * _Nullable)self
-//                                          withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpBgImage];
-//    }];
-//
-//    [self.model.barBGModel vv_addObserverForKeyPath:@"bgColor"
-//                                            options:NSKeyValueObservingOptionNew
-//                                            context:(__bridge void * _Nullable)self
-//                                          withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpBgColor];
-//    }];
+	@weakify(self);
+	[self.KVOController observe:self
+						keyPath:@"model.alpha"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		[self setUpAlpha];
+	}];
+
+	[self.KVOController observe:self
+						keyPath:@"model.translucent"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		[self setUpTranslucent];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"model.barBGModel.bgImage"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		[self setUpBgImage];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"model.barBGModel.bgColor"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		[self setUpBgColor];
+	}];
 }
 
 - (void)setUpAlpha

@@ -17,6 +17,7 @@
 //#import <vv_rootlib_ios/NSDictionary+DataProtect.h>
 #import <Masonry/Masonry.h>
 #import <KTFoundation/KTMacros.h>
+#import <KVOController/KVOController.h>
 
 @interface VVNavigationBar ()
 
@@ -42,12 +43,14 @@
         [self setUpUI];
         [self setUpConstraints];
         
-#warning TODO 0303
-        @weakify(self)
-//        [self vv_addObserverOptionsNewForKeyPath:@"model" block:^{
-//            @strongify(self)
-//            [self addObservers];
-//        }];
+		@weakify(self);
+		[self.KVOController observe:self
+							keyPath:@"model"
+							options:NSKeyValueObservingOptionNew
+							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+			@strongify(self);
+			[self addObservers];
+		}];
     }
     return self;
 }
@@ -96,50 +99,42 @@
 
 - (void)addObservers
 {
-#warning TODO 0303
+    @weakify(self)
+	[self.KVOController observe:self
+						keyPath:@"model.alpha"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self.viewController setNeedsStatusBarAppearanceUpdate];
+	}];
 	
-//    @weakify(self)
-//    [self.model vv_addObserverForKeyPath:@"alpha"
-//                                 options:NSKeyValueObservingOptionNew
-//                                 context:(__bridge void * _Nullable)self
-//                               withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self.viewController setNeedsStatusBarAppearanceUpdate];
-//    }];
-//
-//    [self.model.barBGModel vv_addObserverForKeyPath:@"darkColor"
-//                                            options:NSKeyValueObservingOptionNew
-//                                            context:(__bridge void * _Nullable)self
-//                                          withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self.viewController setNeedsStatusBarAppearanceUpdate];
-//    }];
-//
-//    [self.model.barBGModel vv_addObserverForKeyPath:@"bgColor"
-//                                            options:NSKeyValueObservingOptionNew
-//                                            context:(__bridge void * _Nullable)self
-//                                          withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self.viewController setNeedsStatusBarAppearanceUpdate];
-//    }];
-//
-//    [self.model vv_addObserverForKeyPath:@"customView"
-//                                 options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-//                                 context:(__bridge void * _Nullable)self
-//                               withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        UIView *oldCustomView = [change vv_objectForKey:@"old" verifyClass:UIView.class];
-//        [oldCustomView removeFromSuperview];
-//        [self setUpCustomView];
-//    }];
-//
-//    [self.model vv_addObserverForKeyPath:@"containStatusBar"
-//                                 options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld
-//                                 context:(__bridge void * _Nullable)self
-//                               withBlock:^(NSDictionary * _Nonnull change, void * _Nonnull context) {
-//        @strongify(self)
-//        [self setUpCustomBGView];
-//    }];
+	[self.KVOController observe:self
+						keyPath:@"model.barBGModel.darkColor"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		[self.viewController setNeedsStatusBarAppearanceUpdate];
+	}];
+	
+	[self.KVOController observe:self
+						keyPath:@"model.barBGModel.bgColor"
+						options:NSKeyValueObservingOptionNew
+						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		[self.viewController setNeedsStatusBarAppearanceUpdate];
+	}];
+
+	[self.KVOController observe:self keyPath:@"model.customView" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+		UIView *oldCustomView = [change valueForKey:@"old"];
+		[oldCustomView removeFromSuperview];
+		[self setUpCustomView];
+	}];
+	
+	[self.KVOController observe:self keyPath:@"model.containStatusBar" options:NSKeyValueObservingOptionNew | NSKeyValueObservingOptionOld block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self);
+        [self setUpCustomBGView];
+    }];
 }
 
 - (void)setUpCustomView
