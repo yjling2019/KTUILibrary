@@ -50,7 +50,7 @@ Pod::Spec.new do |s|
   s.subspec 'ImageLabel' do |sp|
 	sp.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
 	sp.dependency 'Masonry'
-	sp.dependency 'KTFoundation/Macros.h'
+	sp.dependency 'KTFoundation/Macros'
   end
   
   s.subspec 'Toast' do |sp|
