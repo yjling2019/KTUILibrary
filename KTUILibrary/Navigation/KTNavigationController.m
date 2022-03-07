@@ -1,6 +1,6 @@
 //
 //  KTNavigationController.m
-//  VOVA
+//  KOTU
 //
 //  Created by KOTU on 2020/5/13.
 //  Copyright © 2020 iOS. All rights reserved.
@@ -19,7 +19,7 @@ static NSString *const kOriginDelegate = @"kOriginDelegate";
 
 @interface KTNavigationController ()
 
-@property (nonatomic, strong) KTEmptyNavigationBar *vv_navigationBar;
+@property (nonatomic, strong) KTEmptyNavigationBar *kt_navigationBar;
 
 @end
 
@@ -32,7 +32,7 @@ static NSString *const kOriginDelegate = @"kOriginDelegate";
     objc_setAssociatedObject(self, [kOriginDelegate UTF8String], kt_delay(self.interactivePopGestureRecognizer.delegate), OBJC_ASSOCIATION_COPY);
     self.interactivePopGestureRecognizer.delegate = (id<UIGestureRecognizerDelegate>)self;
     
-    [self setValue:self.vv_navigationBar forKey:@"navigationBar"];
+    [self setValue:self.kt_navigationBar forKey:@"navigationBar"];
 }
 
 - (void)pushViewController:(UIViewController *)viewController animated:(BOOL)animated
@@ -77,13 +77,13 @@ static NSString *const kOriginDelegate = @"kOriginDelegate";
     return self.topViewController;
 }
 
-- (KTEmptyNavigationBar *)vv_navigationBar
+- (KTEmptyNavigationBar *)kt_navigationBar
 {
-    if (!_vv_navigationBar) {
-        _vv_navigationBar = [[KTEmptyNavigationBar alloc] init];
-        _vv_navigationBar.navController = self;
+    if (!_kt_navigationBar) {
+        _kt_navigationBar = [[KTEmptyNavigationBar alloc] init];
+        _kt_navigationBar.navController = self;
     }
-    return _vv_navigationBar;
+    return _kt_navigationBar;
 }
 
 @end

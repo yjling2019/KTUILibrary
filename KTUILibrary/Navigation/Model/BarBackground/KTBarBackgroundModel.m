@@ -1,6 +1,6 @@
 //
 //  KTBarBackgroundModel.m
-//  VOVA
+//  KOTU
 //
 //  Created by KOTU on 2020/5/13.
 //  Copyright © 2020 iOS. All rights reserved.
@@ -34,7 +34,7 @@
         self.darkColor = true;
     } else {
 #warning TODO
-//        self.darkColor = [bgColor vv_isDarkColor];
+//        self.darkColor = [bgColor kt_isDarkColor];
     }
     
     if (@available(iOS 13.0, *)) {
@@ -45,7 +45,7 @@
                 self.darkColor = true;
             } else {
 #warning TODO
-//                self.darkColor = [bgColor vv_isDarkColor];
+//                self.darkColor = [bgColor kt_isDarkColor];
             }
             return bgColor;
         }];

@@ -1,6 +1,6 @@
 //
 //  KTTabBarBaseButton.m
-//  VOVA
+//  KOTU
 //
 //  Created by KOTU on 2020/3/16.
 //  Copyright © 2020 iOS. All rights reserved.
@@ -104,7 +104,7 @@
     if ([url.scheme isEqualToString:kKTTabBarSchemeKey]) {
         self.bgImageView.image = [UIImage imageNamed:url.host];
     } else {
-//        UIImage *placeholderImage = [UIImage vv_imageWithColor:[UIColor colorWithWhite:238 / 255.0 alpha:1] size:self.bgImageView.frame.size];
+//        UIImage *placeholderImage = [UIImage kt_imageWithColor:[UIColor colorWithWhite:238 / 255.0 alpha:1] size:self.bgImageView.frame.size];
 //        [self.bgImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
     }
 }
@@ -257,7 +257,7 @@
         self.normalImageView.image = [UIImage imageNamed:url.host];
     } else {
 #warning TODO 0303
-//        UIImage *placeholderImage = [UIImage vv_imageWithColor:[UIColor colorWithWhite:238 / 255.0 alpha:1] size:size];
+//        UIImage *placeholderImage = [UIImage kt_imageWithColor:[UIColor colorWithWhite:238 / 255.0 alpha:1] size:size];
 //        [self.normalImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
     }
 }
@@ -289,12 +289,12 @@
 //    }
 //    if ([url.scheme isEqualToString:kKTTabBarSchemeKey]) {
 //        NSString *path = [[NSBundle mainBundle] pathForResource:url.host ofType:@"gif"];
-//        if (!vv_isEmptyStr(path)) {
+//        if (!kt_isEmptyStr(path)) {
 //            FLAnimatedImage *image = [FLAnimatedImage animatedImageWithGIFData:[NSData dataWithContentsOfURL:[NSURL fileURLWithPath:path]]];
 //            self.gifImageView.animatedImage = image;
 //        }
 //    } else {
-//        UIImage *placeholderImage = [UIImage vv_imageWithColor:[UIColor colorWithWhite:238 / 255.0 alpha:1] size:size];
+//        UIImage *placeholderImage = [UIImage kt_imageWithColor:[UIColor colorWithWhite:238 / 255.0 alpha:1] size:size];
 //        [self.gifImageView sd_setImageWithURL:url placeholderImage:placeholderImage];
 //    }
 }

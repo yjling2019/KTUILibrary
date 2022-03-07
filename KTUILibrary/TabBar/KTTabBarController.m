@@ -1,6 +1,6 @@
 //
 //  KTTabBarController.m
-//  VOVA
+//  KOTU
 //
 //  Created by KOTU on 2020/3/13.
 //  Copyright © 2020 iOS. All rights reserved.
@@ -11,7 +11,7 @@
 
 @interface KTTabBarController () <KTTabBarDelegate>
 
-@property (nonatomic, strong) KTTabBar *vvTabBar;
+@property (nonatomic, strong) KTTabBar *kt_tabBar;
 
 @property (nonatomic, strong) NSArray<__kindof UIViewController *> *vcs;
 
@@ -66,9 +66,9 @@
     
     self.vcs = vcs;
     
-    [self.vvTabBar removeFromSuperview];
-    self.vvTabBar = [[KTTabBar alloc] initWithTabBarModels:tabBarModels middleTabBarModel:middleTabBarModel tabBarConfigModel:tabBarConfigModel];
-    self.vvTabBar.tabBarDelegate = self;
+    [self.kt_tabBar removeFromSuperview];
+    self.kt_tabBar = [[KTTabBar alloc] initWithTabBarModels:tabBarModels middleTabBarModel:middleTabBarModel tabBarConfigModel:tabBarConfigModel];
+    self.kt_tabBar.tabBarDelegate = self;
     
     [self setUpKTTabBar];
     
@@ -89,25 +89,25 @@
 
 - (void)setUpKTTabBar
 {
-    [self setValue:self.vvTabBar forKeyPath:@"tabBar"];
+    [self setValue:self.kt_tabBar forKeyPath:@"tabBar"];
     
     // translucent会引起页面大小变化
-    self.vvTabBar.translucent = false;
+    self.kt_tabBar.translucent = false;
     
-    [self.vvTabBar refreshUI];
+    [self.kt_tabBar refreshUI];
 }
 
 - (void)setUpViewControllers
 {
     [self.vcs enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [self externClassNameViewController:obj];
-        SEL getSelector = NSSelectorFromString(@"vv_tabBarController");
+        SEL getSelector = NSSelectorFromString(@"kt_tabBarController");
         SEL setSelector = NSSelectorFromString(@"setVv_tabBarController:");
         if ([vc conformsToProtocol:@protocol(KTTabBarProtocol)] &&
             [vc respondsToSelector:getSelector] &&
             [vc respondsToSelector:setSelector]) {
             id<KTTabBarProtocol> tabBarProtocol = (id<KTTabBarProtocol>)vc;
-            tabBarProtocol.vv_tabBarController = self;
+            tabBarProtocol.kt_tabBarController = self;
         }
     }];
     self.viewControllers = self.vcs;
@@ -130,7 +130,7 @@
 #pragma mark - 设置selectedIndex
 - (void)setSelectedIndex:(NSUInteger)selectedIndex
 {
-    [self.vvTabBar refreshSelectedIndex:selectedIndex];
+    [self.kt_tabBar refreshSelectedIndex:selectedIndex];
     
     UIViewController *originVC = [self.vcs objectAtIndex:self.selectedIndex];
     originVC = [self externClassNameViewController:originVC];
@@ -172,7 +172,7 @@
     [self.vcs enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [self externClassNameViewController:obj];
         if ([vc isKindOfClass:className]) {
-            [self.vvTabBar tabBarSelectedIndex:idx];
+            [self.kt_tabBar tabBarSelectedIndex:idx];
 #if DEBUG
             selectedSuccess = true;
 #endif
@@ -188,7 +188,7 @@
 /// 如果中间按钮影响tabBar的index个数，可以调用selectedIndexWithClassName来切换tab
 - (void)middleSelected
 {
-    [self.vvTabBar middleSelected];
+    [self.kt_tabBar middleSelected];
 }
 
 /// 刷新某个tab的ui
@@ -201,9 +201,9 @@
         UIViewController *vc = [self externClassNameViewController:obj];
         if ([vc isKindOfClass:className]) {
             if (block) {
-                __kindof KTTabBarBaseModel *tabBarModel = [self.vvTabBar tabBarModel:idx];
+                __kindof KTTabBarBaseModel *tabBarModel = [self.kt_tabBar tabBarModel:idx];
                 block(tabBarModel);
-                [self.vvTabBar refreshUI];
+                [self.kt_tabBar refreshUI];
             }
             *stop = YES;
         }
@@ -215,8 +215,8 @@
 - (void)refreshMiddleTabBarButtonWithBlock:(void(^)(KTMiddleTabBarModel *tabBarModel))block
 {
     if (block) {
-        block(self.vvTabBar.middleTabBarModel);
-        [self.vvTabBar refreshUI];
+        block(self.kt_tabBar.middleTabBarModel);
+        [self.kt_tabBar refreshUI];
     }
 }
 
@@ -229,7 +229,7 @@
     [self.vcs enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [self externClassNameViewController:obj];
         if ([vc isKindOfClass:className]) {
-            [self.vvTabBar addRedPointView:redPointView index:idx];
+            [self.kt_tabBar addRedPointView:redPointView index:idx];
             *stop = YES;
         }
     }];
@@ -243,7 +243,7 @@
     [self.vcs enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [self externClassNameViewController:obj];
         if ([vc isKindOfClass:className]) {
-            view = [self.vvTabBar getRedPointViewWithIndex:idx];
+            view = [self.kt_tabBar getRedPointViewWithIndex:idx];
             *stop = YES;
         }
     }];
@@ -254,13 +254,13 @@
 /// @param redPointView 红点视图
 - (void)addMiddleRedPointView:(UIView *)redPointView
 {
-    [self.vvTabBar addMiddleRedPointView:redPointView];
+    [self.kt_tabBar addMiddleRedPointView:redPointView];
 }
 
 /// 获取中间按钮红点
 - (void)getMiddleRedPointView
 {
-    [self.vvTabBar getMiddleRedPointView];
+    [self.kt_tabBar getMiddleRedPointView];
 }
 
 /// 获取当前选中tab

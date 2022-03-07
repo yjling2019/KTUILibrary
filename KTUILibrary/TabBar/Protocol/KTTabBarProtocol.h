@@ -1,6 +1,6 @@
 //
 //  KTTabBarProtocol.h
-//  VOVA
+//  KOTU
 //
 //  Created by KOTU on 2020/3/14.
 //  Copyright © 2020 iOS. All rights reserved.
@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @protocol KTTabBarProtocol <NSObject>
 
-@property (nonatomic, weak) KTTabBarController *vv_tabBarController;
+@property (nonatomic, weak) KTTabBarController *kt_tabBarController;
 
 @end
 

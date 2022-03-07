@@ -1,6 +1,6 @@
 //
 //  KTTabBarBaseModel.m
-//  VOVA
+//  KOTU
 //
 //  Created by KOTU on 2020/3/13.
 //  Copyright © 2020 iOS. All rights reserved.
@@ -9,7 +9,7 @@
 #import "KTTabBarBaseModel.h"
 #import "KTTabBarBaseButton.h"
 
-NSString * const kKTTabBarSchemeKey = @"vvfile";
+NSString * const kKTTabBarSchemeKey = @"ktfile";
 
 @interface KTTabBarBaseModel ()
 
