@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTUILibrary'
-  s.version          = '1.0.0'
+  s.version          = '1.0.1'
   s.summary          = 'KOTU\'s UI Library.'
 
 # This description is used to generate tags and improve search results.
@@ -61,6 +61,10 @@ Pod::Spec.new do |s|
   s.subspec 'Toast' do |sp|
 	sp.source_files = 'KTUILibrary/Toast/**/*.{h,m}'
 	sp.dependency 'Masonry'
+  end
+  
+  s.subspec 'Protocol' do |sp|
+	sp.source_files = 'KTUILibrary/Protocol/**/*.{h,m}'
   end
   
 end
