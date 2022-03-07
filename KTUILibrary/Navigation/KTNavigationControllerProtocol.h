@@ -1,8 +1,8 @@
 //
 //  KTNavigationControllerProtocol.h
-//  vv_bodylib_ios
+//	KOTU
 //
-//  Created by fwzhou on 2020/6/23.
+//  Created by KOTU on 2020/6/23.
 //
 
 #import <Foundation/Foundation.h>

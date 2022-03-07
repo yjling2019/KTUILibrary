@@ -2,7 +2,7 @@
 //  KTBarBackgroundView.m
 //  VOVA
 //
-//  Created by fwzhou on 2020/5/13.
+//  Created by KOTU on 2020/5/13.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
@@ -10,10 +10,6 @@
 #import "KTBarBackgroundVisualEffectView.h"
 #import "KTBarBackgroundShadowView.h"
 #import "KTNavigationItem.h"
-//#import <vv_rootlib_ios/KTDataHelper.h>
-//#import <vv_rootlib_ios/UIColor+TDHelp.h>
-//#import <vv_rootlib_ios/TDScope.h>
-//#import <vv_rootlib_ios/NSObject+KTKVOHelper.h>
 #import <Masonry/Masonry.h>
 #import <KTFoundation/KTMacros.h>
 #import <KVOController/KVOController.h>

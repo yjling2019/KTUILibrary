@@ -34,7 +34,6 @@
 		10A04C759DCBAF09CBC3B0E5076D49DD /* Pods-KTUILibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8380F40ABB23C7E67F8915A172FA44 /* Pods-KTUILibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10B5A5FF74C577DB66C759DE898D39D2 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9230BC8E05C98BAAB43269A587C0C0 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114C2D0BB7EDBEAAA2433CCC8DE5526C /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EFDEB61F02C27DC89ACCD656A92202 /* UIButton+WebCache.m */; };
-		12D1560C7A56AB2B3A0D69C4AA3C0972 /* KTViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5827D00BF621ECD78F212C824633A9DF /* KTViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1319A3F5488FCA5F5DA1F3E6443D02ED /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C315DA12A5B37EF1FDA78C1D62053 /* NSArray+MASAdditions.m */; };
 		142D9291D41C9DED9A71FDE1FC3624A1 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 94736C0B492DFBB886DDFB7280BCD0FC /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		14A8B46A2349B7914CB5DE974CD86203 /* KTTabBarConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4739DC150AA2DDA199372ED1A884D8 /* KTTabBarConfigModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -519,7 +518,6 @@
 		55A57455D6A59D5455E410834C96455F /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		5677E8C8A65A0E1819C733E25A8A471A /* SDAnimatedImagePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImagePlayer.m; path = SDWebImage/Core/SDAnimatedImagePlayer.m; sourceTree = "<group>"; };
 		56B65516FF276BE539A16C28948B5191 /* KTTabBarNumRedPointView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarNumRedPointView.m; sourceTree = "<group>"; };
-		5827D00BF621ECD78F212C824633A9DF /* KTViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTViewProtocol.h; path = KTUILibrary/Navigation/KTViewProtocol.h; sourceTree = "<group>"; };
 		59008098D03A99578D0276C18E9DF229 /* Pods-KTUILibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTUILibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		5B0FAFCE905D1D90B7EE3431FFC2CF9F /* UIViewController+KTKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KTKeyboard.h"; path = "KTFoundation/Category/UIKit/UIViewController+KTKeyboard.h"; sourceTree = "<group>"; };
 		5B33647A8611849F28D0B80F28BF725A /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
@@ -1329,7 +1327,6 @@
 				5F6D81E132E4151A886153157A86284F /* KTNavigationController.h */,
 				39E660B7665989805F6836528774C5ED /* KTNavigationController.m */,
 				720DA694222471B36CCF654BD3B58845 /* KTNavigationControllerProtocol.h */,
-				5827D00BF621ECD78F212C824633A9DF /* KTViewProtocol.h */,
 				837B673F0F210E5C113CF2365135B110 /* Model */,
 				B0DE0C0A2901862FD66CC8D281601693 /* View */,
 			);
@@ -1566,7 +1563,6 @@
 				1FA24E1803AAF526DD278ADEE870C66D /* KTTabBarNumRedPointView.h in Headers */,
 				C1607F75D76F6D56DEC896CD00F3646E /* KTTabBarProtocol.h in Headers */,
 				CC78211667FC74CEDBA99596F0E75D62 /* KTTabBarRedPointViewProtocol.h in Headers */,
-				12D1560C7A56AB2B3A0D69C4AA3C0972 /* KTViewProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

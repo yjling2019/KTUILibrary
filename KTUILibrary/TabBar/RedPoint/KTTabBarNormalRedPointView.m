@@ -2,13 +2,12 @@
 //  KTTabBarNormalRedPointView.m
 //  VOVA
 //
-//  Created by fwzhou on 2020/3/16.
+//  Created by KOTU on 2020/3/16.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
 #import "KTTabBarNormalRedPointView.h"
 #import <Masonry/Masonry.h>
-//#import <vv_rootlib_ios/UIColor+TDHelp.h>
 
 @interface KTTabBarNormalRedPointView ()
 

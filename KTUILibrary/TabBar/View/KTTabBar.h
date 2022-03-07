@@ -2,12 +2,11 @@
 //  KTTabBar.h
 //  VOVA
 //
-//  Created by fwzhou on 2020/3/13.
+//  Created by KOTU on 2020/3/13.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "KTViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
@@ -26,7 +25,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @end
 
-@interface KTTabBar : UITabBar <KTViewProtocol>
+@interface KTTabBar : UITabBar
 
 @property (nonatomic, weak) id<KTTabBarDelegate> tabBarDelegate;
 

@@ -1,8 +1,8 @@
 //
 //  KTTabBarConfigModel.h
-//  vv_bodylib_ios
+//	KOTU
 //
-//  Created by fwzhou on 2020/5/7.
+//  Created by KOTU on 2020/5/7.
 //
 
 #import <Foundation/Foundation.h>

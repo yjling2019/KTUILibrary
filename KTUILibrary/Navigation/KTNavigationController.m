@@ -2,15 +2,12 @@
 //  KTNavigationController.m
 //  VOVA
 //
-//  Created by fwzhou on 2020/5/13.
+//  Created by KOTU on 2020/5/13.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
 #import "KTNavigationController.h"
-//#import <vv_rootlib_ios/NSObject+Swizzle.h>
 #import "KTEmptyNavigationBar.h"
-//#import <vv_bodylib_ios/KTDelay.h>
-//#import "KTPopupManager_N.h"
 #import <KTFoundation/KTMacros.h>
 #import <objc/runtime.h>
 

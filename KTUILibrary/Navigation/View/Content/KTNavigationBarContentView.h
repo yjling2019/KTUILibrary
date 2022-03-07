@@ -2,7 +2,7 @@
 //  KTNavigationBarContentView.h
 //  VOVA
 //
-//  Created by fwzhou on 2020/5/13.
+//  Created by KOTU on 2020/5/13.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
@@ -11,6 +11,8 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface KTNavigationBarContentView : KTNavigationBaseView
+
+- (void)updateWithModel:(id)model;
 
 @end
 

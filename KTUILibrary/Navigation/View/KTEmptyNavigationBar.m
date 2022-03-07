@@ -1,8 +1,8 @@
 //
 //  KTEmptyNavigationBar.m
-//  vv_bodylib_ios
+//	KOTU
 //
-//  Created by fwzhou on 2020/5/20.
+//  Created by KOTU on 2020/5/20.
 //
 
 #import "KTEmptyNavigationBar.h"

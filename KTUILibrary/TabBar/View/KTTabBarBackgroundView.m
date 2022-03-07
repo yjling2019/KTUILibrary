@@ -1,8 +1,8 @@
 //
 //  KTTabBarBackgroundView.m
-//  vv_rootlib_ios
+//	KOTU
 //
-//  Created by fwzhou on 2020/5/29.
+//  Created by KOTU on 2020/5/29.
 //
 
 #import "KTTabBarBackgroundView.h"

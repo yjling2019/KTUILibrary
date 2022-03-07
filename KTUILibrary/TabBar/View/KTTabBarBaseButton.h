@@ -2,12 +2,11 @@
 //  KTTabBarBaseButton.h
 //  VOVA
 //
-//  Created by fwzhou on 2020/3/16.
+//  Created by KOTU on 2020/3/16.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
 #import <UIKit/UIKit.h>
-#import "KTViewProtocol.h"
 //#import <Lottie/Lottie.h>
 //#import <FLAnimatedImage/FLAnimatedImageView.h>
 //#import <FLAnimatedImage/FLAnimatedImage.h>
@@ -15,7 +14,7 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KTTabBarBaseButton : UIButton <KTViewProtocol>
+@interface KTTabBarBaseButton : UIButton
 
 /// 背景图
 @property (nonatomic, strong, readonly) UIImageView *bgImageView;
@@ -34,6 +33,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, strong, readonly) UIView *redPointView;
 
 + (id)configTabBarButtonWithModel:(KTTabBarBaseModel *)model;
+
+- (void)setUpUI;
+- (void)updateWithModel:(id)model;
 
 - (void)setUpRedPointView:(UIView *)redPointView model:(KTTabBarBaseModel *)model;
 

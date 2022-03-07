@@ -28,7 +28,6 @@
 #import "KTBackButtonHandlerProtocol.h"
 #import "KTNavigationController.h"
 #import "KTNavigationControllerProtocol.h"
-#import "KTViewProtocol.h"
 #import "KTMiddleTabBarModel.h"
 #import "KTTabBarBaseModel.h"
 #import "KTTabBarConfigModel.h"

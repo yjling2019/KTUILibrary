@@ -2,7 +2,7 @@
 //  KTNavigationBar.m
 //  VOVA
 //
-//  Created by fwzhou on 2020/5/13.
+//  Created by KOTU on 2020/5/13.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 
@@ -11,10 +11,6 @@
 #import "KTBarBackgroundView.h"
 #import "KTNavigationBarContentView.h"
 #import "KTNavigationItem.h"
-//#import "KTUIMacros.h"
-//#import <vv_rootlib_ios/TDScope.h>
-//#import <vv_rootlib_ios/NSObject+KTKVOHelper.h>
-//#import <vv_rootlib_ios/NSDictionary+DataProtect.h>
 #import <Masonry/Masonry.h>
 #import <KTFoundation/KTMacros.h>
 #import <KVOController/KVOController.h>

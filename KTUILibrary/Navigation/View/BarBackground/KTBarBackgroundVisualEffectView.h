@@ -2,7 +2,7 @@
 //  KTBarBackgroundVisualEffectView.h
 //  VOVA
 //
-//  Created by fwzhou on 2020/5/15.
+//  Created by KOTU on 2020/5/15.
 //  Copyright © 2020 iOS. All rights reserved.
 //
 

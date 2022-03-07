@@ -1,16 +1,17 @@
 //
 //  KTTabBarBackgroundView.h
-//  vv_rootlib_ios
+//	KOTU
 //
-//  Created by fwzhou on 2020/5/29.
+//  Created by KOTU on 2020/5/29.
 //
 
 #import <UIKit/UIKit.h>
-#import "KTViewProtocol.h"
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface KTTabBarBackgroundView : UIView <KTViewProtocol>
+@interface KTTabBarBackgroundView : UIView
+
+- (void)updateWithModel:(id)model;
 
 @end
 
