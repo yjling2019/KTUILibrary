@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTUILibrary'
-  s.version          = '1.0.2'
+  s.version          = '1.0.3'
   s.summary          = 'KOTU\'s UI Library.'
 
 # This description is used to generate tags and improve search results.
@@ -25,6 +25,8 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/yjling2019/KTUILibrary.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
+  
+  s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
   
   s.subspec 'Navigation' do |sp|
 	  sp.source_files = 'KTUILibrary/Navigation/**/*.{h,m}'
