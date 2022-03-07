@@ -40,7 +40,7 @@
 #import "UITextField+KTHelp.h"
 #import "UIView+KTHelp.h"
 #import "UIViewController+KTKeyboard.h"
-#import <KTFoundation/KTMacros.h>
+#import "KTMacros.h"
 #import "KTMetamacros.h"
 #import "KTQuickMacros.h"
 #import "KTScope.h"

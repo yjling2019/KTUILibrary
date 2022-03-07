@@ -72,6 +72,15 @@
 
         ]
       }
+    },
+    {
+      "name": "Toast",
+      "source_files": "KTUILibrary/Toast/**/*.{h,m}",
+      "dependencies": {
+        "Masonry": [
+
+        ]
+      }
     }
   ]
 }

@@ -12,6 +12,7 @@ PODS:
     - KTUILibrary/ImageLabel (= 1.0.0)
     - KTUILibrary/Navigation (= 1.0.0)
     - KTUILibrary/Tabbar (= 1.0.0)
+    - KTUILibrary/Toast (= 1.0.0)
   - KTUILibrary/Base (1.0.0)
   - KTUILibrary/EdgesLabel (1.0.0)
   - KTUILibrary/EdgesTextField (1.0.0)
@@ -25,6 +26,8 @@ PODS:
     - Masonry
   - KTUILibrary/Tabbar (1.0.0):
     - KTFoundation
+    - Masonry
+  - KTUILibrary/Toast (1.0.0):
     - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
@@ -50,11 +53,11 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KTFoundation: 8428d913e636f89554c61e6996935672fb9886a0
-  KTUILibrary: 8b478480433e638ecd839aeae4ffc6f6fc58133f
+  KTUILibrary: 53a522d1a9610a4ecb29715f74f3e333006e8a49
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
 
 PODFILE CHECKSUM: 87e28ad89235f68e343b0dee84dcf43164225b15
 
-COCOAPODS: 1.11.2
+COCOAPODS: 1.10.1

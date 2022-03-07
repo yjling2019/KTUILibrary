@@ -58,4 +58,9 @@ Pod::Spec.new do |s|
 	sp.dependency 'KTUILibrary/Base'
   end
   
+  s.subspec 'Toast' do |sp|
+	sp.source_files = 'KTUILibrary/Toast/**/*.{h,m}'
+	sp.dependency 'Masonry'
+  end
+  
 end
