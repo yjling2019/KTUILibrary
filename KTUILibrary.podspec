@@ -25,16 +25,11 @@ Pod::Spec.new do |s|
   s.source           = { :git => 'https://github.com/yjling2019/KTUILibrary.git', :tag => s.version.to_s }
 
   s.ios.deployment_target = '9.0'
-
-  s.subspec 'Base' do |sp|
-	  sp.source_files = 'KTUILibrary/Base/Classes/*'
-  end
   
   s.subspec 'Navigation' do |sp|
 	  sp.source_files = 'KTUILibrary/Navigation/**/*.{h,m}'
 	  sp.dependency 'KVOController'
 	  sp.dependency 'Masonry'
-	  sp.dependency 'KTUILibrary/Base'
 	  sp.dependency 'KTFoundation'
   end
   
@@ -55,7 +50,7 @@ Pod::Spec.new do |s|
   s.subspec 'ImageLabel' do |sp|
 	sp.source_files = 'KTUILibrary/ImageLabel/Classes/**/*.{h,m}'
 	sp.dependency 'Masonry'
-	sp.dependency 'KTUILibrary/Base'
+	sp.dependency 'KTFoundation/Macros.h'
   end
   
   s.subspec 'Toast' do |sp|
