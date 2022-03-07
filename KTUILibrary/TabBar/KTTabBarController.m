@@ -102,7 +102,7 @@
     [self.vcs enumerateObjectsUsingBlock:^(__kindof UIViewController * _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
         UIViewController *vc = [self externClassNameViewController:obj];
         SEL getSelector = NSSelectorFromString(@"kt_tabBarController");
-        SEL setSelector = NSSelectorFromString(@"setVv_tabBarController:");
+        SEL setSelector = NSSelectorFromString(@"setKt_tabBarController:");
         if ([vc conformsToProtocol:@protocol(KTTabBarProtocol)] &&
             [vc respondsToSelector:getSelector] &&
             [vc respondsToSelector:setSelector]) {
