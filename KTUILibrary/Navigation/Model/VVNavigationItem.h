@@ -49,9 +49,17 @@ NS_ASSUME_NONNULL_BEGIN
 
 /// 亮色个性化标题
 @property (nonatomic, strong, nullable) NSAttributedString *lightAttrTitle;
+/// 亮色标题颜色
+@property (nonatomic, strong, nullable) UIColor *lightTitleColor;
+/// 亮色标题字体
+@property (nonatomic, strong, nullable) UIFont *lightTitleFont;
 
 /// 暗色个性化标题
 @property (nonatomic, strong, nullable) NSAttributedString *darkAttrTitle;
+/// 暗色标题颜色
+@property (nonatomic, strong, nullable) UIColor *darkTitleColor;
+/// 暗色标题字体
+@property (nonatomic, strong, nullable) UIFont *darkTitleFont;
 
 /// 返回按钮
 @property (nonatomic, strong, nullable) __kindof VVBarButtonItem *backBarButtonItem;

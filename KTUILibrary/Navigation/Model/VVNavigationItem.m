@@ -51,8 +51,8 @@
         paraStyle.lineBreakMode = NSLineBreakByTruncatingTail;
         textDict[NSParagraphStyleAttributeName] = paraStyle;
 #warning TODO 0303
-        textDict[NSFontAttributeName] = [UIFont systemFontOfSize:18];
-        textDict[NSForegroundColorAttributeName] = [UIColor whiteColor];
+		textDict[NSFontAttributeName] = self.lightTitleFont ?: [UIFont systemFontOfSize:18];
+		textDict[NSForegroundColorAttributeName] = self.lightTitleColor ?: [UIColor whiteColor];
         _lightAttrTitle = [[NSAttributedString alloc] initWithString:self.title attributes:textDict];
     }
     return _lightAttrTitle;
@@ -66,10 +66,8 @@
         NSMutableParagraphStyle *paraStyle = [[NSMutableParagraphStyle alloc] init];
         paraStyle.lineBreakMode = NSLineBreakByTruncatingTail;
         textDict[NSParagraphStyleAttributeName] = paraStyle;
-#warning TODO 0303
-        textDict[NSFontAttributeName] = [UIFont systemFontOfSize:18];
-//        textDict[NSForegroundColorAttributeName] = [UIColor colorWithHex:0x1c1c1c];
-		textDict[NSForegroundColorAttributeName] = [UIColor blackColor];
+		textDict[NSFontAttributeName] = self.darkTitleFont ?: [UIFont systemFontOfSize:18];
+		textDict[NSForegroundColorAttributeName] = self.darkTitleColor ?: [UIColor blackColor];
 		_darkAttrTitle = [[NSAttributedString alloc] initWithString:self.title attributes:textDict];
     }
     return _darkAttrTitle;
