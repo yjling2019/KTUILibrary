@@ -22,7 +22,7 @@
 		092E352F77C5306E82961E8844CCB231 /* SDImageIOAnimatedCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 01ECD65C4F76B526CA71B68FA81F0B28 /* SDImageIOAnimatedCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		095C82649896E253D7EA4A8DC8CAE4E7 /* UIViewController+KTKeyboard.m in Sources */ = {isa = PBXBuildFile; fileRef = 0727425B7AAA889AFE9A5B63B4559022 /* UIViewController+KTKeyboard.m */; };
 		09813C13105D98B6E7DEE61AB4D89D90 /* UITableView+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 734990D8C1D88A0DCDB3E535E4AAF8A4 /* UITableView+KTHelp.m */; };
-		0AE91B7DD666E2FE678E3D778EED73F0 /* VVEmptyNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE76620E8110A97B85CEF1A4C21B10 /* VVEmptyNavigationBar.m */; };
+		0AE91B7DD666E2FE678E3D778EED73F0 /* KTEmptyNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 97AE76620E8110A97B85CEF1A4C21B10 /* KTEmptyNavigationBar.m */; };
 		0B171EDD928127674944E2397E3664C9 /* FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFA223722B3DA8F5C944C6BB0021E2B /* FBKVOController.m */; };
 		0B79F9ECA7A40BCA5D9039B35FEC1F33 /* KTScope.h in Headers */ = {isa = PBXBuildFile; fileRef = 52CD9749A3B3A17E9F9B057E603237E1 /* KTScope.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0BC52097426786A1611A11744FF823B4 /* SDWebImageCacheSerializer.m in Sources */ = {isa = PBXBuildFile; fileRef = 79EBA99AFB14EF9CA9D488F900ABFB8D /* SDWebImageCacheSerializer.m */; };
@@ -34,12 +34,12 @@
 		10A04C759DCBAF09CBC3B0E5076D49DD /* Pods-KTUILibrary_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4F8380F40ABB23C7E67F8915A172FA44 /* Pods-KTUILibrary_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		10B5A5FF74C577DB66C759DE898D39D2 /* SDImageCodersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CD9230BC8E05C98BAAB43269A587C0C0 /* SDImageCodersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		114C2D0BB7EDBEAAA2433CCC8DE5526C /* UIButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 30EFDEB61F02C27DC89ACCD656A92202 /* UIButton+WebCache.m */; };
-		12D1560C7A56AB2B3A0D69C4AA3C0972 /* VVViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5827D00BF621ECD78F212C824633A9DF /* VVViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		12D1560C7A56AB2B3A0D69C4AA3C0972 /* KTViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 5827D00BF621ECD78F212C824633A9DF /* KTViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1319A3F5488FCA5F5DA1F3E6443D02ED /* NSArray+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 1D0C315DA12A5B37EF1FDA78C1D62053 /* NSArray+MASAdditions.m */; };
 		142D9291D41C9DED9A71FDE1FC3624A1 /* View+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 94736C0B492DFBB886DDFB7280BCD0FC /* View+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14A8B46A2349B7914CB5DE974CD86203 /* VVTabBarConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4739DC150AA2DDA199372ED1A884D8 /* VVTabBarConfigModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		14DD39845916D7EC566474B430200756 /* VVBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C45DF60898A7BA62D11622DA590456A1 /* VVBarBackgroundView.m */; };
-		155EFEA8FED2F5F439FD634714F7DC6B /* VVBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C0C68B73FADC3ED97F6E71FACE9D0F /* VVBarButtonItem.m */; };
+		14A8B46A2349B7914CB5DE974CD86203 /* KTTabBarConfigModel.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4739DC150AA2DDA199372ED1A884D8 /* KTTabBarConfigModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		14DD39845916D7EC566474B430200756 /* KTBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = C45DF60898A7BA62D11622DA590456A1 /* KTBarBackgroundView.m */; };
+		155EFEA8FED2F5F439FD634714F7DC6B /* KTBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 78C0C68B73FADC3ED97F6E71FACE9D0F /* KTBarButtonItem.m */; };
 		158ED66F79A1A1B16072418E8B66E628 /* SDWebImageIndicator.m in Sources */ = {isa = PBXBuildFile; fileRef = FB05E64D9524D7B636B846A418AB8F17 /* SDWebImageIndicator.m */; };
 		15F0D404DF94F1546A17142E40A8F3B1 /* UIImageView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F4A2D09ADFBFDB023A688E6F537E704 /* UIImageView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		178B129FFA06B41C13CDD0143E45832C /* MASViewConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = DA41A997C3FE19B9E43F9C2799AB0C08 /* MASViewConstraint.m */; };
@@ -57,31 +57,31 @@
 		1F55097C4490DCFB8BA4B3D8D284ED33 /* SDAnimatedImage.h in Headers */ = {isa = PBXBuildFile; fileRef = E0EDF5A13DCD890C136D081815185490 /* SDAnimatedImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F5A96B3EF393FE66CAA63900C7B0D56 /* SDDiskCache.h in Headers */ = {isa = PBXBuildFile; fileRef = B8A8CDE2191DDCEC099CAF3A72FB3E9A /* SDDiskCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		1F7AFE861609115DF7D756769A553F87 /* SDAnimatedImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 6E0A3E1B35C3B803963DABC234F49A50 /* SDAnimatedImageView+WebCache.m */; };
-		1FA24E1803AAF526DD278ADEE870C66D /* VVTabBarNumRedPointView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5213B997BCCF07F59FD5625E3578DD14 /* VVTabBarNumRedPointView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		1FA24E1803AAF526DD278ADEE870C66D /* KTTabBarNumRedPointView.h in Headers */ = {isa = PBXBuildFile; fileRef = 5213B997BCCF07F59FD5625E3578DD14 /* KTTabBarNumRedPointView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		219081FBF44151A4FABEC8B91A576FBB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A05C643F05C89841D26131A370B318B /* Foundation.framework */; };
 		221D7BF7AFC40D5E0B75C7502F2560A4 /* KTSingle.h in Headers */ = {isa = PBXBuildFile; fileRef = CE74530DADE6ADF09BF3AEFFF9067D69 /* KTSingle.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		222975FA8676192A77A6B72068F98ADC /* UIGestureRecognizer+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 1BE0E54B7A060D335F92E9FF0E6A19E6 /* UIGestureRecognizer+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		248CC6230850CF024C6760CA70B60024 /* Masonry.h in Headers */ = {isa = PBXBuildFile; fileRef = 984831818EE6CF61E24F47119284CB17 /* Masonry.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		25FEC027CFB81FB34944F0F9E25282F2 /* VVTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA03049AB5F621DF7130C7E1517558 /* VVTabBarButton.m */; };
+		25FEC027CFB81FB34944F0F9E25282F2 /* KTTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FDA03049AB5F621DF7130C7E1517558 /* KTTabBarButton.m */; };
 		26AFA2DD186558E28CCAC2EF248B4E56 /* UIButton+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 2677A54A21A1C2155EABF2C434789145 /* UIButton+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		26D9C9FFCDC18618DC92736439FAD58A /* SDImageCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = AB4D03CE867F892F0DE140244057E348 /* SDImageCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		273ACF8CDCA537DB5769A55F35195A03 /* SDImageCodersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 802CDADC684E446E7371E64E078EB92A /* SDImageCodersManager.m */; };
 		274968CAE2ADC9D4A4FEBCF184148C6D /* SDImageTransformer.h in Headers */ = {isa = PBXBuildFile; fileRef = 5438C13BD74A34ADBFD2E3D6F1E37552 /* SDImageTransformer.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		297C3801F66C5BA1F39CE54E3495B5B2 /* VVTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F009C3C8EBF3106BA4BED1D785B1C5 /* VVTabBarModel.m */; };
+		297C3801F66C5BA1F39CE54E3495B5B2 /* KTTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 88F009C3C8EBF3106BA4BED1D785B1C5 /* KTTabBarModel.m */; };
 		29A34FBE9DC82BF012AC83585F4530E0 /* SDInternalMacros.m in Sources */ = {isa = PBXBuildFile; fileRef = 0051DF1F1FABEA9ED7037BA45E87792F /* SDInternalMacros.m */; };
 		29B8FE69576F488B8C9114144BD38CE6 /* KTToast.h in Headers */ = {isa = PBXBuildFile; fileRef = 0B36C822C650FBFAF17E63FCB68D3B3F /* KTToast.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		29C11EBD5BA1F4AB95FE233E96AFA3E6 /* SDWebImageDownloaderRequestModifier.h in Headers */ = {isa = PBXBuildFile; fileRef = 9DDF17DCF5E058688159A90EBF184B82 /* SDWebImageDownloaderRequestModifier.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		29C55AE60CA7ECAAF305563EDF7C17BA /* VVBarBackgroundModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1810A765CDD07702A6618C6FD2507C08 /* VVBarBackgroundModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		29C55AE60CA7ECAAF305563EDF7C17BA /* KTBarBackgroundModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 1810A765CDD07702A6618C6FD2507C08 /* KTBarBackgroundModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		2B0059D0843F2DC3BE4AE35C6B4EBDEF /* KTCGUtilities.m in Sources */ = {isa = PBXBuildFile; fileRef = 7F0EB547F7D63707C4D08589A48D5236 /* KTCGUtilities.m */; };
 		2D0D89B7545FBB7B495EC9F326AF5814 /* NSData+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 34F9DB9D1F93D6358CE29EFEBC072DB7 /* NSData+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32A3616CA805D9C75E91D965A98D3FE3 /* VVTabBarBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 287E587295DA2ED44B8002D18E464CFB /* VVTabBarBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		32A9748294E141816EAA4FE437158AAF /* VVTabBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4125D2414E6F67CE9DAC8214D709639 /* VVTabBarBackgroundView.m */; };
+		32A3616CA805D9C75E91D965A98D3FE3 /* KTTabBarBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 287E587295DA2ED44B8002D18E464CFB /* KTTabBarBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32A9748294E141816EAA4FE437158AAF /* KTTabBarBackgroundView.m in Sources */ = {isa = PBXBuildFile; fileRef = A4125D2414E6F67CE9DAC8214D709639 /* KTTabBarBackgroundView.m */; };
 		3539E3E01A8DE6636BE39797BBBD13E4 /* SDImageIOCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 814E958CFB8AA2A61819B18687FAA912 /* SDImageIOCoder.m */; };
 		354ED7FE2CF541313426DDB96EC41B5D /* SDWebImageDownloaderOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = 77B0909E4EE485ADF985F3B647CF41A3 /* SDWebImageDownloaderOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		356F9BBAB76C5611E39F578E0BDA1961 /* VVBarBackgroundShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9851FE322440A6663B8BF51A0E1B21C /* VVBarBackgroundShadowView.m */; };
+		356F9BBAB76C5611E39F578E0BDA1961 /* KTBarBackgroundShadowView.m in Sources */ = {isa = PBXBuildFile; fileRef = E9851FE322440A6663B8BF51A0E1B21C /* KTBarBackgroundShadowView.m */; };
 		35CADF0CC07326CD35633FC44AFA7288 /* MASViewConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = C45DC5CF0E95C2461A80259E9FCF3049 /* MASViewConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		35D7349FA198504825E3602C4941EF4D /* UIImage+Transform.h in Headers */ = {isa = PBXBuildFile; fileRef = 7E9A023460F1564BAC594DBB13F26FBF /* UIImage+Transform.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		36257716BD3676E790267647F4E7CFD2 /* VVNavigationBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74818C9E9D025C5FF31E70EBC676B112 /* VVNavigationBaseView.m */; };
+		36257716BD3676E790267647F4E7CFD2 /* KTNavigationBaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 74818C9E9D025C5FF31E70EBC676B112 /* KTNavigationBaseView.m */; };
 		3678DF7B6539D273A7C1427C9B3A844E /* UIColor+SDHexString.m in Sources */ = {isa = PBXBuildFile; fileRef = B6C0FDCB2F22E6C87885D36803BC19A5 /* UIColor+SDHexString.m */; };
 		3712621D4AB06646D591BFB56FE46BBD /* SDWebImageDownloaderDecryptor.m in Sources */ = {isa = PBXBuildFile; fileRef = E96B44499B82BD7DDBFD1CB972C93129 /* SDWebImageDownloaderDecryptor.m */; };
 		387381BC1EDB060330D5D3CF7B81951E /* UIGestureRecognizer+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = FBCE06F01D84D9B472DB03D5D850DEF7 /* UIGestureRecognizer+KTHelp.m */; };
@@ -93,57 +93,57 @@
 		3BF18B5C2DCC54566DCEE6B1AA143A43 /* KTMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 3FD12C22289F113A980655496289815C /* KTMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3C32321E8705001426F7002395697400 /* NSNotificationCenter+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 1639EEA1F19826EF610BAA1EA6718D86 /* NSNotificationCenter+KTHelp.m */; };
 		3C7C4363F1CE30823DA2022E89D076A8 /* CALayer+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5BA70B09FD8232E5A0600011257666DC /* CALayer+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		3CF44A27FA2F506805A4DC9D3090AF00 /* VVBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 11493F3A9DAA613F52F471E8094F7061 /* VVBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3CF44A27FA2F506805A4DC9D3090AF00 /* KTBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 11493F3A9DAA613F52F471E8094F7061 /* KTBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3D375A85D8162BC44D045F53781D006A /* SDWeakProxy.h in Headers */ = {isa = PBXBuildFile; fileRef = 55A57455D6A59D5455E410834C96455F /* SDWeakProxy.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		3D6ED7FD04DC9BA1BECD25CBEAA82F6F /* NSArray+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2E2245C1FD19F74A661BD669795FBB /* NSArray+KTHelp.m */; };
 		3E344FED4F81EEA697CB210FEAC27659 /* SDImageAssetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 272C86518E7D40D858DF6D741ABDEC6E /* SDImageAssetManager.m */; };
 		40A5F8B62507885E01DB3FE0EDE93706 /* UIView+WebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 95D3CF887333BE62160EC993C9CA21D3 /* UIView+WebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		40C1238DC5744C26FB96C3391431639A /* SDImageHEICCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 547114A509E830E33599A389467640AB /* SDImageHEICCoder.m */; };
-		40CC2498E66E100D4E2DF9ACB4829689 /* VVTabBarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D7D3A812876F2FB42AE8AC4E2AE335 /* VVTabBarModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		40CEE290E2233ADA4DD5BDFC79438754 /* VVTabBarBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED490307C9394EE747DEBA20D31B4E8 /* VVTabBarBaseButton.m */; };
+		40CC2498E66E100D4E2DF9ACB4829689 /* KTTabBarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 17D7D3A812876F2FB42AE8AC4E2AE335 /* KTTabBarModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		40CEE290E2233ADA4DD5BDFC79438754 /* KTTabBarBaseButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5ED490307C9394EE747DEBA20D31B4E8 /* KTTabBarBaseButton.m */; };
 		4157771455C501F2A429DB179A93953E /* MASCompositeConstraint.m in Sources */ = {isa = PBXBuildFile; fileRef = 96387F8EF886377FB27A5DC82E471950 /* MASCompositeConstraint.m */; };
 		4313F8A9E3D1D9607543EE1F17EDAB4F /* ViewController+MASAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F5E5F4954849DF7866C743399BC884D /* ViewController+MASAdditions.m */; };
 		44B4F51B018F0039263D2DD796E2F467 /* SDWebImageOptionsProcessor.h in Headers */ = {isa = PBXBuildFile; fileRef = 797EC821FC410ABC59ED0AD956D3E6AE /* SDWebImageOptionsProcessor.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		44E9936E5122D5126877BB5167557928 /* UIBarButtonItem+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = C145F0DAEAB9F3CEC3D60ED3D3C089C3 /* UIBarButtonItem+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		460AE3766F27FCF62B55288A80A4951B /* MASConstraintMaker.m in Sources */ = {isa = PBXBuildFile; fileRef = 680AA6808E765769D7CC93EE2F9FA924 /* MASConstraintMaker.m */; };
-		46A248A7038DAA85EE23644795A6ED11 /* VVBarBackgroundVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0667A853376AB5F67629730CFD18A8 /* VVBarBackgroundVisualEffectView.m */; };
-		47255504CE0A47FEC027EE36E172D29F /* VVTabBarNormalRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6529F9AF7250599263B1797E0142A9F /* VVTabBarNormalRedPointView.m */; };
+		46A248A7038DAA85EE23644795A6ED11 /* KTBarBackgroundVisualEffectView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3F0667A853376AB5F67629730CFD18A8 /* KTBarBackgroundVisualEffectView.m */; };
+		47255504CE0A47FEC027EE36E172D29F /* KTTabBarNormalRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = F6529F9AF7250599263B1797E0142A9F /* KTTabBarNormalRedPointView.m */; };
 		482390939D521EDC7E4197436C13C005 /* SDMemoryCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 15D0A53EA5E08C92558F3A69CC5335C2 /* SDMemoryCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		494F5E5284E2F6D0FA92F07ADF5FB6AC /* SDFileAttributeHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = A7CE707A6CF45BC74A389CF274800CD6 /* SDFileAttributeHelper.m */; };
 		4A76C7A1DA87826F7889A927A7AA6C3E /* UIApplication+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = E5127BAF66C96B4A564102B550BD180E /* UIApplication+KTHelp.m */; };
 		4B926EECD6488564EF12182694F5C073 /* NSNumber+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 99D7E0331D3D2502D3286B23F0831377 /* NSNumber+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4D3D9AA5E2ABCB9F87CD0A59AE536CC6 /* SDImageIOAnimatedCoderInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = C20030714C9DAAD8E012C78C7042A26A /* SDImageIOAnimatedCoderInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		4DB06640ECFB843E89C0AD184DD0F094 /* UIViewController+KTKeyboard.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0FAFCE905D1D90B7EE3431FFC2CF9F /* UIViewController+KTKeyboard.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4DECF9A7B201D7F8A6A373EC30F0E4F6 /* VVMiddleTabBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBC764408053C21A7DB3E90FA1CC251 /* VVMiddleTabBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4DECF9A7B201D7F8A6A373EC30F0E4F6 /* KTMiddleTabBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 8CBC764408053C21A7DB3E90FA1CC251 /* KTMiddleTabBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		4F9B8F367350FE6F02486D6B0AFC0D0C /* UIImage+ForceDecode.h in Headers */ = {isa = PBXBuildFile; fileRef = B6C2F068788AC52A6EDE96CC48171D29 /* UIImage+ForceDecode.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		502D148FB284EE012260A1AA96674EEE /* SDWebImageManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 28174F2E0828A6DA72499C0C03DCBD92 /* SDWebImageManager.m */; };
 		51761B4ABD27877ED3CC757AB5253A19 /* UIScrollView+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 4524A8B505EFEAAF8C90B329968BB265 /* UIScrollView+KTHelp.m */; };
 		517FA4C5F5F5E97E741D0DF2AB5213F2 /* Pods-KTUILibrary_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 59008098D03A99578D0276C18E9DF229 /* Pods-KTUILibrary_Example-dummy.m */; };
-		53CB5A9A0E1FF829409050A89107F37D /* VVButtonBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E777849C9607027EECB2267CD95F07 /* VVButtonBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		53CB5A9A0E1FF829409050A89107F37D /* KTButtonBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = 31E777849C9607027EECB2267CD95F07 /* KTButtonBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5408BE7DEC61C1A3AA80CED53B7BD1F5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A05C643F05C89841D26131A370B318B /* Foundation.framework */; };
 		5570374C644959DBA0C1A3E28CA6CED3 /* UIView+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 98B8467C1C7D1B8B515075E73D206336 /* UIView+KTHelp.m */; };
 		563B9544C22BA4447DF43156531D5743 /* SDImageCache.m in Sources */ = {isa = PBXBuildFile; fileRef = B865BF8906EC7F50B75EA59793AE7622 /* SDImageCache.m */; };
 		565FFF620CE785D5F264F0C35121D578 /* SDImageLoadersManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 9E1BCCD76F9EB55D8594C21F75BF7CF0 /* SDImageLoadersManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		57F97DF043E515E4F910F0F152B36A50 /* NSKeyedUnarchiver+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = F0F22164A3C9437850BFC08C059177AA /* NSKeyedUnarchiver+KTHelp.m */; };
-		5ACCAFB3366DB1F1E0D041407C35A223 /* VVEmptyNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = B309976602770F0EF7EB874B3C5EB18B /* VVEmptyNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5ACCAFB3366DB1F1E0D041407C35A223 /* KTEmptyNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = B309976602770F0EF7EB874B3C5EB18B /* KTEmptyNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5CA2AC72A71CEF79A07FAAA283BE8A52 /* ImageIO.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9EEBAFA6DCAF24AEC826809CAB3AD252 /* ImageIO.framework */; };
-		5D711C6B72ABE10F6E4A8142B4FEEBC5 /* VVNavigationBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6266FBE9EC577E4DB794F45474809D0C /* VVNavigationBarContentView.m */; };
+		5D711C6B72ABE10F6E4A8142B4FEEBC5 /* KTNavigationBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 6266FBE9EC577E4DB794F45474809D0C /* KTNavigationBarContentView.m */; };
 		5D9F97B0AB10A8DC3C1B84491D263C29 /* NSBundle+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 869EDF626CF193A73A1702FFF05F46CD /* NSBundle+KTHelp.m */; };
 		5DEC4E73BABCDC4F2A3BD152665FE5F9 /* FBKVOController.h in Headers */ = {isa = PBXBuildFile; fileRef = 499F3B5334B605AB4E1E543B67335948 /* FBKVOController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5E0D570A78EF2D89B442D62B266B275E /* SDImageLoader.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B26C8F6E14DF4FAFB9190C4B9B893B /* SDImageLoader.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		5F0DF6E3525D4442139093C67A3D1922 /* UIApplication+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 5CD4B9F2B4893C59E4AA733FF6950A59 /* UIApplication+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		5F4552E23FB7EC441AFD481442A5D1F4 /* VVNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7C2229DD782B754258C63BD50AEC80 /* VVNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		5F4552E23FB7EC441AFD481442A5D1F4 /* KTNavigationBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C7C2229DD782B754258C63BD50AEC80 /* KTNavigationBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6004AF2B6D5942DBF1D22646B5061E57 /* UIImage+Metadata.m in Sources */ = {isa = PBXBuildFile; fileRef = CCCC62CC8F2038D825DDD0075F81BC96 /* UIImage+Metadata.m */; };
 		600983DEB7205EC72FAB41DD91F1D605 /* SDMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 63E9D031CEC75A8F1D7DD60BCE3F413E /* SDMemoryCache.m */; };
 		606CF4C030B87CD04100E49A3B962C2B /* SDWebImageDownloaderRequestModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB34225BB2B2D6A903BB26C1883DFA /* SDWebImageDownloaderRequestModifier.m */; };
-		6330CBDE70AB802BFDD6D4325102039D /* VVNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E660B7665989805F6836528774C5ED /* VVNavigationController.m */; };
+		6330CBDE70AB802BFDD6D4325102039D /* KTNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 39E660B7665989805F6836528774C5ED /* KTNavigationController.m */; };
 		6426334186986F3FB6225876EB8A90DA /* SDImageGraphics.m in Sources */ = {isa = PBXBuildFile; fileRef = E0BE8D885AF66A160A5578ECE2D4E2FA /* SDImageGraphics.m */; };
 		64DAB91A8FA2EA338E04690A514F7AE0 /* SDImageAWebPCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B497DA297C2DC7AC24960739B3DDD7A /* SDImageAWebPCoder.m */; };
 		660751AEAE8DBBF4FBEC77223AC2C69C /* SDWebImageDefine.h in Headers */ = {isa = PBXBuildFile; fileRef = 7C3A9818F056EFB10153C9C0C301D8D3 /* SDWebImageDefine.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6670CE21A07A8FE1D74FAD1F5103A93B /* SDImageCachesManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 10A865D164B050E36FAC602436923E41 /* SDImageCachesManager.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		66C530DDF88325249C34AFE3FC449AB0 /* VVBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA55389333DB24465438970583BE0ED /* VVBackBarButtonItem.m */; };
+		66C530DDF88325249C34AFE3FC449AB0 /* KTBackBarButtonItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA55389333DB24465438970583BE0ED /* KTBackBarButtonItem.m */; };
 		66F74B10E450CE11D4D9080499FB5B68 /* NSTimer+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = B83716DFD5A5F4AD45D68A182D05225F /* NSTimer+KTHelp.m */; };
-		671F2E56B1EE8248E4BD95590079E27E /* VVNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6D81E132E4151A886153157A86284F /* VVNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		671F2E56B1EE8248E4BD95590079E27E /* KTNavigationController.h in Headers */ = {isa = PBXBuildFile; fileRef = 5F6D81E132E4151A886153157A86284F /* KTNavigationController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		694569BA69DB36D7AFF27367F5ED3A36 /* UIImage+Metadata.h in Headers */ = {isa = PBXBuildFile; fileRef = 05A945ACFB7F0F8BC862746072F38122 /* UIImage+Metadata.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		6AC5D2781167F9081FBA570FC8B89C90 /* SDAnimatedImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 97847750673AB4BBBA709AD41EEF3437 /* SDAnimatedImage.m */; };
 		6C42B486581CEE939F24228C979D8754 /* UIView+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = B0E380581BBEB371BA1DD771C4318DE6 /* UIView+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -180,20 +180,20 @@
 		7F6F6C2E1FD56E01EE3343D474B763FA /* UIImage+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 198B6D6CBDA34EE06DD968616B9CB4CB /* UIImage+KTHelp.m */; };
 		8053615ABFC39553B8A104CF9B5CD61E /* KTUILibrary-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 7B9403D6A458E7A99902FE981229D593 /* KTUILibrary-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		83EA9F04D864A79A3928C71B67B36690 /* UIImage+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 4AF09AB79C7EEDE7C3ADBC3912A14E4B /* UIImage+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		842E114EAC7812B3CCAB864A61E762D8 /* VVBarBackgroundShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = D36F251E021CF223668451D0D389A7B8 /* VVBarBackgroundShadowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		842E114EAC7812B3CCAB864A61E762D8 /* KTBarBackgroundShadowView.h in Headers */ = {isa = PBXBuildFile; fileRef = D36F251E021CF223668451D0D389A7B8 /* KTBarBackgroundShadowView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8456DD2543B5D22FC36768ED530D9365 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A05C643F05C89841D26131A370B318B /* Foundation.framework */; };
 		84B3C925CCA883C89A4FAF942D952371 /* SDWebImageCompat.h in Headers */ = {isa = PBXBuildFile; fileRef = A54E9633F9231137C64FF07E258A78BD /* SDWebImageCompat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		85FB50C8A79A473625B9BB664BCCEBBE /* SDDisplayLink.m in Sources */ = {isa = PBXBuildFile; fileRef = E4259E0D6D887727F460D12B1A7C1A76 /* SDDisplayLink.m */; };
 		870F8CC125713185231805CA5F1A3005 /* SDAnimatedImageView.h in Headers */ = {isa = PBXBuildFile; fileRef = 45F67301C528BB25CAEF12D200DB6917 /* SDAnimatedImageView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		88E80274256872AA35DEB424B591AF48 /* VVNavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F3139E3550532FB638EF27AFC32F12 /* VVNavigationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		8A2669131CC31112AE7739ADA6428F55 /* VVBarBackgroundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B672827791C6A47173170F5840A19B56 /* VVBarBackgroundModel.m */; };
+		88E80274256872AA35DEB424B591AF48 /* KTNavigationItem.h in Headers */ = {isa = PBXBuildFile; fileRef = F6F3139E3550532FB638EF27AFC32F12 /* KTNavigationItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8A2669131CC31112AE7739ADA6428F55 /* KTBarBackgroundModel.m in Sources */ = {isa = PBXBuildFile; fileRef = B672827791C6A47173170F5840A19B56 /* KTBarBackgroundModel.m */; };
 		8B5758DF4B13538BD14B5923B2FCF70A /* NSBezierPath+SDRoundedCorners.h in Headers */ = {isa = PBXBuildFile; fileRef = 85B6E956CAF55638F67A74275BECD36C /* NSBezierPath+SDRoundedCorners.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		8CCEFFEC611548879D72B56C19061A58 /* KTFoundation-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 03AB3B339428892074262EBABCCA6E56 /* KTFoundation-dummy.m */; };
-		8CD3D162CD872137DAB47C83E32DC30F /* VVTabBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = ED901B927434801AEEE9F51B5F2047BC /* VVTabBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8CD3D162CD872137DAB47C83E32DC30F /* KTTabBarButton.h in Headers */ = {isa = PBXBuildFile; fileRef = ED901B927434801AEEE9F51B5F2047BC /* KTTabBarButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D34717C107EA741BEE9869A20622AFE /* SDImageTransformer.m in Sources */ = {isa = PBXBuildFile; fileRef = FC9241894D9A21D7A9E95D4151A3CCE6 /* SDImageTransformer.m */; };
 		8D498B45A3F5FE02C47AB09F786BC423 /* KTFoundation-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 032D9112CF3A0AA753193BB8E873B11F /* KTFoundation-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		8D73F702A995711B09C3AE6315D3AFFD /* UIImageView+HighlightedWebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = ABF462F00875C2A6AD31D3E29564302E /* UIImageView+HighlightedWebCache.m */; };
-		8F862FD9679634AB72B7FC53126ED46E /* VVBarBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 794EA6E913F0BA7228265C1E2E779D2F /* VVBarBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8F862FD9679634AB72B7FC53126ED46E /* KTBarBackgroundView.h in Headers */ = {isa = PBXBuildFile; fileRef = 794EA6E913F0BA7228265C1E2E779D2F /* KTBarBackgroundView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		918DC0A9B519352900AA9A7D054F2764 /* KTEdgesLabel.h in Headers */ = {isa = PBXBuildFile; fileRef = CBA181419500493CD0FB51D319A9BA52 /* KTEdgesLabel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		919698B67A879DF4B1D27ADEC113E4EB /* UIImage+ExtendedCacheData.h in Headers */ = {isa = PBXBuildFile; fileRef = 7CFA434390AD175166764D4031D46232 /* UIImage+ExtendedCacheData.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		91CB272CC3D7C0D5C1442BCFBC4F5048 /* NSButton+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 69CF4DD8FF0035F94633CA4CD7E7C72A /* NSButton+WebCache.m */; };
@@ -208,7 +208,7 @@
 		9A7902828F49BD78A454AA95FF89DAC7 /* UIImage+GIF.h in Headers */ = {isa = PBXBuildFile; fileRef = F7CA7E81EFAE942B5D72AECEC0CB294F /* UIImage+GIF.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		9BFF63FFEA484FC67C23A671B6E5153B /* UIImage+GIF.m in Sources */ = {isa = PBXBuildFile; fileRef = DE00D7648CA928EC9F96C6543B5F7862 /* UIImage+GIF.m */; };
 		9D227F3FB6A74CB6D35300133142E7DF /* UIView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2004C6C221A2E5EED8A81E0DA9593DF6 /* UIView+WebCache.m */; };
-		9E62211D8CAF1F0C686654F72981750A /* VVMiddleTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F70CEF2BCE51D10CE26471E6928505D /* VVMiddleTabBarModel.m */; };
+		9E62211D8CAF1F0C686654F72981750A /* KTMiddleTabBarModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 4F70CEF2BCE51D10CE26471E6928505D /* KTMiddleTabBarModel.m */; };
 		9FFBF180E58F87C33F09ECAA10CA6627 /* SDImageLoadersManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DC317908F097D9A0E7EE45475CD3A76 /* SDImageLoadersManager.m */; };
 		A128F49AA0C69EC677B7CBE89E876B42 /* SDWebImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 192D13B11DDC4904205D285C324ED66F /* SDWebImage.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A1CA153657BB3C689240AED52E62A088 /* SDWebImageCompat.m in Sources */ = {isa = PBXBuildFile; fileRef = 013D00D3728C47CEB5A6E3E552C621AE /* SDWebImageCompat.m */; };
@@ -221,11 +221,11 @@
 		A7164BC1D4458DF39F884C4FABD3CBAB /* UIImageView+HighlightedWebCache.h in Headers */ = {isa = PBXBuildFile; fileRef = 73DB07A844CFA0B155A1B98413A3F942 /* UIImageView+HighlightedWebCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A80404D8B63B127D33C6EE5FDCF9E22A /* SDImageGIFCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = 40082E9CCBA77C917B22F3051A7F83C8 /* SDImageGIFCoder.m */; };
 		A89A92F1A42E55D16D68F8C61956B738 /* SDImageAPNGCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = D131CC85C8E0068AD2D7D09140B99E94 /* SDImageAPNGCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		A8A71D5F10880D43E788F4EDA435BDE7 /* VVMiddleTabBarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A9EA762119AC94CD49D4E42C5E1A2308 /* VVMiddleTabBarModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A8A71D5F10880D43E788F4EDA435BDE7 /* KTMiddleTabBarModel.h in Headers */ = {isa = PBXBuildFile; fileRef = A9EA762119AC94CD49D4E42C5E1A2308 /* KTMiddleTabBarModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A8C8A2C92F70DFC3E67E1CCB0A5FBDA3 /* SDDeviceHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 90F5779D7B92DC8EFA79078BE180AB53 /* SDDeviceHelper.m */; };
 		AAABA6909E7E218399B8D18C8D6E5233 /* SDWebImageOperation.h in Headers */ = {isa = PBXBuildFile; fileRef = B79E5F9CCB7DAEC97C675732CA48689D /* SDWebImageOperation.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AAF0393EA07B67D23FC091A658AE1E66 /* NSBundle+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = FDB8BBED5492827A79A3493851F5573A /* NSBundle+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		AB9356FCAD816C47730DD425EECE8DEF /* VVTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F124023A67F558DA85AFC484E93F150 /* VVTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		AB9356FCAD816C47730DD425EECE8DEF /* KTTabBarController.h in Headers */ = {isa = PBXBuildFile; fileRef = 2F124023A67F558DA85AFC484E93F150 /* KTTabBarController.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		ABD2E7452FCBB2F2B68D2F13E7CCF934 /* SDWebImageDownloaderResponseModifier.m in Sources */ = {isa = PBXBuildFile; fileRef = 47A512BA4FD7128BD87E6CC2848A75D6 /* SDWebImageDownloaderResponseModifier.m */; };
 		AC139FED9A7DBE099B12A721A995A516 /* SDWebImage-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CC326A26A779982CBB786864E9B054C /* SDWebImage-dummy.m */; };
 		AC9B05583933D6DBA6CC98D8B1E125BE /* NSObject+FBKVOController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B1A813A308199E405EF971F8CFD8456 /* NSObject+FBKVOController.m */; };
@@ -235,10 +235,10 @@
 		ADDF98A85600FE7C46F0B5DE60403BFD /* UIView+WebCacheOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = BE4D719EEA5641279C5F49E37498AEA4 /* UIView+WebCacheOperation.m */; };
 		AE950A6E392E01E728AAE5D5D7997D60 /* NSImage+Compatibility.h in Headers */ = {isa = PBXBuildFile; fileRef = 88B3ED26BB1542574FDB7977AF7A50F0 /* NSImage+Compatibility.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		AE9A894C45B1F40A0585B51D241DD2A6 /* SDInternalMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = C906CEDE7EB23D6D33A7AA199DC63199 /* SDInternalMacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
-		AF465527C35EDF33F0086B00D872F40D /* VVButtonBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FEBC64374B339EBD5D609E5FDEBAE /* VVButtonBarButton.m */; };
+		AF465527C35EDF33F0086B00D872F40D /* KTButtonBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A9FEBC64374B339EBD5D609E5FDEBAE /* KTButtonBarButton.m */; };
 		AF855A5EDCAEFF0EFCD1F6AC49D664B5 /* SDAsyncBlockOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B33647A8611849F28D0B80F28BF725A /* SDAsyncBlockOperation.m */; };
 		B06DC7D0B6CC92EF7E6B6A5DA9B260F2 /* NSData+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 93215FE04D20EE207A16EE86DA4E82D3 /* NSData+KTHelp.m */; };
-		B09D3CBF287FCF17BC04193151C7224E /* VVTabBarNormalRedPointView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F1066521BCCE2E71BA3B5B3095D709 /* VVTabBarNormalRedPointView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B09D3CBF287FCF17BC04193151C7224E /* KTTabBarNormalRedPointView.h in Headers */ = {isa = PBXBuildFile; fileRef = 68F1066521BCCE2E71BA3B5B3095D709 /* KTTabBarNormalRedPointView.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		B13000184102BC002BDF251521D52FBE /* SDmetamacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 9A60C0B87FD94DD2A7464771E1663AF4 /* SDmetamacros.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		B1B1B22D8B0E5D20F62EEA4434752AE0 /* UIScreen+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B43D836B6F53E343EB40187084E65A3 /* UIScreen+KTHelp.m */; };
 		B1DB99789806C0441B342B5E9DC53B51 /* SDImageCoderHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 79CE7BABB917CFA3F5C7CDD0B8F186F2 /* SDImageCoderHelper.m */; };
@@ -253,13 +253,13 @@
 		B964F75E0BEC223C3DDD199C6342AE0F /* SDWebImage-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4DADC54D9DBCC693241A1C9DBCF2C714 /* SDWebImage-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BAFF63FF8545C7260E02370A687591C3 /* NSObject+KTHelpForKVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1EB10A8C540951759CC336BF98BEC847 /* NSObject+KTHelpForKVC.m */; };
 		BB63B61AFB731024FD1D752F830ABA97 /* CALayer+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = ECC9A6C2209F80239A00D223F93D6494 /* CALayer+KTHelp.m */; };
-		BBA2258511C4F72DF612D9BD20B37753 /* VVNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F381416C78515B6F46CC4EBFA0E818 /* VVNavigationItem.m */; };
+		BBA2258511C4F72DF612D9BD20B37753 /* KTNavigationItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 63F381416C78515B6F46CC4EBFA0E818 /* KTNavigationItem.m */; };
 		BBAD0633CE0112E388A0C3B68016B8B4 /* NSArray+MASAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 402F0A0F7E5F16F5943CB121369FE8E2 /* NSArray+MASAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		BD8E2EDAA9631CEF3CDEECF1254AAA23 /* SDImageCachesManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD76593CC4EC2B1DAFC7EA77AE0F5986 /* SDImageCachesManager.m */; };
 		BDE334516C2D11C98E23D505A7108F0D /* KVOController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7BDDE46EAF5681614FB1F56EB4D0F4AD /* KVOController-dummy.m */; };
 		C0081500170D8977F5CD233B9D268B03 /* NSObject+KTHelpForKVC.h in Headers */ = {isa = PBXBuildFile; fileRef = 99642377FB01B5CF32285FBB259D00D5 /* NSObject+KTHelpForKVC.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C12CF6AE48A9F59A21E07A0F53F3616E /* NSArray+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 3F59144E33E05C4B127AE7E242A3A6DA /* NSArray+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C1607F75D76F6D56DEC896CD00F3646E /* VVTabBarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8EACAC48790A6200D4BCD5BB02F0C5 /* VVTabBarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C1607F75D76F6D56DEC896CD00F3646E /* KTTabBarProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 1C8EACAC48790A6200D4BCD5BB02F0C5 /* KTTabBarProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C237BF7CC4251B70879620EDB8ECB238 /* UIImageView+WebCache.m in Sources */ = {isa = PBXBuildFile; fileRef = 2DA91D6E4C1F1F2AE386986D56FD602A /* UIImageView+WebCache.m */; };
 		C2CD90549C541C9ABF8BFCFF4A2B99CC /* KTQuickMacros.h in Headers */ = {isa = PBXBuildFile; fileRef = 1890750F2E1B214DAB8823AA186AE54A /* KTQuickMacros.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C311E505311BAEA04C896AD42725298D /* SDWebImageDownloader.h in Headers */ = {isa = PBXBuildFile; fileRef = 74084B625C7350693F3F653DDC178396 /* SDWebImageDownloader.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -267,33 +267,33 @@
 		C51E20E7609EF48B5574E613D68EBB3C /* MASCompositeConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 659DD4B6CDD1F35CD995440936AE57B0 /* MASCompositeConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C589A43976BF47F1FB08D67C89877006 /* KTImageLabel.m in Sources */ = {isa = PBXBuildFile; fileRef = 46FD421F4DCA8D8263AA3E73154BBB8F /* KTImageLabel.m */; };
 		C5E75553E150D75C05DDFF6A1F937B2D /* SDImageIOAnimatedCoder.m in Sources */ = {isa = PBXBuildFile; fileRef = CB967D8057B63C119339495B48D0F7F6 /* SDImageIOAnimatedCoder.m */; };
-		C5EE53B8E84C1B258BD81147DE415BB5 /* VVTabBarConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C25B75C650A4DCD7592C44125FA0 /* VVTabBarConfigModel.m */; };
+		C5EE53B8E84C1B258BD81147DE415BB5 /* KTTabBarConfigModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 3B03C25B75C650A4DCD7592C44125FA0 /* KTTabBarConfigModel.m */; };
 		C6FF07461DB95FD96B47723C123B36BB /* NSData+ImageContentType.m in Sources */ = {isa = PBXBuildFile; fileRef = A003433C74C195181550CB42C99F2950 /* NSData+ImageContentType.m */; };
 		C76B0E50CBC62A5D037B6A194E087E74 /* UIImage+MultiFormat.h in Headers */ = {isa = PBXBuildFile; fileRef = 89D1005DBDAB84D7830A879FD80F22E3 /* UIImage+MultiFormat.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		C7F50EDBB22A2456909CD13BF0986354 /* SDWebImageError.m in Sources */ = {isa = PBXBuildFile; fileRef = 1B9F6A48C8C11519563C198C103FA393 /* SDWebImageError.m */; };
 		C87040318E07746CC938B347CC58CF00 /* NSLayoutConstraint+MASDebugAdditions.h in Headers */ = {isa = PBXBuildFile; fileRef = 9B90A2621B84C7A6FDEF2250C4B5B0B0 /* NSLayoutConstraint+MASDebugAdditions.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C9F2AF6D591816EA4E2990410E8A6285 /* VVBarBackgroundVisualEffectView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4704EE12639ACB0C006230B797D8BD /* VVBarBackgroundVisualEffectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CA9D22BBA8870B5C636B7E454C701A23 /* VVNavigationBarContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD047CD85A839E221AA04BF2984580F5 /* VVNavigationBarContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		CBAC7BC169CF47E9DA489874984F5BEF /* VVMiddleTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF18C1BEE4960E3AC3F3AD4D1E48E0F /* VVMiddleTabBarButton.m */; };
-		CC78211667FC74CEDBA99596F0E75D62 /* VVTabBarRedPointViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB093A76F2F0C77BF0C19B90546112E /* VVTabBarRedPointViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		C9F2AF6D591816EA4E2990410E8A6285 /* KTBarBackgroundVisualEffectView.h in Headers */ = {isa = PBXBuildFile; fileRef = CD4704EE12639ACB0C006230B797D8BD /* KTBarBackgroundVisualEffectView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CA9D22BBA8870B5C636B7E454C701A23 /* KTNavigationBarContentView.h in Headers */ = {isa = PBXBuildFile; fileRef = DD047CD85A839E221AA04BF2984580F5 /* KTNavigationBarContentView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CBAC7BC169CF47E9DA489874984F5BEF /* KTMiddleTabBarButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 5CF18C1BEE4960E3AC3F3AD4D1E48E0F /* KTMiddleTabBarButton.m */; };
+		CC78211667FC74CEDBA99596F0E75D62 /* KTTabBarRedPointViewProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = EDB093A76F2F0C77BF0C19B90546112E /* KTTabBarRedPointViewProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		CEE39451D2648F560E415CEE64855EEF /* SDWebImagePrefetcher.m in Sources */ = {isa = PBXBuildFile; fileRef = 8B2E219474F665F68C18BE9B2BECA4F7 /* SDWebImagePrefetcher.m */; };
 		D16C2F1CC5EC2E62802393D517DDCF2B /* NSDictionary+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = 48CBF298CBE0BDDCB7AD299293E1BF2B /* NSDictionary+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D178E7A915C804DC54F57BE6050E2CFE /* SDWebImageTransitionInternal.h in Headers */ = {isa = PBXBuildFile; fileRef = 0441777F3D7A320CBE32C4AF7451CD41 /* SDWebImageTransitionInternal.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		D1E9C0F0E9AA28EE802FDED9925322E3 /* NSNotificationCenter+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F04CCDEC17D9349A03EF5A519A7847CE /* NSNotificationCenter+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D455B234E9604B04112E953B4A2F8611 /* VVTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 54623DFC46125F3326643D5B22785429 /* VVTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D455B234E9604B04112E953B4A2F8611 /* KTTabBar.h in Headers */ = {isa = PBXBuildFile; fileRef = 54623DFC46125F3326643D5B22785429 /* KTTabBar.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D5654FAB8F39234F9B2FBEE7110A22B0 /* MASConstraint+Private.h in Headers */ = {isa = PBXBuildFile; fileRef = 180C520518C6E8DE2458885788E6E87D /* MASConstraint+Private.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D5BAB3CA288020D4060F194F1006D7A1 /* VVTabBarBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D161868B93AE8A6A5B9DEAFB20756D14 /* VVTabBarBaseModel.m */; };
-		D6D8E90855166954B5DACA0A1C984316 /* VVBackButtonHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B094FFB96FBD17871EC004EC61EBFB9 /* VVBackButtonHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D79A70B27C3592A841150F2EF3926CC8 /* VVTabBarBaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AB22CF3DC7E9EE5ED6961531BCC98D /* VVTabBarBaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D81950A947090CCE296BCD149FB72AA0 /* VVTabBarBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A200EF03A6C57AC263B4D5F2487E008 /* VVTabBarBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D5BAB3CA288020D4060F194F1006D7A1 /* KTTabBarBaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D161868B93AE8A6A5B9DEAFB20756D14 /* KTTabBarBaseModel.m */; };
+		D6D8E90855166954B5DACA0A1C984316 /* KTBackButtonHandlerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 8B094FFB96FBD17871EC004EC61EBFB9 /* KTBackButtonHandlerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D79A70B27C3592A841150F2EF3926CC8 /* KTTabBarBaseButton.h in Headers */ = {isa = PBXBuildFile; fileRef = D7AB22CF3DC7E9EE5ED6961531BCC98D /* KTTabBarBaseButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D81950A947090CCE296BCD149FB72AA0 /* KTTabBarBaseModel.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A200EF03A6C57AC263B4D5F2487E008 /* KTTabBarBaseModel.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D8C9376C3575D4225568760858E9ACD4 /* UITextField+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 323DFF9995404005A193959BE16AE054 /* UITextField+KTHelp.m */; };
 		D91024E2275D2B62BB8CDFAADDA9F999 /* SDAnimatedImagePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 5677E8C8A65A0E1819C733E25A8A471A /* SDAnimatedImagePlayer.m */; };
 		D91E6234649F422478161C25F986A3B4 /* UIBarButtonItem+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 06CD6D36CE2BE7234914203C669ED240 /* UIBarButtonItem+KTHelp.m */; };
-		D9371A24D9A8DF2C7D28FF3412A4DEC4 /* VVNavigationControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 720DA694222471B36CCF654BD3B58845 /* VVNavigationControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D9371A24D9A8DF2C7D28FF3412A4DEC4 /* KTNavigationControllerProtocol.h in Headers */ = {isa = PBXBuildFile; fileRef = 720DA694222471B36CCF654BD3B58845 /* KTNavigationControllerProtocol.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DA6895F97E7A188A1086A604D704181B /* SDWebImageIndicator.h in Headers */ = {isa = PBXBuildFile; fileRef = 6047E0A3F0C4CC77658029EF2BB67748 /* SDWebImageIndicator.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DAA31185ABD4F282FBE0E3DC342050A5 /* UIFont+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 05DC019D22E02B88E7AA8446EAA839CE /* UIFont+KTHelp.m */; };
 		DD6AF95C98B212C0B258E0D68B43DC2C /* MASLayoutConstraint.h in Headers */ = {isa = PBXBuildFile; fileRef = 46803E34E5C8DCC742B051E5C22FA682 /* MASLayoutConstraint.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		DD7A88274302F9C74CC64F9D5FF270B6 /* VVNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7064E77804A07427F22D0CEBF4453 /* VVNavigationBar.m */; };
+		DD7A88274302F9C74CC64F9D5FF270B6 /* KTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = F4B7064E77804A07427F22D0CEBF4453 /* KTNavigationBar.m */; };
 		DDABCEDA1455A7213CC6411BEE294CCB /* SDAnimatedImagePlayer.h in Headers */ = {isa = PBXBuildFile; fileRef = 8A8FDFC7F097A509D98B8C021B812CEC /* SDAnimatedImagePlayer.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		DDB94E31E7FBD134EA9B8D98D878121C /* KTEdgesTextField.m in Sources */ = {isa = PBXBuildFile; fileRef = 0A31CAC4C863BA7F779A58B6831DAB16 /* KTEdgesTextField.m */; };
 		DDEB2A27A82E554A225CDB9E0532B212 /* UIBezierPath+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = F5B488124BD44B9FF18C45E2CD5FCB7D /* UIBezierPath+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -303,16 +303,16 @@
 		E10179E12ABCC89D5453961066457029 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9A05C643F05C89841D26131A370B318B /* Foundation.framework */; };
 		E12407444B456EF7D25AF5E458C5755C /* Masonry.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 05F6B5135B26F3645B71429BC86530C5 /* Masonry.framework */; };
 		E1A8C6ADA9BD17098369EC9C59D96C89 /* NSDictionary+KTHelp.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ACD713065C912F90E81F431A491F3DC /* NSDictionary+KTHelp.m */; };
-		E27EB69A87844B0E5A01D33BBE52D785 /* VVTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91606C0A4064AEE3872F15557B355E79 /* VVTabBar.m */; };
+		E27EB69A87844B0E5A01D33BBE52D785 /* KTTabBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 91606C0A4064AEE3872F15557B355E79 /* KTTabBar.m */; };
 		E358670DC69C217065D89D9BE53E685A /* UITextField+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = AC3B3D5DDD9685F6B6160B4A325AECF5 /* UITextField+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E3C7DC809034DACD9D1FF1856DAD3ED2 /* SDAnimatedImageRep.m in Sources */ = {isa = PBXBuildFile; fileRef = 523AC24C8C1E2AD2BB955FECE3521C8A /* SDAnimatedImageRep.m */; };
 		E3F51CB54A45249F79A9C49F02039CC5 /* SDImageCache.h in Headers */ = {isa = PBXBuildFile; fileRef = A88879C6FFBA88F7994EB0021381CC54 /* SDImageCache.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		E4E1FA42EF47413EBEB0D1E5827C21E5 /* SDGraphicsImageRenderer.m in Sources */ = {isa = PBXBuildFile; fileRef = CF62A22A34C0EA13DB5D6F6895D8AF44 /* SDGraphicsImageRenderer.m */; };
 		E57482DCBAB73E4AC9A8EB0816998D8F /* SDAnimatedImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCED75BFE459F464BEF4249048E351F /* SDAnimatedImageView.m */; };
-		E8181CD4C68C7F94674E983C23265E5F /* VVNavigationBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FDBDF899A5B8511B888B8D099680274 /* VVNavigationBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EAE3705AD377D40935AC97DAE41F24FC /* VVBackBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 23B95A3C9423A2369C027C5C41785374 /* VVBackBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E8181CD4C68C7F94674E983C23265E5F /* KTNavigationBaseView.h in Headers */ = {isa = PBXBuildFile; fileRef = 9FDBDF899A5B8511B888B8D099680274 /* KTNavigationBaseView.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EAE3705AD377D40935AC97DAE41F24FC /* KTBackBarButtonItem.h in Headers */ = {isa = PBXBuildFile; fileRef = 23B95A3C9423A2369C027C5C41785374 /* KTBackBarButtonItem.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EB67EB0103B6D3B0A0FFBB37143AA59B /* NSString+KTHelp.h in Headers */ = {isa = PBXBuildFile; fileRef = B9EEF52375806B9A7BAD44F77E8BC9A0 /* NSString+KTHelp.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EFBCF36306F49EF807EDF06F09774808 /* VVTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAA1286188EBD9490DA8E584EDCCBD /* VVTabBarController.m */; };
+		EFBCF36306F49EF807EDF06F09774808 /* KTTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8BEAA1286188EBD9490DA8E584EDCCBD /* KTTabBarController.m */; };
 		F00615AF2747EBC80993096F43808951 /* SDImageFrame.m in Sources */ = {isa = PBXBuildFile; fileRef = ACAD343FEA760CAD24E88589CD0B9C82 /* SDImageFrame.m */; };
 		F1D31101E2475D6199388A2B5C96841D /* UIImage+Transform.m in Sources */ = {isa = PBXBuildFile; fileRef = C647B1728FD12D60029D43C0E83FC773 /* UIImage+Transform.m */; };
 		F3928A33E3BA8E361B7287528F88ABB4 /* UIImage+ExtendedCacheData.m in Sources */ = {isa = PBXBuildFile; fileRef = F9165DDB687B60AD28D0B6AEED9D72A3 /* UIImage+ExtendedCacheData.m */; };
@@ -320,7 +320,7 @@
 		F5B2194F8954EB26405AC5EE15D4B673 /* SDImageAssetManager.h in Headers */ = {isa = PBXBuildFile; fileRef = CDBBCDB554DF956D9D52CB6B5F3EB477 /* SDImageAssetManager.h */; settings = {ATTRIBUTES = (Private, ); }; };
 		F7425341829DF6D4D5D48298E7001981 /* UIImage+MultiFormat.m in Sources */ = {isa = PBXBuildFile; fileRef = 93C1CB87E291AFD0C264ACC930832B91 /* UIImage+MultiFormat.m */; };
 		F8C32F37DC56462D29CA113B078ADF99 /* SDImageGraphics.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A05DA072C7501664B392C1DF195C532 /* SDImageGraphics.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F964511506F92464CEF1BC5325DBBA77 /* VVTabBarNumRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B65516FF276BE539A16C28948B5191 /* VVTabBarNumRedPointView.m */; };
+		F964511506F92464CEF1BC5325DBBA77 /* KTTabBarNumRedPointView.m in Sources */ = {isa = PBXBuildFile; fileRef = 56B65516FF276BE539A16C28948B5191 /* KTTabBarNumRedPointView.m */; };
 		F9B9D0B4A16EC1CADBCFE8533E849AF6 /* SDWebImageTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 3302EDCE5D32BE47AA29FF7681158502 /* SDWebImageTransition.m */; };
 		FCB195C37285D2114148870D88D2973C /* SDImageCacheConfig.m in Sources */ = {isa = PBXBuildFile; fileRef = 385099E32A12FE402A9F09F3F53BF193 /* SDImageCacheConfig.m */; };
 		FCE4B93B3ACF7D9349F4604EB0BFA2A7 /* SDImageIOCoder.h in Headers */ = {isa = PBXBuildFile; fileRef = 8AA479F9F5E0F10CC8CFD3C83FEC9719 /* SDImageIOCoder.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -409,42 +409,42 @@
 		0727425B7AAA889AFE9A5B63B4559022 /* UIViewController+KTKeyboard.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIViewController+KTKeyboard.m"; path = "KTFoundation/Category/UIKit/UIViewController+KTKeyboard.m"; sourceTree = "<group>"; };
 		09BCC689142D4212303186A7FBFC9B06 /* KTUILibrary-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KTUILibrary-dummy.m"; sourceTree = "<group>"; };
 		0A05DA072C7501664B392C1DF195C532 /* SDImageGraphics.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageGraphics.h; path = SDWebImage/Core/SDImageGraphics.h; sourceTree = "<group>"; };
-		0A200EF03A6C57AC263B4D5F2487E008 /* VVTabBarBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarBaseModel.h; sourceTree = "<group>"; };
+		0A200EF03A6C57AC263B4D5F2487E008 /* KTTabBarBaseModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarBaseModel.h; sourceTree = "<group>"; };
 		0A31CAC4C863BA7F779A58B6831DAB16 /* KTEdgesTextField.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTEdgesTextField.m; path = KTUILibrary/EdgesTextField/Classes/KTEdgesTextField.m; sourceTree = "<group>"; };
 		0A4A08F504781B7F007FDC02966F23E6 /* SDWebImagePrefetcher.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImagePrefetcher.h; path = SDWebImage/Core/SDWebImagePrefetcher.h; sourceTree = "<group>"; };
 		0A60E0AF45DE481F9A31015CD344F5AC /* KTEdgesLabel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTEdgesLabel.m; path = KTUILibrary/EdgesLabel/Classes/KTEdgesLabel.m; sourceTree = "<group>"; };
 		0B36C822C650FBFAF17E63FCB68D3B3F /* KTToast.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTToast.h; path = KTUILibrary/Toast/KTToast.h; sourceTree = "<group>"; };
 		0BEFEE15B962F09F08F575CABAA16FDF /* NSKeyedUnarchiver+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSKeyedUnarchiver+KTHelp.h"; path = "KTFoundation/Category/Foundation/NSKeyedUnarchiver+KTHelp.h"; sourceTree = "<group>"; };
 		0C254BCFA20CB7E778A9BC2EBD2C7353 /* SDWebImageDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDefine.m; path = SDWebImage/Core/SDWebImageDefine.m; sourceTree = "<group>"; };
-		0D0E2B7080F0F1B37C5D9C160CB69DC9 /* KTUILibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTUILibrary.framework; path = KTUILibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0D0E2B7080F0F1B37C5D9C160CB69DC9 /* KTUILibrary.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTUILibrary.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0D7A68E5DC9DD93F40CB0DA8FC4CA0D6 /* KVOController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KVOController.modulemap; sourceTree = "<group>"; };
-		0F494DFA3A6BCC07C119C3C8D2A2AF80 /* Pods_KTUILibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_KTUILibrary_Example.framework; path = "Pods-KTUILibrary_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FDA03049AB5F621DF7130C7E1517558 /* VVTabBarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarButton.m; sourceTree = "<group>"; };
+		0F494DFA3A6BCC07C119C3C8D2A2AF80 /* Pods_KTUILibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTUILibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0FDA03049AB5F621DF7130C7E1517558 /* KTTabBarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarButton.m; sourceTree = "<group>"; };
 		10A865D164B050E36FAC602436923E41 /* SDImageCachesManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCachesManager.h; path = SDWebImage/Core/SDImageCachesManager.h; sourceTree = "<group>"; };
-		11493F3A9DAA613F52F471E8094F7061 /* VVBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBarButtonItem.h; sourceTree = "<group>"; };
+		11493F3A9DAA613F52F471E8094F7061 /* KTBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTBarButtonItem.h; sourceTree = "<group>"; };
 		11C5928167CAE545437D38AB11DA1217 /* NSLayoutConstraint+MASDebugAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSLayoutConstraint+MASDebugAdditions.m"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.m"; sourceTree = "<group>"; };
 		124D7127BB75FD0BD06A62F29128E6D7 /* View+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "View+MASAdditions.m"; path = "Masonry/View+MASAdditions.m"; sourceTree = "<group>"; };
 		15D0A53EA5E08C92558F3A69CC5335C2 /* SDMemoryCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDMemoryCache.h; path = SDWebImage/Core/SDMemoryCache.h; sourceTree = "<group>"; };
 		1639EEA1F19826EF610BAA1EA6718D86 /* NSNotificationCenter+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSNotificationCenter+KTHelp.m"; sourceTree = "<group>"; };
 		16E9F27720142528D7CDA87AD7CF8DFA /* SDWebImageError.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageError.h; path = SDWebImage/Core/SDWebImageError.h; sourceTree = "<group>"; };
-		17D7D3A812876F2FB42AE8AC4E2AE335 /* VVTabBarModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarModel.h; sourceTree = "<group>"; };
+		17D7D3A812876F2FB42AE8AC4E2AE335 /* KTTabBarModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarModel.h; sourceTree = "<group>"; };
 		180C520518C6E8DE2458885788E6E87D /* MASConstraint+Private.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "MASConstraint+Private.h"; path = "Masonry/MASConstraint+Private.h"; sourceTree = "<group>"; };
-		1810A765CDD07702A6618C6FD2507C08 /* VVBarBackgroundModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBarBackgroundModel.h; sourceTree = "<group>"; };
+		1810A765CDD07702A6618C6FD2507C08 /* KTBarBackgroundModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTBarBackgroundModel.h; sourceTree = "<group>"; };
 		1890750F2E1B214DAB8823AA186AE54A /* KTQuickMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTQuickMacros.h; path = KTFoundation/Macros/Classes/KTQuickMacros.h; sourceTree = "<group>"; };
 		192D13B11DDC4904205D285C324ED66F /* SDWebImage.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImage.h; path = WebImage/SDWebImage.h; sourceTree = "<group>"; };
 		198B6D6CBDA34EE06DD968616B9CB4CB /* UIImage+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+KTHelp.m"; path = "KTFoundation/Category/UIKit/UIImage+KTHelp.m"; sourceTree = "<group>"; };
 		1A2182650668C1102D660A653D033C56 /* SDImageFrame.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageFrame.h; path = SDWebImage/Core/SDImageFrame.h; sourceTree = "<group>"; };
-		1A9FEBC64374B339EBD5D609E5FDEBAE /* VVButtonBarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVButtonBarButton.m; sourceTree = "<group>"; };
+		1A9FEBC64374B339EBD5D609E5FDEBAE /* KTButtonBarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTButtonBarButton.m; sourceTree = "<group>"; };
 		1B9F6A48C8C11519563C198C103FA393 /* SDWebImageError.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageError.m; path = SDWebImage/Core/SDWebImageError.m; sourceTree = "<group>"; };
 		1BE0E54B7A060D335F92E9FF0E6A19E6 /* UIGestureRecognizer+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIGestureRecognizer+KTHelp.h"; sourceTree = "<group>"; };
-		1C8EACAC48790A6200D4BCD5BB02F0C5 /* VVTabBarProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarProtocol.h; sourceTree = "<group>"; };
-		1CD8E16B0207D8C6957025E0B32D19C1 /* KTUILibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = KTUILibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1C8EACAC48790A6200D4BCD5BB02F0C5 /* KTTabBarProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarProtocol.h; sourceTree = "<group>"; };
+		1CD8E16B0207D8C6957025E0B32D19C1 /* KTUILibrary.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = KTUILibrary.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1D0C315DA12A5B37EF1FDA78C1D62053 /* NSArray+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+MASAdditions.m"; path = "Masonry/NSArray+MASAdditions.m"; sourceTree = "<group>"; };
 		1EB10A8C540951759CC336BF98BEC847 /* NSObject+KTHelpForKVC.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KTHelpForKVC.m"; path = "KTFoundation/Category/Foundation/NSObject+KTHelpForKVC.m"; sourceTree = "<group>"; };
-		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Masonry.framework; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FFED36A657123030ABB700256D73F15 /* Masonry.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Masonry.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2004C6C221A2E5EED8A81E0DA9593DF6 /* UIView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+WebCache.m"; path = "SDWebImage/Core/UIView+WebCache.m"; sourceTree = "<group>"; };
 		21D37E91FEEC110F3AC79F9A490D6B73 /* UIControl+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+KTHelp.m"; path = "KTFoundation/Category/UIKit/UIControl+KTHelp.m"; sourceTree = "<group>"; };
-		23B95A3C9423A2369C027C5C41785374 /* VVBackBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBackBarButtonItem.h; sourceTree = "<group>"; };
+		23B95A3C9423A2369C027C5C41785374 /* KTBackBarButtonItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTBackBarButtonItem.h; sourceTree = "<group>"; };
 		26504DFF469671138DBEC0316E9EE027 /* SDWebImage-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "SDWebImage-Info.plist"; sourceTree = "<group>"; };
 		2677A54A21A1C2155EABF2C434789145 /* UIButton+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+WebCache.h"; path = "SDWebImage/Core/UIButton+WebCache.h"; sourceTree = "<group>"; };
 		26E0807CB5DC7439F7C08AD8835E2D7E /* SDWebImageCacheKeyFilter.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheKeyFilter.h; path = SDWebImage/Core/SDWebImageCacheKeyFilter.h; sourceTree = "<group>"; };
@@ -453,17 +453,17 @@
 		2774D216EF0F5615E02ED4BD03F28324 /* SDImageAWebPCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAWebPCoder.h; path = SDWebImage/Core/SDImageAWebPCoder.h; sourceTree = "<group>"; };
 		28174F2E0828A6DA72499C0C03DCBD92 /* SDWebImageManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageManager.m; path = SDWebImage/Core/SDWebImageManager.m; sourceTree = "<group>"; };
 		283A8E2340D1FD6412D234467609BC94 /* SDImageCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoder.m; path = SDWebImage/Core/SDImageCoder.m; sourceTree = "<group>"; };
-		287E587295DA2ED44B8002D18E464CFB /* VVTabBarBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarBackgroundView.h; sourceTree = "<group>"; };
+		287E587295DA2ED44B8002D18E464CFB /* KTTabBarBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarBackgroundView.h; sourceTree = "<group>"; };
 		2A2E2245C1FD19F74A661BD669795FBB /* NSArray+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSArray+KTHelp.m"; sourceTree = "<group>"; };
 		2ACD713065C912F90E81F431A491F3DC /* NSDictionary+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSDictionary+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSDictionary+KTHelp.m"; sourceTree = "<group>"; };
 		2B497DA297C2DC7AC24960739B3DDD7A /* SDImageAWebPCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAWebPCoder.m; path = SDWebImage/Core/SDImageAWebPCoder.m; sourceTree = "<group>"; };
 		2DA91D6E4C1F1F2AE386986D56FD602A /* UIImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+WebCache.m"; path = "SDWebImage/Core/UIImageView+WebCache.m"; sourceTree = "<group>"; };
 		2E5C8385AD4BA3C45000888E48249ADB /* NSString+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSString+KTHelp.m"; sourceTree = "<group>"; };
-		2F124023A67F558DA85AFC484E93F150 /* VVTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVTabBarController.h; path = KTUILibrary/TabBar/VVTabBarController.h; sourceTree = "<group>"; };
+		2F124023A67F558DA85AFC484E93F150 /* KTTabBarController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTTabBarController.h; path = KTUILibrary/TabBar/KTTabBarController.h; sourceTree = "<group>"; };
 		2F949D5AC8801FDAE19D146FE6922AF9 /* SDWebImageTransition.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageTransition.h; path = SDWebImage/Core/SDWebImageTransition.h; sourceTree = "<group>"; };
 		3021A8F1A707E01C822B6C921D6D15E1 /* UIScrollView+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScrollView+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIScrollView+KTHelp.h"; sourceTree = "<group>"; };
 		30EFDEB61F02C27DC89ACCD656A92202 /* UIButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIButton+WebCache.m"; path = "SDWebImage/Core/UIButton+WebCache.m"; sourceTree = "<group>"; };
-		31E777849C9607027EECB2267CD95F07 /* VVButtonBarButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVButtonBarButton.h; sourceTree = "<group>"; };
+		31E777849C9607027EECB2267CD95F07 /* KTButtonBarButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTButtonBarButton.h; sourceTree = "<group>"; };
 		323DFF9995404005A193959BE16AE054 /* UITextField+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+KTHelp.m"; path = "KTFoundation/Category/UIKit/UITextField+KTHelp.m"; sourceTree = "<group>"; };
 		3302EDCE5D32BE47AA29FF7681158502 /* SDWebImageTransition.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageTransition.m; path = SDWebImage/Core/SDWebImageTransition.m; sourceTree = "<group>"; };
 		34C5553A3158D56CCAD63D4A2FB91923 /* MASConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraint.h; path = Masonry/MASConstraint.h; sourceTree = "<group>"; };
@@ -471,19 +471,19 @@
 		36A0FF6F42DB5AD72F5A984A395EE458 /* SDDisplayLink.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDisplayLink.h; path = SDWebImage/Private/SDDisplayLink.h; sourceTree = "<group>"; };
 		385099E32A12FE402A9F09F3F53BF193 /* SDImageCacheConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheConfig.m; path = SDWebImage/Core/SDImageCacheConfig.m; sourceTree = "<group>"; };
 		38CD72AFA5E6DC8083084FA47776E010 /* KTFoundation.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTFoundation.release.xcconfig; sourceTree = "<group>"; };
-		399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KVOController.framework; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		39E660B7665989805F6836528774C5ED /* VVNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VVNavigationController.m; path = KTUILibrary/Navigation/VVNavigationController.m; sourceTree = "<group>"; };
+		399EC9508E73C0D54D9BBD8741FBA137 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		39E660B7665989805F6836528774C5ED /* KTNavigationController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTNavigationController.m; path = KTUILibrary/Navigation/KTNavigationController.m; sourceTree = "<group>"; };
 		39F01ABCB5588E6A0C6FD6E0D3792F94 /* Pods-KTUILibrary_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-KTUILibrary_Example-frameworks.sh"; sourceTree = "<group>"; };
 		3A22ADA5778A169E5DD67C549743CB85 /* KTCGUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTCGUtilities.h; path = KTFoundation/Category/Quartz/KTCGUtilities.h; sourceTree = "<group>"; };
-		3B03C25B75C650A4DCD7592C44125FA0 /* VVTabBarConfigModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarConfigModel.m; sourceTree = "<group>"; };
+		3B03C25B75C650A4DCD7592C44125FA0 /* KTTabBarConfigModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarConfigModel.m; sourceTree = "<group>"; };
 		3B677E34A8A78550C2E32612964621DD /* SDWebImageDownloader.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloader.m; path = SDWebImage/Core/SDWebImageDownloader.m; sourceTree = "<group>"; };
-		3BEB954E01162289AA92D7447B41AD1D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		3BEB954E01162289AA92D7447B41AD1D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		3D967BA39F8385368083AE830AECD707 /* KVOController-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KVOController-Info.plist"; sourceTree = "<group>"; };
-		3DA55389333DB24465438970583BE0ED /* VVBackBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBackBarButtonItem.m; sourceTree = "<group>"; };
+		3DA55389333DB24465438970583BE0ED /* KTBackBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTBackBarButtonItem.m; sourceTree = "<group>"; };
 		3DC317908F097D9A0E7EE45475CD3A76 /* SDImageLoadersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageLoadersManager.m; path = SDWebImage/Core/SDImageLoadersManager.m; sourceTree = "<group>"; };
-		3F0667A853376AB5F67629730CFD18A8 /* VVBarBackgroundVisualEffectView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBarBackgroundVisualEffectView.m; sourceTree = "<group>"; };
+		3F0667A853376AB5F67629730CFD18A8 /* KTBarBackgroundVisualEffectView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTBarBackgroundVisualEffectView.m; sourceTree = "<group>"; };
 		3F59144E33E05C4B127AE7E242A3A6DA /* NSArray+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+KTHelp.h"; path = "KTFoundation/Category/Foundation/NSArray+KTHelp.h"; sourceTree = "<group>"; };
-		3FD029F08F4019146A117F73D1AA5A00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		3FD029F08F4019146A117F73D1AA5A00 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3FD12C22289F113A980655496289815C /* KTMacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTMacros.h; path = KTFoundation/Macros/Classes/KTMacros.h; sourceTree = "<group>"; };
 		40082E9CCBA77C917B22F3051A7F83C8 /* SDImageGIFCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageGIFCoder.m; path = SDWebImage/Core/SDImageGIFCoder.m; sourceTree = "<group>"; };
 		402F0A0F7E5F16F5943CB121369FE8E2 /* NSArray+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASAdditions.h"; path = "Masonry/NSArray+MASAdditions.h"; sourceTree = "<group>"; };
@@ -500,26 +500,26 @@
 		4D8CC6F570BC7D6858294C098F5648F8 /* UITableView+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITableView+KTHelp.h"; path = "KTFoundation/Category/UIKit/UITableView+KTHelp.h"; sourceTree = "<group>"; };
 		4DADC54D9DBCC693241A1C9DBCF2C714 /* SDWebImage-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-umbrella.h"; sourceTree = "<group>"; };
 		4F5E5F4954849DF7866C743399BC884D /* ViewController+MASAdditions.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "ViewController+MASAdditions.m"; path = "Masonry/ViewController+MASAdditions.m"; sourceTree = "<group>"; };
-		4F70CEF2BCE51D10CE26471E6928505D /* VVMiddleTabBarModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVMiddleTabBarModel.m; sourceTree = "<group>"; };
+		4F70CEF2BCE51D10CE26471E6928505D /* KTMiddleTabBarModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTMiddleTabBarModel.m; sourceTree = "<group>"; };
 		4F8380F40ABB23C7E67F8915A172FA44 /* Pods-KTUILibrary_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-KTUILibrary_Example-umbrella.h"; sourceTree = "<group>"; };
 		4F95BAC7AB195B3C82F8A540AED63A9D /* Masonry.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.debug.xcconfig; sourceTree = "<group>"; };
 		50E7815E1FDBD7A4AB26F7D6FCF88827 /* SDDeviceHelper.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDDeviceHelper.h; path = SDWebImage/Private/SDDeviceHelper.h; sourceTree = "<group>"; };
 		51A7A021BA5EE64E839769020A47DF06 /* MASViewAttribute.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewAttribute.m; path = Masonry/MASViewAttribute.m; sourceTree = "<group>"; };
 		51C0137E34A60ED50F43E4295FEDE8D3 /* SDWebImageOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOperation.m; path = SDWebImage/Core/SDWebImageOperation.m; sourceTree = "<group>"; };
 		51F9D295C8AFAACFB345A3E1F536BEE3 /* UIScreen+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIScreen+KTHelp.h"; sourceTree = "<group>"; };
-		5213B997BCCF07F59FD5625E3578DD14 /* VVTabBarNumRedPointView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarNumRedPointView.h; sourceTree = "<group>"; };
+		5213B997BCCF07F59FD5625E3578DD14 /* KTTabBarNumRedPointView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarNumRedPointView.h; sourceTree = "<group>"; };
 		523AC24C8C1E2AD2BB955FECE3521C8A /* SDAnimatedImageRep.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImageRep.m; path = SDWebImage/Core/SDAnimatedImageRep.m; sourceTree = "<group>"; };
 		52B0EA75CA7D54E783AC33B31F3B6B3A /* UIColor+SDHexString.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+SDHexString.h"; path = "SDWebImage/Private/UIColor+SDHexString.h"; sourceTree = "<group>"; };
 		52CD9749A3B3A17E9F9B057E603237E1 /* KTScope.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTScope.h; path = KTFoundation/Macros/Classes/KTScope.h; sourceTree = "<group>"; };
 		5385E1BA31D82527E8848BE62C01A5BF /* NSObject+FBKVOController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+FBKVOController.h"; path = "FBKVOController/NSObject+FBKVOController.h"; sourceTree = "<group>"; };
 		53D81233B58CFA07B8A9DEA16F50A583 /* Pods-KTUILibrary_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-KTUILibrary_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		5438C13BD74A34ADBFD2E3D6F1E37552 /* SDImageTransformer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageTransformer.h; path = SDWebImage/Core/SDImageTransformer.h; sourceTree = "<group>"; };
-		54623DFC46125F3326643D5B22785429 /* VVTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBar.h; sourceTree = "<group>"; };
+		54623DFC46125F3326643D5B22785429 /* KTTabBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBar.h; sourceTree = "<group>"; };
 		547114A509E830E33599A389467640AB /* SDImageHEICCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageHEICCoder.m; path = SDWebImage/Core/SDImageHEICCoder.m; sourceTree = "<group>"; };
 		55A57455D6A59D5455E410834C96455F /* SDWeakProxy.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWeakProxy.h; path = SDWebImage/Private/SDWeakProxy.h; sourceTree = "<group>"; };
 		5677E8C8A65A0E1819C733E25A8A471A /* SDAnimatedImagePlayer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImagePlayer.m; path = SDWebImage/Core/SDAnimatedImagePlayer.m; sourceTree = "<group>"; };
-		56B65516FF276BE539A16C28948B5191 /* VVTabBarNumRedPointView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarNumRedPointView.m; sourceTree = "<group>"; };
-		5827D00BF621ECD78F212C824633A9DF /* VVViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVViewProtocol.h; path = KTUILibrary/Navigation/VVViewProtocol.h; sourceTree = "<group>"; };
+		56B65516FF276BE539A16C28948B5191 /* KTTabBarNumRedPointView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarNumRedPointView.m; sourceTree = "<group>"; };
+		5827D00BF621ECD78F212C824633A9DF /* KTViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTViewProtocol.h; path = KTUILibrary/Navigation/KTViewProtocol.h; sourceTree = "<group>"; };
 		59008098D03A99578D0276C18E9DF229 /* Pods-KTUILibrary_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-KTUILibrary_Example-dummy.m"; sourceTree = "<group>"; };
 		5B0FAFCE905D1D90B7EE3431FFC2CF9F /* UIViewController+KTKeyboard.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIViewController+KTKeyboard.h"; path = "KTFoundation/Category/UIKit/UIViewController+KTKeyboard.h"; sourceTree = "<group>"; };
 		5B33647A8611849F28D0B80F28BF725A /* SDAsyncBlockOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAsyncBlockOperation.m; path = SDWebImage/Private/SDAsyncBlockOperation.m; sourceTree = "<group>"; };
@@ -527,12 +527,12 @@
 		5BA70B09FD8232E5A0600011257666DC /* CALayer+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+KTHelp.h"; path = "KTFoundation/Category/Quartz/CALayer+KTHelp.h"; sourceTree = "<group>"; };
 		5CC326A26A779982CBB786864E9B054C /* SDWebImage-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SDWebImage-dummy.m"; sourceTree = "<group>"; };
 		5CD4B9F2B4893C59E4AA733FF6950A59 /* UIApplication+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIApplication+KTHelp.h"; sourceTree = "<group>"; };
-		5CF18C1BEE4960E3AC3F3AD4D1E48E0F /* VVMiddleTabBarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVMiddleTabBarButton.m; sourceTree = "<group>"; };
-		5ED490307C9394EE747DEBA20D31B4E8 /* VVTabBarBaseButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarBaseButton.m; sourceTree = "<group>"; };
+		5CF18C1BEE4960E3AC3F3AD4D1E48E0F /* KTMiddleTabBarButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTMiddleTabBarButton.m; sourceTree = "<group>"; };
+		5ED490307C9394EE747DEBA20D31B4E8 /* KTTabBarBaseButton.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarBaseButton.m; sourceTree = "<group>"; };
 		5F1426970B09F06E8C8BF079BA88FCCD /* NSImage+Compatibility.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSImage+Compatibility.m"; path = "SDWebImage/Core/NSImage+Compatibility.m"; sourceTree = "<group>"; };
 		5F4A2D09ADFBFDB023A688E6F537E704 /* UIImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+WebCache.h"; path = "SDWebImage/Core/UIImageView+WebCache.h"; sourceTree = "<group>"; };
 		5F5A5B315D34D108085C61F063DE2CCE /* MASConstraintMaker.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASConstraintMaker.h; path = Masonry/MASConstraintMaker.h; sourceTree = "<group>"; };
-		5F6D81E132E4151A886153157A86284F /* VVNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVNavigationController.h; path = KTUILibrary/Navigation/VVNavigationController.h; sourceTree = "<group>"; };
+		5F6D81E132E4151A886153157A86284F /* KTNavigationController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTNavigationController.h; path = KTUILibrary/Navigation/KTNavigationController.h; sourceTree = "<group>"; };
 		5FC96F4C8323BC07F81F2E297AA028F2 /* MASConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraint.m; path = Masonry/MASConstraint.m; sourceTree = "<group>"; };
 		6002F744354B408933D10FF21966B4C9 /* SDImageCachesManagerOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCachesManagerOperation.m; path = SDWebImage/Private/SDImageCachesManagerOperation.m; sourceTree = "<group>"; };
 		6047E0A3F0C4CC77658029EF2BB67748 /* SDWebImageIndicator.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageIndicator.h; path = SDWebImage/Core/SDWebImageIndicator.h; sourceTree = "<group>"; };
@@ -540,17 +540,17 @@
 		611277251BC06DE668394741F9101CAE /* Masonry-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Masonry-prefix.pch"; sourceTree = "<group>"; };
 		619E3888361ABD7D911C94B8E75A6199 /* SDAnimatedImageRep.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImageRep.h; path = SDWebImage/Core/SDAnimatedImageRep.h; sourceTree = "<group>"; };
 		6266D3B5C69CF2D28EBA7032A57EBF89 /* Pods-KTUILibrary_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-KTUILibrary_Example.modulemap"; sourceTree = "<group>"; };
-		6266FBE9EC577E4DB794F45474809D0C /* VVNavigationBarContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVNavigationBarContentView.m; sourceTree = "<group>"; };
+		6266FBE9EC577E4DB794F45474809D0C /* KTNavigationBarContentView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTNavigationBarContentView.m; sourceTree = "<group>"; };
 		6300FB2F8B658F58FB6C82CAD3D2BB82 /* KVOController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-umbrella.h"; sourceTree = "<group>"; };
 		63828274001E5E143E91C4CE35247A90 /* UIDevice+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIDevice+KTHelp.h"; sourceTree = "<group>"; };
 		63E9D031CEC75A8F1D7DD60BCE3F413E /* SDMemoryCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDMemoryCache.m; path = SDWebImage/Core/SDMemoryCache.m; sourceTree = "<group>"; };
-		63F381416C78515B6F46CC4EBFA0E818 /* VVNavigationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVNavigationItem.m; sourceTree = "<group>"; };
+		63F381416C78515B6F46CC4EBFA0E818 /* KTNavigationItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTNavigationItem.m; sourceTree = "<group>"; };
 		659DD4B6CDD1F35CD995440936AE57B0 /* MASCompositeConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASCompositeConstraint.h; path = Masonry/MASCompositeConstraint.h; sourceTree = "<group>"; };
 		6683F4E45C0D9E24C32205F3963E3894 /* KVOController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KVOController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		675D83C433A71D47D96BC8DA7C0ACCC1 /* KVOController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KVOController-prefix.pch"; sourceTree = "<group>"; };
 		680AA6808E765769D7CC93EE2F9FA924 /* MASConstraintMaker.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASConstraintMaker.m; path = Masonry/MASConstraintMaker.m; sourceTree = "<group>"; };
 		688CE0686226684078E6DD991FAB496A /* UIImage+MemoryCacheCost.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MemoryCacheCost.m"; path = "SDWebImage/Core/UIImage+MemoryCacheCost.m"; sourceTree = "<group>"; };
-		68F1066521BCCE2E71BA3B5B3095D709 /* VVTabBarNormalRedPointView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarNormalRedPointView.h; sourceTree = "<group>"; };
+		68F1066521BCCE2E71BA3B5B3095D709 /* KTTabBarNormalRedPointView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarNormalRedPointView.h; sourceTree = "<group>"; };
 		69CF4DD8FF0035F94633CA4CD7E7C72A /* NSButton+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSButton+WebCache.m"; path = "SDWebImage/Core/NSButton+WebCache.m"; sourceTree = "<group>"; };
 		6A3CE35A9B43F28AA0E424CD83ACAA0E /* Masonry-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Masonry-Info.plist"; sourceTree = "<group>"; };
 		6B5F92ED7C323E899F481341FE201605 /* UIColor+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+KTHelp.m"; path = "KTFoundation/Category/UIKit/UIColor+KTHelp.m"; sourceTree = "<group>"; };
@@ -558,17 +558,17 @@
 		6DF6B8CAA5F546DEF59005AE6351E1E1 /* SDImageCacheDefine.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCacheDefine.m; path = SDWebImage/Core/SDImageCacheDefine.m; sourceTree = "<group>"; };
 		6E0A3E1B35C3B803963DABC234F49A50 /* SDAnimatedImageView+WebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "SDAnimatedImageView+WebCache.m"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.m"; sourceTree = "<group>"; };
 		6EF389C2C8B97A18187CB99D8C9593E8 /* SDWebImageDownloaderResponseModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderResponseModifier.h; path = SDWebImage/Core/SDWebImageDownloaderResponseModifier.h; sourceTree = "<group>"; };
-		720DA694222471B36CCF654BD3B58845 /* VVNavigationControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVNavigationControllerProtocol.h; path = KTUILibrary/Navigation/VVNavigationControllerProtocol.h; sourceTree = "<group>"; };
+		720DA694222471B36CCF654BD3B58845 /* KTNavigationControllerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTNavigationControllerProtocol.h; path = KTUILibrary/Navigation/KTNavigationControllerProtocol.h; sourceTree = "<group>"; };
 		732833340FD08BFEAF0004774A0FF700 /* NSObject+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSObject+KTHelp.m"; sourceTree = "<group>"; };
 		734990D8C1D88A0DCDB3E535E4AAF8A4 /* UITableView+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+KTHelp.m"; path = "KTFoundation/Category/UIKit/UITableView+KTHelp.m"; sourceTree = "<group>"; };
 		73DB07A844CFA0B155A1B98413A3F942 /* UIImageView+HighlightedWebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImageView+HighlightedWebCache.h"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.h"; sourceTree = "<group>"; };
 		74084B625C7350693F3F653DDC178396 /* SDWebImageDownloader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloader.h; path = SDWebImage/Core/SDWebImageDownloader.h; sourceTree = "<group>"; };
-		74818C9E9D025C5FF31E70EBC676B112 /* VVNavigationBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVNavigationBaseView.m; sourceTree = "<group>"; };
+		74818C9E9D025C5FF31E70EBC676B112 /* KTNavigationBaseView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTNavigationBaseView.m; sourceTree = "<group>"; };
 		7551238829B6A7B110521D01DDF84524 /* NSNumber+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSNumber+KTHelp.m"; sourceTree = "<group>"; };
 		7674C63A471BEA83391062A56A60BE95 /* NSBezierPath+SDRoundedCorners.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBezierPath+SDRoundedCorners.m"; path = "SDWebImage/Private/NSBezierPath+SDRoundedCorners.m"; sourceTree = "<group>"; };
 		77B0909E4EE485ADF985F3B647CF41A3 /* SDWebImageDownloaderOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderOperation.h; path = SDWebImage/Core/SDWebImageDownloaderOperation.h; sourceTree = "<group>"; };
-		78C0C68B73FADC3ED97F6E71FACE9D0F /* VVBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBarButtonItem.m; sourceTree = "<group>"; };
-		794EA6E913F0BA7228265C1E2E779D2F /* VVBarBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBarBackgroundView.h; sourceTree = "<group>"; };
+		78C0C68B73FADC3ED97F6E71FACE9D0F /* KTBarButtonItem.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTBarButtonItem.m; sourceTree = "<group>"; };
+		794EA6E913F0BA7228265C1E2E779D2F /* KTBarBackgroundView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTBarBackgroundView.h; sourceTree = "<group>"; };
 		797EC821FC410ABC59ED0AD956D3E6AE /* SDWebImageOptionsProcessor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageOptionsProcessor.h; path = SDWebImage/Core/SDWebImageOptionsProcessor.h; sourceTree = "<group>"; };
 		79AD74C30AECFF74CAB10ACABF073A55 /* SDWeakProxy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWeakProxy.m; path = SDWebImage/Private/SDWeakProxy.m; sourceTree = "<group>"; };
 		79CE7BABB917CFA3F5C7CDD0B8F186F2 /* SDImageCoderHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCoderHelper.m; path = SDWebImage/Core/SDImageCoderHelper.m; sourceTree = "<group>"; };
@@ -576,7 +576,7 @@
 		7B9403D6A458E7A99902FE981229D593 /* KTUILibrary-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTUILibrary-umbrella.h"; sourceTree = "<group>"; };
 		7BDDE46EAF5681614FB1F56EB4D0F4AD /* KVOController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "KVOController-dummy.m"; sourceTree = "<group>"; };
 		7C3A9818F056EFB10153C9C0C301D8D3 /* SDWebImageDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDefine.h; path = SDWebImage/Core/SDWebImageDefine.h; sourceTree = "<group>"; };
-		7C7C2229DD782B754258C63BD50AEC80 /* VVNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVNavigationBar.h; sourceTree = "<group>"; };
+		7C7C2229DD782B754258C63BD50AEC80 /* KTNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTNavigationBar.h; sourceTree = "<group>"; };
 		7CFA434390AD175166764D4031D46232 /* UIImage+ExtendedCacheData.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ExtendedCacheData.h"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.h"; sourceTree = "<group>"; };
 		7E7830DADF1698F08DEC478EF1603B74 /* Pods-KTUILibrary_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTUILibrary_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7E9A023460F1564BAC594DBB13F26FBF /* UIImage+Transform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Transform.h"; path = "SDWebImage/Core/UIImage+Transform.h"; sourceTree = "<group>"; };
@@ -584,7 +584,7 @@
 		7F1F73263C1A7B61CB73471B96000816 /* SDWebImageManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageManager.h; path = SDWebImage/Core/SDWebImageManager.h; sourceTree = "<group>"; };
 		802CDADC684E446E7371E64E078EB92A /* SDImageCodersManager.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageCodersManager.m; path = SDWebImage/Core/SDImageCodersManager.m; sourceTree = "<group>"; };
 		814E958CFB8AA2A61819B18687FAA912 /* SDImageIOCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOCoder.m; path = SDWebImage/Core/SDImageIOCoder.m; sourceTree = "<group>"; };
-		817DB20FE652AA3837F3361A4E5209F4 /* KTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = KTFoundation.framework; path = KTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		817DB20FE652AA3837F3361A4E5209F4 /* KTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		82AAD57711E112800F00321C858EDD89 /* UIBezierPath+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+KTHelp.m"; path = "KTFoundation/Category/UIKit/UIBezierPath+KTHelp.m"; sourceTree = "<group>"; };
 		82C64A0C8698A46E7DA5D3968B0D37B8 /* Pods-KTUILibrary_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-KTUILibrary_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		83F3A79BED86C364B057C6C2DB976DA0 /* SDWebImageDownloaderConfig.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderConfig.h; path = SDWebImage/Core/SDWebImageDownloaderConfig.h; sourceTree = "<group>"; };
@@ -594,24 +594,24 @@
 		869EDF626CF193A73A1702FFF05F46CD /* NSBundle+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSBundle+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSBundle+KTHelp.m"; sourceTree = "<group>"; };
 		885A8543F68565685067E251BA1F3C8A /* SDWebImageDownloaderOperation.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderOperation.m; path = SDWebImage/Core/SDWebImageDownloaderOperation.m; sourceTree = "<group>"; };
 		88B3ED26BB1542574FDB7977AF7A50F0 /* NSImage+Compatibility.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSImage+Compatibility.h"; path = "SDWebImage/Core/NSImage+Compatibility.h"; sourceTree = "<group>"; };
-		88F009C3C8EBF3106BA4BED1D785B1C5 /* VVTabBarModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarModel.m; sourceTree = "<group>"; };
+		88F009C3C8EBF3106BA4BED1D785B1C5 /* KTTabBarModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarModel.m; sourceTree = "<group>"; };
 		89D1005DBDAB84D7830A879FD80F22E3 /* UIImage+MultiFormat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+MultiFormat.h"; path = "SDWebImage/Core/UIImage+MultiFormat.h"; sourceTree = "<group>"; };
 		8A8FDFC7F097A509D98B8C021B812CEC /* SDAnimatedImagePlayer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAnimatedImagePlayer.h; path = SDWebImage/Core/SDAnimatedImagePlayer.h; sourceTree = "<group>"; };
 		8AA479F9F5E0F10CC8CFD3C83FEC9719 /* SDImageIOCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOCoder.h; path = SDWebImage/Core/SDImageIOCoder.h; sourceTree = "<group>"; };
-		8B094FFB96FBD17871EC004EC61EBFB9 /* VVBackButtonHandlerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = VVBackButtonHandlerProtocol.h; path = KTUILibrary/Navigation/VVBackButtonHandlerProtocol.h; sourceTree = "<group>"; };
+		8B094FFB96FBD17871EC004EC61EBFB9 /* KTBackButtonHandlerProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTBackButtonHandlerProtocol.h; path = KTUILibrary/Navigation/KTBackButtonHandlerProtocol.h; sourceTree = "<group>"; };
 		8B1A813A308199E405EF971F8CFD8456 /* NSObject+FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+FBKVOController.m"; path = "FBKVOController/NSObject+FBKVOController.m"; sourceTree = "<group>"; };
 		8B2E219474F665F68C18BE9B2BECA4F7 /* SDWebImagePrefetcher.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImagePrefetcher.m; path = SDWebImage/Core/SDWebImagePrefetcher.m; sourceTree = "<group>"; };
-		8BEAA1286188EBD9490DA8E584EDCCBD /* VVTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = VVTabBarController.m; path = KTUILibrary/TabBar/VVTabBarController.m; sourceTree = "<group>"; };
+		8BEAA1286188EBD9490DA8E584EDCCBD /* KTTabBarController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = KTTabBarController.m; path = KTUILibrary/TabBar/KTTabBarController.m; sourceTree = "<group>"; };
 		8C8D0902242FAEB773207C8636C35273 /* NSObject+KTHelpForKVO.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KTHelpForKVO.h"; path = "KTFoundation/Category/Foundation/NSObject+KTHelpForKVO.h"; sourceTree = "<group>"; };
 		8CAA0E4DDF0E122F5B1E90665B595D67 /* KTEdgesTextField.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTEdgesTextField.h; path = KTUILibrary/EdgesTextField/Classes/KTEdgesTextField.h; sourceTree = "<group>"; };
-		8CBC764408053C21A7DB3E90FA1CC251 /* VVMiddleTabBarButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVMiddleTabBarButton.h; sourceTree = "<group>"; };
+		8CBC764408053C21A7DB3E90FA1CC251 /* KTMiddleTabBarButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTMiddleTabBarButton.h; sourceTree = "<group>"; };
 		8EFA223722B3DA8F5C944C6BB0021E2B /* FBKVOController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBKVOController.m; path = FBKVOController/FBKVOController.m; sourceTree = "<group>"; };
 		8EFB34225BB2B2D6A903BB26C1883DFA /* SDWebImageDownloaderRequestModifier.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderRequestModifier.m; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.m; sourceTree = "<group>"; };
 		8F864A3AC124212C5FE3E663EA75699E /* SDWebImage-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SDWebImage-prefix.pch"; sourceTree = "<group>"; };
 		8FE67A56052E2A4BDA21A4FBDCA9197D /* SDImageCacheDefine.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCacheDefine.h; path = SDWebImage/Core/SDImageCacheDefine.h; sourceTree = "<group>"; };
 		90B8A3CD11B382C5A564B5A42A9AF467 /* MASLayoutConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASLayoutConstraint.m; path = Masonry/MASLayoutConstraint.m; sourceTree = "<group>"; };
 		90F5779D7B92DC8EFA79078BE180AB53 /* SDDeviceHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDeviceHelper.m; path = SDWebImage/Private/SDDeviceHelper.m; sourceTree = "<group>"; };
-		91606C0A4064AEE3872F15557B355E79 /* VVTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBar.m; sourceTree = "<group>"; };
+		91606C0A4064AEE3872F15557B355E79 /* KTTabBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBar.m; sourceTree = "<group>"; };
 		93215FE04D20EE207A16EE86DA4E82D3 /* NSData+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSData+KTHelp.m"; sourceTree = "<group>"; };
 		93C1CB87E291AFD0C264ACC930832B91 /* UIImage+MultiFormat.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+MultiFormat.m"; path = "SDWebImage/Core/UIImage+MultiFormat.m"; sourceTree = "<group>"; };
 		9461D427ABA5778AB72D1AD7B4134550 /* MASUtilities.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASUtilities.h; path = Masonry/MASUtilities.h; sourceTree = "<group>"; };
@@ -619,7 +619,7 @@
 		95D3CF887333BE62160EC993C9CA21D3 /* UIView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCache.h"; path = "SDWebImage/Core/UIView+WebCache.h"; sourceTree = "<group>"; };
 		96387F8EF886377FB27A5DC82E471950 /* MASCompositeConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASCompositeConstraint.m; path = Masonry/MASCompositeConstraint.m; sourceTree = "<group>"; };
 		97847750673AB4BBBA709AD41EEF3437 /* SDAnimatedImage.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAnimatedImage.m; path = SDWebImage/Core/SDAnimatedImage.m; sourceTree = "<group>"; };
-		97AE76620E8110A97B85CEF1A4C21B10 /* VVEmptyNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVEmptyNavigationBar.m; sourceTree = "<group>"; };
+		97AE76620E8110A97B85CEF1A4C21B10 /* KTEmptyNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTEmptyNavigationBar.m; sourceTree = "<group>"; };
 		984831818EE6CF61E24F47119284CB17 /* Masonry.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Masonry.h; path = Masonry/Masonry.h; sourceTree = "<group>"; };
 		98B8467C1C7D1B8B515075E73D206336 /* UIView+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+KTHelp.m"; path = "KTFoundation/Category/UIKit/UIView+KTHelp.m"; sourceTree = "<group>"; };
 		99642377FB01B5CF32285FBB259D00D5 /* NSObject+KTHelpForKVC.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+KTHelpForKVC.h"; path = "KTFoundation/Category/Foundation/NSObject+KTHelpForKVC.h"; sourceTree = "<group>"; };
@@ -629,17 +629,17 @@
 		9A05C643F05C89841D26131A370B318B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		9A60C0B87FD94DD2A7464771E1663AF4 /* SDmetamacros.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDmetamacros.h; path = SDWebImage/Private/SDmetamacros.h; sourceTree = "<group>"; };
 		9B90A2621B84C7A6FDEF2250C4B5B0B0 /* NSLayoutConstraint+MASDebugAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSLayoutConstraint+MASDebugAdditions.h"; path = "Masonry/NSLayoutConstraint+MASDebugAdditions.h"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9DDF17DCF5E058688159A90EBF184B82 /* SDWebImageDownloaderRequestModifier.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderRequestModifier.h; path = SDWebImage/Core/SDWebImageDownloaderRequestModifier.h; sourceTree = "<group>"; };
 		9E1BCCD76F9EB55D8594C21F75BF7CF0 /* SDImageLoadersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoadersManager.h; path = SDWebImage/Core/SDImageLoadersManager.h; sourceTree = "<group>"; };
 		9EE11B150EB295790BF7C12D9453B579 /* SDAssociatedObject.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDAssociatedObject.m; path = SDWebImage/Private/SDAssociatedObject.m; sourceTree = "<group>"; };
 		9EEBAFA6DCAF24AEC826809CAB3AD252 /* ImageIO.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ImageIO.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/ImageIO.framework; sourceTree = DEVELOPER_DIR; };
 		9F4509F1F1F1C65780A5705C407D70E2 /* SDDiskCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDDiskCache.m; path = SDWebImage/Core/SDDiskCache.m; sourceTree = "<group>"; };
-		9FDBDF899A5B8511B888B8D099680274 /* VVNavigationBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVNavigationBaseView.h; sourceTree = "<group>"; };
+		9FDBDF899A5B8511B888B8D099680274 /* KTNavigationBaseView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTNavigationBaseView.h; sourceTree = "<group>"; };
 		A003433C74C195181550CB42C99F2950 /* NSData+ImageContentType.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSData+ImageContentType.m"; path = "SDWebImage/Core/NSData+ImageContentType.m"; sourceTree = "<group>"; };
 		A32BA310B473DA1F5EF0B8C52E94E0E3 /* KVOController.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.debug.xcconfig; sourceTree = "<group>"; };
 		A37E80E1D1C74CCBD6A769006649A80B /* SDWebImageCacheKeyFilter.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageCacheKeyFilter.m; path = SDWebImage/Core/SDWebImageCacheKeyFilter.m; sourceTree = "<group>"; };
-		A4125D2414E6F67CE9DAC8214D709639 /* VVTabBarBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarBackgroundView.m; sourceTree = "<group>"; };
+		A4125D2414E6F67CE9DAC8214D709639 /* KTTabBarBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarBackgroundView.m; sourceTree = "<group>"; };
 		A4E56F41804BB5686DB93AACDD1B0F64 /* KTFoundation.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTFoundation.debug.xcconfig; sourceTree = "<group>"; };
 		A54E9633F9231137C64FF07E258A78BD /* SDWebImageCompat.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCompat.h; path = SDWebImage/Core/SDWebImageCompat.h; sourceTree = "<group>"; };
 		A62DCBF5A8DCA5322DAF0B1E98311E87 /* NSDate+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDate+KTHelp.h"; path = "KTFoundation/Category/Foundation/NSDate+KTHelp.h"; sourceTree = "<group>"; };
@@ -647,20 +647,20 @@
 		A88879C6FFBA88F7994EB0021381CC54 /* SDImageCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCache.h; path = SDWebImage/Core/SDImageCache.h; sourceTree = "<group>"; };
 		A8A1407B36C6D8EEF1D1E20A72DDBB5A /* SDWebImageDownloaderConfig.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderConfig.m; path = SDWebImage/Core/SDWebImageDownloaderConfig.m; sourceTree = "<group>"; };
 		A9C47724FB8831E1032B8B21D5EAA6C5 /* ViewController+MASAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "ViewController+MASAdditions.h"; path = "Masonry/ViewController+MASAdditions.h"; sourceTree = "<group>"; };
-		A9EA762119AC94CD49D4E42C5E1A2308 /* VVMiddleTabBarModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVMiddleTabBarModel.h; sourceTree = "<group>"; };
+		A9EA762119AC94CD49D4E42C5E1A2308 /* KTMiddleTabBarModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTMiddleTabBarModel.h; sourceTree = "<group>"; };
 		AB137F4C3AA8407411C58568DA7F50F5 /* UIFont+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIFont+KTHelp.h"; sourceTree = "<group>"; };
 		AB1E3759043576CED10DA3B4E4EF782A /* SDWebImageCacheSerializer.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageCacheSerializer.h; path = SDWebImage/Core/SDWebImageCacheSerializer.h; sourceTree = "<group>"; };
 		AB4D03CE867F892F0DE140244057E348 /* SDImageCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCoder.h; path = SDWebImage/Core/SDImageCoder.h; sourceTree = "<group>"; };
 		ABF462F00875C2A6AD31D3E29564302E /* UIImageView+HighlightedWebCache.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImageView+HighlightedWebCache.m"; path = "SDWebImage/Core/UIImageView+HighlightedWebCache.m"; sourceTree = "<group>"; };
 		AC3B3D5DDD9685F6B6160B4A325AECF5 /* UITextField+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+KTHelp.h"; path = "KTFoundation/Category/UIKit/UITextField+KTHelp.h"; sourceTree = "<group>"; };
 		ACAD343FEA760CAD24E88589CD0B9C82 /* SDImageFrame.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageFrame.m; path = SDWebImage/Core/SDImageFrame.m; sourceTree = "<group>"; };
-		AD4739DC150AA2DDA199372ED1A884D8 /* VVTabBarConfigModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarConfigModel.h; sourceTree = "<group>"; };
+		AD4739DC150AA2DDA199372ED1A884D8 /* KTTabBarConfigModel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarConfigModel.h; sourceTree = "<group>"; };
 		AF41E25D1155DC38B1FEF9889F90EA76 /* KVOController.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KVOController.release.xcconfig; sourceTree = "<group>"; };
-		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = SDWebImage.framework; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B0B214D775196BA7CA8E17E53048A493 /* SDWebImage.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SDWebImage.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0E380581BBEB371BA1DD771C4318DE6 /* UIView+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIView+KTHelp.h"; sourceTree = "<group>"; };
-		B309976602770F0EF7EB874B3C5EB18B /* VVEmptyNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVEmptyNavigationBar.h; sourceTree = "<group>"; };
+		B309976602770F0EF7EB874B3C5EB18B /* KTEmptyNavigationBar.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTEmptyNavigationBar.h; sourceTree = "<group>"; };
 		B4D286C7AFF50A5AF26A11C21D7F67AD /* UIView+WebCacheOperation.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIView+WebCacheOperation.h"; path = "SDWebImage/Core/UIView+WebCacheOperation.h"; sourceTree = "<group>"; };
-		B672827791C6A47173170F5840A19B56 /* VVBarBackgroundModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBarBackgroundModel.m; sourceTree = "<group>"; };
+		B672827791C6A47173170F5840A19B56 /* KTBarBackgroundModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTBarBackgroundModel.m; sourceTree = "<group>"; };
 		B6C0FDCB2F22E6C87885D36803BC19A5 /* UIColor+SDHexString.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+SDHexString.m"; path = "SDWebImage/Private/UIColor+SDHexString.m"; sourceTree = "<group>"; };
 		B6C2F068788AC52A6EDE96CC48171D29 /* UIImage+ForceDecode.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+ForceDecode.h"; path = "SDWebImage/Core/UIImage+ForceDecode.h"; sourceTree = "<group>"; };
 		B719464D1C85C68721B96955A4044E4A /* NSData+ImageContentType.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSData+ImageContentType.h"; path = "SDWebImage/Core/NSData+ImageContentType.h"; sourceTree = "<group>"; };
@@ -679,7 +679,7 @@
 		C145F0DAEAB9F3CEC3D60ED3D3C089C3 /* UIBarButtonItem+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBarButtonItem+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIBarButtonItem+KTHelp.h"; sourceTree = "<group>"; };
 		C20030714C9DAAD8E012C78C7042A26A /* SDImageIOAnimatedCoderInternal.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageIOAnimatedCoderInternal.h; path = SDWebImage/Private/SDImageIOAnimatedCoderInternal.h; sourceTree = "<group>"; };
 		C45DC5CF0E95C2461A80259E9FCF3049 /* MASViewConstraint.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = MASViewConstraint.h; path = Masonry/MASViewConstraint.h; sourceTree = "<group>"; };
-		C45DF60898A7BA62D11622DA590456A1 /* VVBarBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBarBackgroundView.m; sourceTree = "<group>"; };
+		C45DF60898A7BA62D11622DA590456A1 /* KTBarBackgroundView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTBarBackgroundView.m; sourceTree = "<group>"; };
 		C522E4AA9554A7822B3AF9AEEEA96835 /* SDWebImageOptionsProcessor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageOptionsProcessor.m; path = SDWebImage/Core/SDWebImageOptionsProcessor.m; sourceTree = "<group>"; };
 		C645B93304545D8C827B29B17E6A3F7E /* View+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "View+MASShorthandAdditions.h"; path = "Masonry/View+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		C647B1728FD12D60029D43C0E83FC773 /* UIImage+Transform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Transform.m"; path = "SDWebImage/Core/UIImage+Transform.m"; sourceTree = "<group>"; };
@@ -692,24 +692,24 @@
 		CB967D8057B63C119339495B48D0F7F6 /* SDImageIOAnimatedCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageIOAnimatedCoder.m; path = SDWebImage/Core/SDImageIOAnimatedCoder.m; sourceTree = "<group>"; };
 		CBA181419500493CD0FB51D319A9BA52 /* KTEdgesLabel.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTEdgesLabel.h; path = KTUILibrary/EdgesLabel/Classes/KTEdgesLabel.h; sourceTree = "<group>"; };
 		CCCC62CC8F2038D825DDD0075F81BC96 /* UIImage+Metadata.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Metadata.m"; path = "SDWebImage/Core/UIImage+Metadata.m"; sourceTree = "<group>"; };
-		CD4704EE12639ACB0C006230B797D8BD /* VVBarBackgroundVisualEffectView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBarBackgroundVisualEffectView.h; sourceTree = "<group>"; };
+		CD4704EE12639ACB0C006230B797D8BD /* KTBarBackgroundVisualEffectView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTBarBackgroundVisualEffectView.h; sourceTree = "<group>"; };
 		CD9230BC8E05C98BAAB43269A587C0C0 /* SDImageCodersManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageCodersManager.h; path = SDWebImage/Core/SDImageCodersManager.h; sourceTree = "<group>"; };
 		CDBBCDB554DF956D9D52CB6B5F3EB477 /* SDImageAssetManager.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAssetManager.h; path = SDWebImage/Private/SDImageAssetManager.h; sourceTree = "<group>"; };
 		CE74530DADE6ADF09BF3AEFFF9067D69 /* KTSingle.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = KTSingle.h; path = KTFoundation/Macros/Classes/KTSingle.h; sourceTree = "<group>"; };
 		CF62A22A34C0EA13DB5D6F6895D8AF44 /* SDGraphicsImageRenderer.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDGraphicsImageRenderer.m; path = SDWebImage/Core/SDGraphicsImageRenderer.m; sourceTree = "<group>"; };
 		D131CC85C8E0068AD2D7D09140B99E94 /* SDImageAPNGCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageAPNGCoder.h; path = SDWebImage/Core/SDImageAPNGCoder.h; sourceTree = "<group>"; };
-		D161868B93AE8A6A5B9DEAFB20756D14 /* VVTabBarBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarBaseModel.m; sourceTree = "<group>"; };
+		D161868B93AE8A6A5B9DEAFB20756D14 /* KTTabBarBaseModel.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarBaseModel.m; sourceTree = "<group>"; };
 		D2CBEF9D94F8034298AEF3A3DB090872 /* SDAssociatedObject.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDAssociatedObject.h; path = SDWebImage/Private/SDAssociatedObject.h; sourceTree = "<group>"; };
-		D36F251E021CF223668451D0D389A7B8 /* VVBarBackgroundShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVBarBackgroundShadowView.h; sourceTree = "<group>"; };
+		D36F251E021CF223668451D0D389A7B8 /* KTBarBackgroundShadowView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTBarBackgroundShadowView.h; sourceTree = "<group>"; };
 		D6997E876B682F1EDA29EB1072DC576F /* KTUILibrary.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KTUILibrary.modulemap; sourceTree = "<group>"; };
 		D69EF8FE2F7A61F6504F402FB0692CBE /* Pods-KTUILibrary_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-KTUILibrary_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		D7AB22CF3DC7E9EE5ED6961531BCC98D /* VVTabBarBaseButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarBaseButton.h; sourceTree = "<group>"; };
+		D7AB22CF3DC7E9EE5ED6961531BCC98D /* KTTabBarBaseButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarBaseButton.h; sourceTree = "<group>"; };
 		D99DF1668FE80BEFAE014384BB03FF32 /* SDAnimatedImageView+WebCache.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "SDAnimatedImageView+WebCache.h"; path = "SDWebImage/Core/SDAnimatedImageView+WebCache.h"; sourceTree = "<group>"; };
 		DA1A88E22D53146397097C53F30823E4 /* KTUILibrary-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "KTUILibrary-prefix.pch"; sourceTree = "<group>"; };
 		DA41A997C3FE19B9E43F9C2799AB0C08 /* MASViewConstraint.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = MASViewConstraint.m; path = Masonry/MASViewConstraint.m; sourceTree = "<group>"; };
 		DC8C09B47734FE1F145E4CE49A67675F /* SDImageAPNGCoder.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDImageAPNGCoder.m; path = SDWebImage/Core/SDImageAPNGCoder.m; sourceTree = "<group>"; };
 		DCC76E3F87BD0894E4048378794AF62C /* Masonry-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Masonry-dummy.m"; sourceTree = "<group>"; };
-		DD047CD85A839E221AA04BF2984580F5 /* VVNavigationBarContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVNavigationBarContentView.h; sourceTree = "<group>"; };
+		DD047CD85A839E221AA04BF2984580F5 /* KTNavigationBarContentView.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTNavigationBarContentView.h; sourceTree = "<group>"; };
 		DDCC44982DF5A721A73737A42098B3F7 /* KTUILibrary.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = KTUILibrary.debug.xcconfig; sourceTree = "<group>"; };
 		DE00D7648CA928EC9F96C6543B5F7862 /* UIImage+GIF.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+GIF.m"; path = "SDWebImage/Core/UIImage+GIF.m"; sourceTree = "<group>"; };
 		DF2303D36A0F1078CEBC783907C7C72C /* KTUILibrary-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KTUILibrary-Info.plist"; sourceTree = "<group>"; };
@@ -723,10 +723,10 @@
 		E65060FF2FEDB3866CC013DCBADCAD06 /* Masonry.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = Masonry.modulemap; sourceTree = "<group>"; };
 		E8F2A4A913DCB2A12FEA17ED26B1D7A8 /* SDWebImageDownloaderDecryptor.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDWebImageDownloaderDecryptor.h; path = SDWebImage/Core/SDWebImageDownloaderDecryptor.h; sourceTree = "<group>"; };
 		E96B44499B82BD7DDBFD1CB972C93129 /* SDWebImageDownloaderDecryptor.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = SDWebImageDownloaderDecryptor.m; path = SDWebImage/Core/SDWebImageDownloaderDecryptor.m; sourceTree = "<group>"; };
-		E9851FE322440A6663B8BF51A0E1B21C /* VVBarBackgroundShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVBarBackgroundShadowView.m; sourceTree = "<group>"; };
+		E9851FE322440A6663B8BF51A0E1B21C /* KTBarBackgroundShadowView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTBarBackgroundShadowView.m; sourceTree = "<group>"; };
 		ECC9A6C2209F80239A00D223F93D6494 /* CALayer+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "CALayer+KTHelp.m"; path = "KTFoundation/Category/Quartz/CALayer+KTHelp.m"; sourceTree = "<group>"; };
-		ED901B927434801AEEE9F51B5F2047BC /* VVTabBarButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarButton.h; sourceTree = "<group>"; };
-		EDB093A76F2F0C77BF0C19B90546112E /* VVTabBarRedPointViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVTabBarRedPointViewProtocol.h; sourceTree = "<group>"; };
+		ED901B927434801AEEE9F51B5F2047BC /* KTTabBarButton.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarButton.h; sourceTree = "<group>"; };
+		EDB093A76F2F0C77BF0C19B90546112E /* KTTabBarRedPointViewProtocol.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTTabBarRedPointViewProtocol.h; sourceTree = "<group>"; };
 		EDB83635518EA574044958968FD358A7 /* KTFoundation.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = KTFoundation.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EDFA48B7E1C7FB1D83947A3FC3D2BF4E /* KTFoundation-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "KTFoundation-Info.plist"; sourceTree = "<group>"; };
 		EF41F56D87FCDEF0F80AB417B0013F44 /* Masonry.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Masonry.release.xcconfig; sourceTree = "<group>"; };
@@ -734,13 +734,13 @@
 		F0F22164A3C9437850BFC08C059177AA /* NSKeyedUnarchiver+KTHelp.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSKeyedUnarchiver+KTHelp.m"; path = "KTFoundation/Category/Foundation/NSKeyedUnarchiver+KTHelp.m"; sourceTree = "<group>"; };
 		F317096EE7871DFA20CB56E77B2467FC /* NSObject+KTHelpForKVO.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+KTHelpForKVO.m"; path = "KTFoundation/Category/Foundation/NSObject+KTHelpForKVO.m"; sourceTree = "<group>"; };
 		F42B944BB71DAC94E155D322FC9174C9 /* SDImageHEICCoder.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageHEICCoder.h; path = SDWebImage/Core/SDImageHEICCoder.h; sourceTree = "<group>"; };
-		F4B7064E77804A07427F22D0CEBF4453 /* VVNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVNavigationBar.m; sourceTree = "<group>"; };
+		F4B7064E77804A07427F22D0CEBF4453 /* KTNavigationBar.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTNavigationBar.m; sourceTree = "<group>"; };
 		F58743A085071069B12EFAD36687CB5C /* NSTimer+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSTimer+KTHelp.h"; path = "KTFoundation/Category/Foundation/NSTimer+KTHelp.h"; sourceTree = "<group>"; };
 		F5B26C8F6E14DF4FAFB9190C4B9B893B /* SDImageLoader.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SDImageLoader.h; path = SDWebImage/Core/SDImageLoader.h; sourceTree = "<group>"; };
 		F5B488124BD44B9FF18C45E2CD5FCB7D /* UIBezierPath+KTHelp.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIBezierPath+KTHelp.h"; path = "KTFoundation/Category/UIKit/UIBezierPath+KTHelp.h"; sourceTree = "<group>"; };
-		F6529F9AF7250599263B1797E0142A9F /* VVTabBarNormalRedPointView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = VVTabBarNormalRedPointView.m; sourceTree = "<group>"; };
+		F6529F9AF7250599263B1797E0142A9F /* KTTabBarNormalRedPointView.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = KTTabBarNormalRedPointView.m; sourceTree = "<group>"; };
 		F6E7A008B5C8D4104322BD7FDF60437C /* KTFoundation.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = KTFoundation.modulemap; sourceTree = "<group>"; };
-		F6F3139E3550532FB638EF27AFC32F12 /* VVNavigationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = VVNavigationItem.h; sourceTree = "<group>"; };
+		F6F3139E3550532FB638EF27AFC32F12 /* KTNavigationItem.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = KTNavigationItem.h; sourceTree = "<group>"; };
 		F7CA7E81EFAE942B5D72AECEC0CB294F /* UIImage+GIF.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+GIF.h"; path = "SDWebImage/Core/UIImage+GIF.h"; sourceTree = "<group>"; };
 		F7FC261FFD6933ABADF7D0EFF02330A8 /* NSArray+MASShorthandAdditions.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSArray+MASShorthandAdditions.h"; path = "Masonry/NSArray+MASShorthandAdditions.h"; sourceTree = "<group>"; };
 		F9165DDB687B60AD28D0B6AEED9D72A3 /* UIImage+ExtendedCacheData.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+ExtendedCacheData.m"; path = "SDWebImage/Core/UIImage+ExtendedCacheData.m"; sourceTree = "<group>"; };
@@ -836,8 +836,8 @@
 		0DA25F361C840AE038BB7E73845C112D /* Protocol */ = {
 			isa = PBXGroup;
 			children = (
-				1C8EACAC48790A6200D4BCD5BB02F0C5 /* VVTabBarProtocol.h */,
-				EDB093A76F2F0C77BF0C19B90546112E /* VVTabBarRedPointViewProtocol.h */,
+				1C8EACAC48790A6200D4BCD5BB02F0C5 /* KTTabBarProtocol.h */,
+				EDB093A76F2F0C77BF0C19B90546112E /* KTTabBarRedPointViewProtocol.h */,
 			);
 			name = Protocol;
 			path = KTUILibrary/TabBar/Protocol;
@@ -846,14 +846,13 @@
 		0F6BD9655987DC123932BCC0E956BFE8 /* BarBackground */ = {
 			isa = PBXGroup;
 			children = (
-				D36F251E021CF223668451D0D389A7B8 /* VVBarBackgroundShadowView.h */,
-				E9851FE322440A6663B8BF51A0E1B21C /* VVBarBackgroundShadowView.m */,
-				794EA6E913F0BA7228265C1E2E779D2F /* VVBarBackgroundView.h */,
-				C45DF60898A7BA62D11622DA590456A1 /* VVBarBackgroundView.m */,
-				CD4704EE12639ACB0C006230B797D8BD /* VVBarBackgroundVisualEffectView.h */,
-				3F0667A853376AB5F67629730CFD18A8 /* VVBarBackgroundVisualEffectView.m */,
+				D36F251E021CF223668451D0D389A7B8 /* KTBarBackgroundShadowView.h */,
+				E9851FE322440A6663B8BF51A0E1B21C /* KTBarBackgroundShadowView.m */,
+				794EA6E913F0BA7228265C1E2E779D2F /* KTBarBackgroundView.h */,
+				C45DF60898A7BA62D11622DA590456A1 /* KTBarBackgroundView.m */,
+				CD4704EE12639ACB0C006230B797D8BD /* KTBarBackgroundVisualEffectView.h */,
+				3F0667A853376AB5F67629730CFD18A8 /* KTBarBackgroundVisualEffectView.m */,
 			);
-			name = BarBackground;
 			path = BarBackground;
 			sourceTree = "<group>";
 		};
@@ -884,26 +883,25 @@
 		176E53DADC3D01A8D804A97D98DD753C /* BarBackground */ = {
 			isa = PBXGroup;
 			children = (
-				1810A765CDD07702A6618C6FD2507C08 /* VVBarBackgroundModel.h */,
-				B672827791C6A47173170F5840A19B56 /* VVBarBackgroundModel.m */,
+				1810A765CDD07702A6618C6FD2507C08 /* KTBarBackgroundModel.h */,
+				B672827791C6A47173170F5840A19B56 /* KTBarBackgroundModel.m */,
 			);
-			name = BarBackground;
 			path = BarBackground;
 			sourceTree = "<group>";
 		};
 		1CA6A8CC49EA9A7A1E86ECB1464A249C /* View */ = {
 			isa = PBXGroup;
 			children = (
-				8CBC764408053C21A7DB3E90FA1CC251 /* VVMiddleTabBarButton.h */,
-				5CF18C1BEE4960E3AC3F3AD4D1E48E0F /* VVMiddleTabBarButton.m */,
-				54623DFC46125F3326643D5B22785429 /* VVTabBar.h */,
-				91606C0A4064AEE3872F15557B355E79 /* VVTabBar.m */,
-				287E587295DA2ED44B8002D18E464CFB /* VVTabBarBackgroundView.h */,
-				A4125D2414E6F67CE9DAC8214D709639 /* VVTabBarBackgroundView.m */,
-				D7AB22CF3DC7E9EE5ED6961531BCC98D /* VVTabBarBaseButton.h */,
-				5ED490307C9394EE747DEBA20D31B4E8 /* VVTabBarBaseButton.m */,
-				ED901B927434801AEEE9F51B5F2047BC /* VVTabBarButton.h */,
-				0FDA03049AB5F621DF7130C7E1517558 /* VVTabBarButton.m */,
+				8CBC764408053C21A7DB3E90FA1CC251 /* KTMiddleTabBarButton.h */,
+				5CF18C1BEE4960E3AC3F3AD4D1E48E0F /* KTMiddleTabBarButton.m */,
+				54623DFC46125F3326643D5B22785429 /* KTTabBar.h */,
+				91606C0A4064AEE3872F15557B355E79 /* KTTabBar.m */,
+				287E587295DA2ED44B8002D18E464CFB /* KTTabBarBackgroundView.h */,
+				A4125D2414E6F67CE9DAC8214D709639 /* KTTabBarBackgroundView.m */,
+				D7AB22CF3DC7E9EE5ED6961531BCC98D /* KTTabBarBaseButton.h */,
+				5ED490307C9394EE747DEBA20D31B4E8 /* KTTabBarBaseButton.m */,
+				ED901B927434801AEEE9F51B5F2047BC /* KTTabBarButton.h */,
+				0FDA03049AB5F621DF7130C7E1517558 /* KTTabBarButton.m */,
 			);
 			name = View;
 			path = KTUILibrary/TabBar/View;
@@ -1035,7 +1033,6 @@
 				874AD852B5B8358FEF51009B88B6C6A2 /* Core */,
 				B8DA64A4541906AC13CB938BFD85ED91 /* Support Files */,
 			);
-			name = SDWebImage;
 			path = SDWebImage;
 			sourceTree = "<group>";
 		};
@@ -1049,25 +1046,23 @@
 				8B1A813A308199E405EF971F8CFD8456 /* NSObject+FBKVOController.m */,
 				9B50F96FD8172EA78333BFAEAE943A61 /* Support Files */,
 			);
-			name = KVOController;
 			path = KVOController;
 			sourceTree = "<group>";
 		};
 		62FCDAFED97B8BA222DB5624301A1B4D /* Base */ = {
 			isa = PBXGroup;
 			children = (
-				9FDBDF899A5B8511B888B8D099680274 /* VVNavigationBaseView.h */,
-				74818C9E9D025C5FF31E70EBC676B112 /* VVNavigationBaseView.m */,
+				9FDBDF899A5B8511B888B8D099680274 /* KTNavigationBaseView.h */,
+				74818C9E9D025C5FF31E70EBC676B112 /* KTNavigationBaseView.m */,
 			);
-			name = Base;
 			path = Base;
 			sourceTree = "<group>";
 		};
 		837B673F0F210E5C113CF2365135B110 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				F6F3139E3550532FB638EF27AFC32F12 /* VVNavigationItem.h */,
-				63F381416C78515B6F46CC4EBFA0E818 /* VVNavigationItem.m */,
+				F6F3139E3550532FB638EF27AFC32F12 /* KTNavigationItem.h */,
+				63F381416C78515B6F46CC4EBFA0E818 /* KTNavigationItem.m */,
 				176E53DADC3D01A8D804A97D98DD753C /* BarBackground */,
 				C14846A541EE575B2F4428DBC1179A00 /* Content */,
 			);
@@ -1105,7 +1100,6 @@
 				4F5E5F4954849DF7866C743399BC884D /* ViewController+MASAdditions.m */,
 				3C1B3938D7286C01392DD0622B645E4D /* Support Files */,
 			);
-			name = Masonry;
 			path = Masonry;
 			sourceTree = "<group>";
 		};
@@ -1272,8 +1266,8 @@
 		8F17FC4BB4B56AF5B5D840CDB3546EA0 /* Tabbar */ = {
 			isa = PBXGroup;
 			children = (
-				2F124023A67F558DA85AFC484E93F150 /* VVTabBarController.h */,
-				8BEAA1286188EBD9490DA8E584EDCCBD /* VVTabBarController.m */,
+				2F124023A67F558DA85AFC484E93F150 /* KTTabBarController.h */,
+				8BEAA1286188EBD9490DA8E584EDCCBD /* KTTabBarController.m */,
 				D3436F1E726CECBB9D50352E2B8DE2BE /* Model */,
 				0DA25F361C840AE038BB7E73845C112D /* Protocol */,
 				98B9DC42AEC9B4CCEAF9572E237810D9 /* RedPoint */,
@@ -1289,17 +1283,16 @@
 				0C9FE0335E1C3C713CEBBAB1EFA5F6FD /* Macros */,
 				119C0C202EC744BFC7891137A01AB539 /* Support Files */,
 			);
-			name = KTFoundation;
 			path = KTFoundation;
 			sourceTree = "<group>";
 		};
 		98B9DC42AEC9B4CCEAF9572E237810D9 /* RedPoint */ = {
 			isa = PBXGroup;
 			children = (
-				68F1066521BCCE2E71BA3B5B3095D709 /* VVTabBarNormalRedPointView.h */,
-				F6529F9AF7250599263B1797E0142A9F /* VVTabBarNormalRedPointView.m */,
-				5213B997BCCF07F59FD5625E3578DD14 /* VVTabBarNumRedPointView.h */,
-				56B65516FF276BE539A16C28948B5191 /* VVTabBarNumRedPointView.m */,
+				68F1066521BCCE2E71BA3B5B3095D709 /* KTTabBarNormalRedPointView.h */,
+				F6529F9AF7250599263B1797E0142A9F /* KTTabBarNormalRedPointView.m */,
+				5213B997BCCF07F59FD5625E3578DD14 /* KTTabBarNumRedPointView.h */,
+				56B65516FF276BE539A16C28948B5191 /* KTTabBarNumRedPointView.m */,
 			);
 			name = RedPoint;
 			path = KTUILibrary/TabBar/RedPoint;
@@ -1332,11 +1325,11 @@
 		9DBCCC82F6BFA3B1E73C2371A4703964 /* Navigation */ = {
 			isa = PBXGroup;
 			children = (
-				8B094FFB96FBD17871EC004EC61EBFB9 /* VVBackButtonHandlerProtocol.h */,
-				5F6D81E132E4151A886153157A86284F /* VVNavigationController.h */,
-				39E660B7665989805F6836528774C5ED /* VVNavigationController.m */,
-				720DA694222471B36CCF654BD3B58845 /* VVNavigationControllerProtocol.h */,
-				5827D00BF621ECD78F212C824633A9DF /* VVViewProtocol.h */,
+				8B094FFB96FBD17871EC004EC61EBFB9 /* KTBackButtonHandlerProtocol.h */,
+				5F6D81E132E4151A886153157A86284F /* KTNavigationController.h */,
+				39E660B7665989805F6836528774C5ED /* KTNavigationController.m */,
+				720DA694222471B36CCF654BD3B58845 /* KTNavigationControllerProtocol.h */,
+				5827D00BF621ECD78F212C824633A9DF /* KTViewProtocol.h */,
 				837B673F0F210E5C113CF2365135B110 /* Model */,
 				B0DE0C0A2901862FD66CC8D281601693 /* View */,
 			);
@@ -1356,10 +1349,10 @@
 		B0DE0C0A2901862FD66CC8D281601693 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B309976602770F0EF7EB874B3C5EB18B /* VVEmptyNavigationBar.h */,
-				97AE76620E8110A97B85CEF1A4C21B10 /* VVEmptyNavigationBar.m */,
-				7C7C2229DD782B754258C63BD50AEC80 /* VVNavigationBar.h */,
-				F4B7064E77804A07427F22D0CEBF4453 /* VVNavigationBar.m */,
+				B309976602770F0EF7EB874B3C5EB18B /* KTEmptyNavigationBar.h */,
+				97AE76620E8110A97B85CEF1A4C21B10 /* KTEmptyNavigationBar.m */,
+				7C7C2229DD782B754258C63BD50AEC80 /* KTNavigationBar.h */,
+				F4B7064E77804A07427F22D0CEBF4453 /* KTNavigationBar.m */,
 				0F6BD9655987DC123932BCC0E956BFE8 /* BarBackground */,
 				62FCDAFED97B8BA222DB5624301A1B4D /* Base */,
 				CB266FDE9999F07F29127BA6D4E7F621 /* Content */,
@@ -1386,12 +1379,11 @@
 		C14846A541EE575B2F4428DBC1179A00 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				23B95A3C9423A2369C027C5C41785374 /* VVBackBarButtonItem.h */,
-				3DA55389333DB24465438970583BE0ED /* VVBackBarButtonItem.m */,
-				11493F3A9DAA613F52F471E8094F7061 /* VVBarButtonItem.h */,
-				78C0C68B73FADC3ED97F6E71FACE9D0F /* VVBarButtonItem.m */,
+				23B95A3C9423A2369C027C5C41785374 /* KTBackBarButtonItem.h */,
+				3DA55389333DB24465438970583BE0ED /* KTBackBarButtonItem.m */,
+				11493F3A9DAA613F52F471E8094F7061 /* KTBarButtonItem.h */,
+				78C0C68B73FADC3ED97F6E71FACE9D0F /* KTBarButtonItem.m */,
 			);
-			name = Content;
 			path = Content;
 			sourceTree = "<group>";
 		};
@@ -1407,12 +1399,11 @@
 		CB266FDE9999F07F29127BA6D4E7F621 /* Content */ = {
 			isa = PBXGroup;
 			children = (
-				31E777849C9607027EECB2267CD95F07 /* VVButtonBarButton.h */,
-				1A9FEBC64374B339EBD5D609E5FDEBAE /* VVButtonBarButton.m */,
-				DD047CD85A839E221AA04BF2984580F5 /* VVNavigationBarContentView.h */,
-				6266FBE9EC577E4DB794F45474809D0C /* VVNavigationBarContentView.m */,
+				31E777849C9607027EECB2267CD95F07 /* KTButtonBarButton.h */,
+				1A9FEBC64374B339EBD5D609E5FDEBAE /* KTButtonBarButton.m */,
+				DD047CD85A839E221AA04BF2984580F5 /* KTNavigationBarContentView.h */,
+				6266FBE9EC577E4DB794F45474809D0C /* KTNavigationBarContentView.m */,
 			);
-			name = Content;
 			path = Content;
 			sourceTree = "<group>";
 		};
@@ -1431,14 +1422,14 @@
 		D3436F1E726CECBB9D50352E2B8DE2BE /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				A9EA762119AC94CD49D4E42C5E1A2308 /* VVMiddleTabBarModel.h */,
-				4F70CEF2BCE51D10CE26471E6928505D /* VVMiddleTabBarModel.m */,
-				0A200EF03A6C57AC263B4D5F2487E008 /* VVTabBarBaseModel.h */,
-				D161868B93AE8A6A5B9DEAFB20756D14 /* VVTabBarBaseModel.m */,
-				AD4739DC150AA2DDA199372ED1A884D8 /* VVTabBarConfigModel.h */,
-				3B03C25B75C650A4DCD7592C44125FA0 /* VVTabBarConfigModel.m */,
-				17D7D3A812876F2FB42AE8AC4E2AE335 /* VVTabBarModel.h */,
-				88F009C3C8EBF3106BA4BED1D785B1C5 /* VVTabBarModel.m */,
+				A9EA762119AC94CD49D4E42C5E1A2308 /* KTMiddleTabBarModel.h */,
+				4F70CEF2BCE51D10CE26471E6928505D /* KTMiddleTabBarModel.m */,
+				0A200EF03A6C57AC263B4D5F2487E008 /* KTTabBarBaseModel.h */,
+				D161868B93AE8A6A5B9DEAFB20756D14 /* KTTabBarBaseModel.m */,
+				AD4739DC150AA2DDA199372ED1A884D8 /* KTTabBarConfigModel.h */,
+				3B03C25B75C650A4DCD7592C44125FA0 /* KTTabBarConfigModel.m */,
+				17D7D3A812876F2FB42AE8AC4E2AE335 /* KTTabBarModel.h */,
+				88F009C3C8EBF3106BA4BED1D785B1C5 /* KTTabBarModel.m */,
 			);
 			name = Model;
 			path = KTUILibrary/TabBar/Model;
@@ -1546,36 +1537,36 @@
 				FDEB6161A8E3944AB9DC6E70159EE136 /* KTImageLabel.h in Headers */,
 				29B8FE69576F488B8C9114144BD38CE6 /* KTToast.h in Headers */,
 				8053615ABFC39553B8A104CF9B5CD61E /* KTUILibrary-umbrella.h in Headers */,
-				EAE3705AD377D40935AC97DAE41F24FC /* VVBackBarButtonItem.h in Headers */,
-				D6D8E90855166954B5DACA0A1C984316 /* VVBackButtonHandlerProtocol.h in Headers */,
-				29C55AE60CA7ECAAF305563EDF7C17BA /* VVBarBackgroundModel.h in Headers */,
-				842E114EAC7812B3CCAB864A61E762D8 /* VVBarBackgroundShadowView.h in Headers */,
-				8F862FD9679634AB72B7FC53126ED46E /* VVBarBackgroundView.h in Headers */,
-				C9F2AF6D591816EA4E2990410E8A6285 /* VVBarBackgroundVisualEffectView.h in Headers */,
-				3CF44A27FA2F506805A4DC9D3090AF00 /* VVBarButtonItem.h in Headers */,
-				53CB5A9A0E1FF829409050A89107F37D /* VVButtonBarButton.h in Headers */,
-				5ACCAFB3366DB1F1E0D041407C35A223 /* VVEmptyNavigationBar.h in Headers */,
-				4DECF9A7B201D7F8A6A373EC30F0E4F6 /* VVMiddleTabBarButton.h in Headers */,
-				A8A71D5F10880D43E788F4EDA435BDE7 /* VVMiddleTabBarModel.h in Headers */,
-				5F4552E23FB7EC441AFD481442A5D1F4 /* VVNavigationBar.h in Headers */,
-				CA9D22BBA8870B5C636B7E454C701A23 /* VVNavigationBarContentView.h in Headers */,
-				E8181CD4C68C7F94674E983C23265E5F /* VVNavigationBaseView.h in Headers */,
-				671F2E56B1EE8248E4BD95590079E27E /* VVNavigationController.h in Headers */,
-				D9371A24D9A8DF2C7D28FF3412A4DEC4 /* VVNavigationControllerProtocol.h in Headers */,
-				88E80274256872AA35DEB424B591AF48 /* VVNavigationItem.h in Headers */,
-				D455B234E9604B04112E953B4A2F8611 /* VVTabBar.h in Headers */,
-				32A3616CA805D9C75E91D965A98D3FE3 /* VVTabBarBackgroundView.h in Headers */,
-				D79A70B27C3592A841150F2EF3926CC8 /* VVTabBarBaseButton.h in Headers */,
-				D81950A947090CCE296BCD149FB72AA0 /* VVTabBarBaseModel.h in Headers */,
-				8CD3D162CD872137DAB47C83E32DC30F /* VVTabBarButton.h in Headers */,
-				14A8B46A2349B7914CB5DE974CD86203 /* VVTabBarConfigModel.h in Headers */,
-				AB9356FCAD816C47730DD425EECE8DEF /* VVTabBarController.h in Headers */,
-				40CC2498E66E100D4E2DF9ACB4829689 /* VVTabBarModel.h in Headers */,
-				B09D3CBF287FCF17BC04193151C7224E /* VVTabBarNormalRedPointView.h in Headers */,
-				1FA24E1803AAF526DD278ADEE870C66D /* VVTabBarNumRedPointView.h in Headers */,
-				C1607F75D76F6D56DEC896CD00F3646E /* VVTabBarProtocol.h in Headers */,
-				CC78211667FC74CEDBA99596F0E75D62 /* VVTabBarRedPointViewProtocol.h in Headers */,
-				12D1560C7A56AB2B3A0D69C4AA3C0972 /* VVViewProtocol.h in Headers */,
+				EAE3705AD377D40935AC97DAE41F24FC /* KTBackBarButtonItem.h in Headers */,
+				D6D8E90855166954B5DACA0A1C984316 /* KTBackButtonHandlerProtocol.h in Headers */,
+				29C55AE60CA7ECAAF305563EDF7C17BA /* KTBarBackgroundModel.h in Headers */,
+				842E114EAC7812B3CCAB864A61E762D8 /* KTBarBackgroundShadowView.h in Headers */,
+				8F862FD9679634AB72B7FC53126ED46E /* KTBarBackgroundView.h in Headers */,
+				C9F2AF6D591816EA4E2990410E8A6285 /* KTBarBackgroundVisualEffectView.h in Headers */,
+				3CF44A27FA2F506805A4DC9D3090AF00 /* KTBarButtonItem.h in Headers */,
+				53CB5A9A0E1FF829409050A89107F37D /* KTButtonBarButton.h in Headers */,
+				5ACCAFB3366DB1F1E0D041407C35A223 /* KTEmptyNavigationBar.h in Headers */,
+				4DECF9A7B201D7F8A6A373EC30F0E4F6 /* KTMiddleTabBarButton.h in Headers */,
+				A8A71D5F10880D43E788F4EDA435BDE7 /* KTMiddleTabBarModel.h in Headers */,
+				5F4552E23FB7EC441AFD481442A5D1F4 /* KTNavigationBar.h in Headers */,
+				CA9D22BBA8870B5C636B7E454C701A23 /* KTNavigationBarContentView.h in Headers */,
+				E8181CD4C68C7F94674E983C23265E5F /* KTNavigationBaseView.h in Headers */,
+				671F2E56B1EE8248E4BD95590079E27E /* KTNavigationController.h in Headers */,
+				D9371A24D9A8DF2C7D28FF3412A4DEC4 /* KTNavigationControllerProtocol.h in Headers */,
+				88E80274256872AA35DEB424B591AF48 /* KTNavigationItem.h in Headers */,
+				D455B234E9604B04112E953B4A2F8611 /* KTTabBar.h in Headers */,
+				32A3616CA805D9C75E91D965A98D3FE3 /* KTTabBarBackgroundView.h in Headers */,
+				D79A70B27C3592A841150F2EF3926CC8 /* KTTabBarBaseButton.h in Headers */,
+				D81950A947090CCE296BCD149FB72AA0 /* KTTabBarBaseModel.h in Headers */,
+				8CD3D162CD872137DAB47C83E32DC30F /* KTTabBarButton.h in Headers */,
+				14A8B46A2349B7914CB5DE974CD86203 /* KTTabBarConfigModel.h in Headers */,
+				AB9356FCAD816C47730DD425EECE8DEF /* KTTabBarController.h in Headers */,
+				40CC2498E66E100D4E2DF9ACB4829689 /* KTTabBarModel.h in Headers */,
+				B09D3CBF287FCF17BC04193151C7224E /* KTTabBarNormalRedPointView.h in Headers */,
+				1FA24E1803AAF526DD278ADEE870C66D /* KTTabBarNumRedPointView.h in Headers */,
+				C1607F75D76F6D56DEC896CD00F3646E /* KTTabBarProtocol.h in Headers */,
+				CC78211667FC74CEDBA99596F0E75D62 /* KTTabBarRedPointViewProtocol.h in Headers */,
+				12D1560C7A56AB2B3A0D69C4AA3C0972 /* KTViewProtocol.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2005,31 +1996,31 @@
 				C589A43976BF47F1FB08D67C89877006 /* KTImageLabel.m in Sources */,
 				ACF4CD6DBF7396159425BECF216FDFDB /* KTToast.m in Sources */,
 				0C5EB1FC32EB4BDE16DDA2305A5E4B56 /* KTUILibrary-dummy.m in Sources */,
-				66C530DDF88325249C34AFE3FC449AB0 /* VVBackBarButtonItem.m in Sources */,
-				8A2669131CC31112AE7739ADA6428F55 /* VVBarBackgroundModel.m in Sources */,
-				356F9BBAB76C5611E39F578E0BDA1961 /* VVBarBackgroundShadowView.m in Sources */,
-				14DD39845916D7EC566474B430200756 /* VVBarBackgroundView.m in Sources */,
-				46A248A7038DAA85EE23644795A6ED11 /* VVBarBackgroundVisualEffectView.m in Sources */,
-				155EFEA8FED2F5F439FD634714F7DC6B /* VVBarButtonItem.m in Sources */,
-				AF465527C35EDF33F0086B00D872F40D /* VVButtonBarButton.m in Sources */,
-				0AE91B7DD666E2FE678E3D778EED73F0 /* VVEmptyNavigationBar.m in Sources */,
-				CBAC7BC169CF47E9DA489874984F5BEF /* VVMiddleTabBarButton.m in Sources */,
-				9E62211D8CAF1F0C686654F72981750A /* VVMiddleTabBarModel.m in Sources */,
-				DD7A88274302F9C74CC64F9D5FF270B6 /* VVNavigationBar.m in Sources */,
-				5D711C6B72ABE10F6E4A8142B4FEEBC5 /* VVNavigationBarContentView.m in Sources */,
-				36257716BD3676E790267647F4E7CFD2 /* VVNavigationBaseView.m in Sources */,
-				6330CBDE70AB802BFDD6D4325102039D /* VVNavigationController.m in Sources */,
-				BBA2258511C4F72DF612D9BD20B37753 /* VVNavigationItem.m in Sources */,
-				E27EB69A87844B0E5A01D33BBE52D785 /* VVTabBar.m in Sources */,
-				32A9748294E141816EAA4FE437158AAF /* VVTabBarBackgroundView.m in Sources */,
-				40CEE290E2233ADA4DD5BDFC79438754 /* VVTabBarBaseButton.m in Sources */,
-				D5BAB3CA288020D4060F194F1006D7A1 /* VVTabBarBaseModel.m in Sources */,
-				25FEC027CFB81FB34944F0F9E25282F2 /* VVTabBarButton.m in Sources */,
-				C5EE53B8E84C1B258BD81147DE415BB5 /* VVTabBarConfigModel.m in Sources */,
-				EFBCF36306F49EF807EDF06F09774808 /* VVTabBarController.m in Sources */,
-				297C3801F66C5BA1F39CE54E3495B5B2 /* VVTabBarModel.m in Sources */,
-				47255504CE0A47FEC027EE36E172D29F /* VVTabBarNormalRedPointView.m in Sources */,
-				F964511506F92464CEF1BC5325DBBA77 /* VVTabBarNumRedPointView.m in Sources */,
+				66C530DDF88325249C34AFE3FC449AB0 /* KTBackBarButtonItem.m in Sources */,
+				8A2669131CC31112AE7739ADA6428F55 /* KTBarBackgroundModel.m in Sources */,
+				356F9BBAB76C5611E39F578E0BDA1961 /* KTBarBackgroundShadowView.m in Sources */,
+				14DD39845916D7EC566474B430200756 /* KTBarBackgroundView.m in Sources */,
+				46A248A7038DAA85EE23644795A6ED11 /* KTBarBackgroundVisualEffectView.m in Sources */,
+				155EFEA8FED2F5F439FD634714F7DC6B /* KTBarButtonItem.m in Sources */,
+				AF465527C35EDF33F0086B00D872F40D /* KTButtonBarButton.m in Sources */,
+				0AE91B7DD666E2FE678E3D778EED73F0 /* KTEmptyNavigationBar.m in Sources */,
+				CBAC7BC169CF47E9DA489874984F5BEF /* KTMiddleTabBarButton.m in Sources */,
+				9E62211D8CAF1F0C686654F72981750A /* KTMiddleTabBarModel.m in Sources */,
+				DD7A88274302F9C74CC64F9D5FF270B6 /* KTNavigationBar.m in Sources */,
+				5D711C6B72ABE10F6E4A8142B4FEEBC5 /* KTNavigationBarContentView.m in Sources */,
+				36257716BD3676E790267647F4E7CFD2 /* KTNavigationBaseView.m in Sources */,
+				6330CBDE70AB802BFDD6D4325102039D /* KTNavigationController.m in Sources */,
+				BBA2258511C4F72DF612D9BD20B37753 /* KTNavigationItem.m in Sources */,
+				E27EB69A87844B0E5A01D33BBE52D785 /* KTTabBar.m in Sources */,
+				32A9748294E141816EAA4FE437158AAF /* KTTabBarBackgroundView.m in Sources */,
+				40CEE290E2233ADA4DD5BDFC79438754 /* KTTabBarBaseButton.m in Sources */,
+				D5BAB3CA288020D4060F194F1006D7A1 /* KTTabBarBaseModel.m in Sources */,
+				25FEC027CFB81FB34944F0F9E25282F2 /* KTTabBarButton.m in Sources */,
+				C5EE53B8E84C1B258BD81147DE415BB5 /* KTTabBarConfigModel.m in Sources */,
+				EFBCF36306F49EF807EDF06F09774808 /* KTTabBarController.m in Sources */,
+				297C3801F66C5BA1F39CE54E3495B5B2 /* KTTabBarModel.m in Sources */,
+				47255504CE0A47FEC027EE36E172D29F /* KTTabBarNormalRedPointView.m in Sources */,
+				F964511506F92464CEF1BC5325DBBA77 /* KTTabBarNumRedPointView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2550,8 +2541,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
