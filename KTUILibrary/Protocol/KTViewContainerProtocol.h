@@ -42,6 +42,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 移除监听，dealloc时移除
 - (void)kt_removeObservers;
 
+/// 更新数据
+- (void)updateWithModel:(id)model;
+
 @end
 
 NS_ASSUME_NONNULL_END
