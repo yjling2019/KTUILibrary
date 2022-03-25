@@ -10,6 +10,10 @@
 #ifndef KTViewControllerProtocol_h
 #define KTViewControllerProtocol_h
 
+#define KTSynthesizeViewControllerProtocol \
+@synthesize inputJson = _inputJson;\
+@synthesize inputModel = _inputModel;\
+
 @protocol KTViewControllerProtocol <NSObject>
 
 @optional
@@ -24,6 +28,9 @@
 ///  使用类方法根据model初始化
 /// @param model 数据模型
 + (instancetype)kt_controllerWithModel:(id)model;
+
+@property (nonatomic, strong) NSDictionary *inputJson;
+@property (nonatomic, strong) id inputModel;
 
 @end
 

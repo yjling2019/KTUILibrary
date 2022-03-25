@@ -7,6 +7,9 @@
 
 #import <Foundation/Foundation.h>
 
+#define KTSynthesizeNavigationControllerProtocol \
+@synthesize useCustomNavigationBar = _useCustomNavigationBar;\
+
 NS_ASSUME_NONNULL_BEGIN
 
 @protocol KTNavigationControllerProtocol <NSObject>
