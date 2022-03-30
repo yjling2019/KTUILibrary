@@ -14,18 +14,18 @@ static KTImageDownloadBlock imageDownloader = nil;
 
 @interface KTImageLabel ()
 
-@property (strong, nonatomic) UILabel *label;
-@property (strong, nonatomic) UIImageView *contentImageView;
-@property (strong, nonatomic) UIImageView *backgroundImageView;
+@property (nonatomic, strong) UILabel *label;
+@property (nonatomic, strong) UIImageView *contentImageView;
+@property (nonatomic, strong) UIImageView *backgroundImageView;
 
-@property (assign, nonatomic) KTImageLabelContentImagePosition contentImagePosition_;
-@property (assign, nonatomic) KTImageLabelContentImageAlign contentImageAlign_;
-@property (assign, nonatomic) CGFloat alignOffset_;
-@property (assign, nonatomic) UIEdgeInsets textEdge_;
-@property (assign, nonatomic) UIEdgeInsets contentImageEdge_;
-@property (assign, nonatomic) CGFloat contentSpace_;
-@property (assign, nonatomic) BOOL autoWrap_;
-@property (assign, nonatomic) CGSize contentImageSize_;
+@property (nonatomic, assign) KTImageLabelContentImagePosition contentImagePosition_;
+@property (nonatomic, assign) KTImageLabelContentImageAlign contentImageAlign_;
+@property (nonatomic, assign) CGFloat alignOffset_;
+@property (nonatomic, assign) UIEdgeInsets textEdge_;
+@property (nonatomic, assign) UIEdgeInsets contentImageEdge_;
+@property (nonatomic, assign) CGFloat contentSpace_;
+@property (nonatomic, assign) BOOL autoWrap_;
+@property (nonatomic, assign) CGSize contentImageSize_;
 @end
 
 @implementation KTImageLabel
