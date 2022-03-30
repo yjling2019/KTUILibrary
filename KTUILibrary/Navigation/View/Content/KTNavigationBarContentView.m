@@ -40,10 +40,10 @@
         [self setUpUI];
         
 		@weakify(self);
-		[self.KVOController observe:self
-							keyPath:@"model"
-							options:NSKeyValueObservingOptionNew
-							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		[self.KVOControllerNonRetaining observe:self
+										keyPath:@"model"
+										options:NSKeyValueObservingOptionNew
+										  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 			@strongify(self);
 			[self addObservers];
 		}];
@@ -90,7 +90,10 @@
 - (void)addObservers
 {
 	@weakify(self);
-	[self.KVOController observe:self keyPath:@"model.title" options:NSKeyValueObservingOptionNew block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.title"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self);
 		[self setUpAlpha];
 		[self setUpTitle];
@@ -100,36 +103,36 @@
         @"model.alpha",
         @"model.barBGModel.darkColor"
     ];
-	[self.KVOController observe:self
-					   keyPaths:keyPaths
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+								   keyPaths:keyPaths
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		[self setUpAlpha];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"model.backBarButtonItem"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.backBarButtonItem"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		[self arrangeBackBarButtonItem];
 		[self setUpTitle];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"model.rightBarButtonItem"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.rightBarButtonItem"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		[self arrangeRightBarButtonItem];
 		[self setUpTitle];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"model.rightBarButtonItems"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.rightBarButtonItems"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		[self arrangeRightBarButtonItems];
 		[self setUpTitle];

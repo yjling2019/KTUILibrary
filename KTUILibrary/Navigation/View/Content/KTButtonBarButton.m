@@ -37,10 +37,10 @@ static NSString * const KTButtonBarButtonString = @"KTButtonBarButtonString";
         [self bindUIActions];
         
 		@weakify(self);
-		[self.KVOController observe:self
-							keyPath:@"model"
-							options:NSKeyValueObservingOptionNew
-							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		[self.KVOControllerNonRetaining observe:self
+										keyPath:@"model"
+										options:NSKeyValueObservingOptionNew
+										  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 			@strongify(self);
 			[self addObservers];
 		}];
@@ -122,26 +122,26 @@ static NSString * const KTButtonBarButtonString = @"KTButtonBarButtonString";
     void *context = (__bridge void *)string;
     
 	@weakify(self);
-	[self.KVOController observe:self
-						keyPath:@"buttonItem.statusBarStyle"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.statusBarStyle"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		[self setUpImageAndLabel];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"buttonItem.enabled"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.enabled"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		self.enabled = self.buttonItem.enabled;
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"buttonItem.text"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.text"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		self.enabled = self.buttonItem.enabled;
 		self.buttonItem.lightAttrText = nil;
@@ -149,19 +149,19 @@ static NSString * const KTButtonBarButtonString = @"KTButtonBarButtonString";
 		[self setUpImageAndLabel];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"buttonItem.darkImage"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.darkImage"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		self.enabled = self.buttonItem.enabled;
 		[self setUpImageAndLabel];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"buttonItem.lightImage"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.lightImage"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		self.enabled = self.buttonItem.enabled;
 		[self setUpImageAndLabel];

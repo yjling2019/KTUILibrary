@@ -38,10 +38,10 @@
         [self setUpUI];
         
 		@weakify(self);
-		[self.KVOController observe:self
-							keyPath:@"model"
-							options:NSKeyValueObservingOptionNew
-							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		[self.KVOControllerNonRetaining observe:self
+										keyPath:@"model"
+										options:NSKeyValueObservingOptionNew
+										  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 			@strongify(self);
 			[self addObservers];
 		}];
@@ -89,34 +89,34 @@
 - (void)addObservers
 {
 	@weakify(self);
-	[self.KVOController observe:self
-						keyPath:@"model.alpha"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.alpha"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self);
 		[self setUpAlpha];
 	}];
 
-	[self.KVOController observe:self
-						keyPath:@"model.translucent"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.translucent"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self);
 		[self setUpTranslucent];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"model.barBGModel.bgImage"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.barBGModel.bgImage"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self);
 		[self setUpBgImage];
 	}];
 	
-	[self.KVOController observe:self
-						keyPath:@"model.barBGModel.bgColor"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.barBGModel.bgColor"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self);
 		[self setUpBgColor];
 	}];

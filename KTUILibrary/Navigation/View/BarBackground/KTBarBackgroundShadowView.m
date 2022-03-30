@@ -27,10 +27,10 @@
         [self setUpUI];
 			
 		@weakify(self);
-		[self.KVOController observe:self
-							keyPath:@"model"
-							options:NSKeyValueObservingOptionNew
-							  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		[self.KVOControllerNonRetaining observe:self
+										keyPath:@"model"
+										options:NSKeyValueObservingOptionNew
+										  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 			@strongify(self);
 			[self addObservers];
 		}];
@@ -62,10 +62,10 @@
 - (void)addObservers
 {	
 	@weakify(self);
-	[self.KVOController observe:self
-						keyPath:@"model.barBGModel.dividingStyle"
-						options:NSKeyValueObservingOptionNew
-						  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"model.barBGModel.dividingStyle"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 		@strongify(self)
 		[self setUpDividingStyle];
 	}];
