@@ -13,6 +13,9 @@
 #define KTSynthesizeViewControllerProtocol \
 @synthesize inputJson = _inputJson;\
 @synthesize inputModel = _inputModel;\
+@synthesize callBack = _callBack;\
+
+typedef void (^KTViewControllerCallBackBlock)(NSDictionary *data);
 
 @protocol KTViewControllerProtocol <NSObject>
 
@@ -25,12 +28,18 @@
 /// @param json json对象
 + (instancetype)kt_controllerWithJSON:(NSDictionary *)json;
 
+/// 使用类方法根据json对象初始化
+/// @param json json对象
+/// @param callBack 回调block
++ (instancetype)kt_controllerWithJSON:(NSDictionary *)json callBack:(KTViewControllerCallBackBlock)callBack;
+
 ///  使用类方法根据model初始化
 /// @param model 数据模型
 + (instancetype)kt_controllerWithModel:(id)model;
 
 @property (nonatomic, strong) NSDictionary *inputJson;
 @property (nonatomic, strong) id inputModel;
+@property (nonatomic, strong) KTViewControllerCallBackBlock callBack;
 
 @end
 
