@@ -66,7 +66,15 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 #pragma mark - 初始化webview
 - (void)initWebView
 {
+	//js脚本
+	NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+	//注入
+	WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+	WKUserContentController *wkUController = [[WKUserContentController alloc] init];
+	[wkUController addUserScript:wkUScript];
+	
     WKWebViewConfiguration *conf = [[WKWebViewConfiguration alloc] init];
+	conf.userContentController = wkUController;
     //设置是否将数据加载如内存后渲染界面
     conf.suppressesIncrementalRendering = NO;
     if ([conf respondsToSelector:@selector(setWebsiteDataStore:)]) {
@@ -79,7 +87,7 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     
     [self.view addSubview:self.webView];
     [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.mas_offset(UIEdgeInsetsZero);
+        make.edges.mas_equalTo(0);
     }];
     
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
@@ -100,9 +108,6 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     } else if (self.htmlString) {
         [self.webView loadHTMLString:self.htmlString baseURL:nil];
     }
-    
-//    self.bridge = [KTWebKitJavascriptBridge bridgeForWebView:self.webView];
-//	[self registerJSHandlerForBridge:self.bridge];
 }
 
 // 加载进度条
@@ -141,8 +146,7 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     [self.webView.configuration.userContentController addUserScript:cookieScript];
 }
 
-#pragma mark - WKNavigationDelegate
-
+#pragma mark - WKNavigationDelegatesetUpHelp
 - (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation
 {
     //开始加载网页时展示出progressView

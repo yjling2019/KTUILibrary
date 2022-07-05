@@ -56,9 +56,6 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)configWebViewCookies:(nonnull NSDictionary *)cookieDic forKey:(NSString *)key;
 
-#pragma mark - 页面除URL的配置参数
-@property (nonatomic, copy) NSDictionary *routDic; // 由KOTUroute传入的参数
-
 #pragma mark - webView状态回调
 @property (nonatomic, copy) void (^redirectAction)(WKWebView *webView);
 
