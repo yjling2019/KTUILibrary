@@ -64,4 +64,8 @@ Pod::Spec.new do |s|
 	sp.source_files = 'KTUILibrary/Protocol/**/*.{h,m}'
   end
   
+  s.subspec 'Webview' do |sp|
+	sp.source_files = 'KTUILibrary/Webview/**/*.{h,m}'
+  end
+  
 end

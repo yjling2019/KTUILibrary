@@ -45,6 +45,8 @@
 #import "KTTabBarBaseButton.h"
 #import "KTTabBarButton.h"
 #import "KTToast.h"
+#import "KTWebContainerViewController.h"
+#import "KTWebViewControllerHelpProtocol.h"
 
 FOUNDATION_EXPORT double KTUILibraryVersionNumber;
 FOUNDATION_EXPORT const unsigned char KTUILibraryVersionString[];

@@ -1,6 +1,6 @@
 {
   "name": "KTUILibrary",
-  "version": "1.0.0",
+  "version": "1.0.3",
   "summary": "KOTU's UI Library.",
   "description": "KOTU's UI Library.",
   "homepage": "https://github.com/yjling2019/KTUILibrary",
@@ -13,16 +13,15 @@
   },
   "source": {
     "git": "https://github.com/yjling2019/KTUILibrary.git",
-    "tag": "1.0.0"
+    "tag": "1.0.3"
   },
   "platforms": {
     "ios": "9.0"
   },
+  "user_target_xcconfig": {
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
+  },
   "subspecs": [
-    {
-      "name": "Base",
-      "source_files": "KTUILibrary/Base/Classes/*"
-    },
     {
       "name": "Navigation",
       "source_files": "KTUILibrary/Navigation/**/*.{h,m}",
@@ -31,9 +30,6 @@
 
         ],
         "Masonry": [
-
-        ],
-        "KTUILibrary/Base": [
 
         ],
         "KTFoundation": [
@@ -68,7 +64,7 @@
         "Masonry": [
 
         ],
-        "KTUILibrary/Base": [
+        "KTFoundation/Macros": [
 
         ]
       }
@@ -85,6 +81,10 @@
     {
       "name": "Protocol",
       "source_files": "KTUILibrary/Protocol/**/*.{h,m}"
+    },
+    {
+      "name": "Webview",
+      "source_files": "KTUILibrary/Webview/**/*.{h,m}"
     }
   ]
 }

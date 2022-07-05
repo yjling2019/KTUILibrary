@@ -3,7 +3,7 @@
 //  KOTU
 //
 //  Created by KOTU on 2017/5/9.
-//  Copyright © 2017年 FloryDay. All rights reserved.
+//  Copyright © 2017年 KOTU. All rights reserved.
 //
 
 #import "KTToast.h"
