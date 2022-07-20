@@ -66,6 +66,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'Webview' do |sp|
 	sp.source_files = 'KTUILibrary/Webview/**/*.{h,m}'
+	sp.dependency 'Masonry'
   end
   
 end
