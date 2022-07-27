@@ -36,6 +36,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// 容器中刷新UI
 - (void)kt_refreshUI;
 
+/// 容器中强制刷新UI
+- (void)kt_forceRefreshUI;
+
 /// 添加监听，viewDidload时添加
 - (void)kt_addObservers;
 
