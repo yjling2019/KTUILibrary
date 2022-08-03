@@ -1,9 +1,9 @@
 //
 //  UIViewController+TDKeyboardHelp.h
-//  KOTU
+//  FloryDay
 //
 //  Created by KOTU on 12/9/17.
-//  Copyright © 2017年 KOTU. All rights reserved.
+//  Copyright © 2017年 FloryDay. All rights reserved.
 //
 
 //使用方法

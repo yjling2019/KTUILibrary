@@ -1,6 +1,6 @@
 //
 //  NSObject+KVC.m
-//  KTRootLib
+//  VVRootLib
 //
 //  Created by KOTU on 2019/8/9.
 //  Copyright © 2019 com.lebby.www. All rights reserved.

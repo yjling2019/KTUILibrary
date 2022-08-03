@@ -5,31 +5,32 @@ PODS:
   - KTFoundation/Category (0.1.0):
     - KTFoundation/Macros
   - KTFoundation/Macros (0.1.0)
-  - KTUILibrary (1.0.3):
-    - KTUILibrary/EdgesLabel (= 1.0.3)
-    - KTUILibrary/EdgesTextField (= 1.0.3)
-    - KTUILibrary/ImageLabel (= 1.0.3)
-    - KTUILibrary/Navigation (= 1.0.3)
-    - KTUILibrary/Protocol (= 1.0.3)
-    - KTUILibrary/Tabbar (= 1.0.3)
-    - KTUILibrary/Toast (= 1.0.3)
-    - KTUILibrary/Webview (= 1.0.3)
-  - KTUILibrary/EdgesLabel (1.0.3)
-  - KTUILibrary/EdgesTextField (1.0.3)
-  - KTUILibrary/ImageLabel (1.0.3):
+  - KTUILibrary (1.0.5):
+    - KTUILibrary/EdgesLabel (= 1.0.5)
+    - KTUILibrary/EdgesTextField (= 1.0.5)
+    - KTUILibrary/ImageLabel (= 1.0.5)
+    - KTUILibrary/Navigation (= 1.0.5)
+    - KTUILibrary/Protocol (= 1.0.5)
+    - KTUILibrary/Tabbar (= 1.0.5)
+    - KTUILibrary/Toast (= 1.0.5)
+    - KTUILibrary/Webview (= 1.0.5)
+  - KTUILibrary/EdgesLabel (1.0.5)
+  - KTUILibrary/EdgesTextField (1.0.5)
+  - KTUILibrary/ImageLabel (1.0.5):
     - KTFoundation/Macros
     - Masonry
-  - KTUILibrary/Navigation (1.0.3):
+  - KTUILibrary/Navigation (1.0.5):
     - KTFoundation
     - KVOController
     - Masonry
-  - KTUILibrary/Protocol (1.0.3)
-  - KTUILibrary/Tabbar (1.0.3):
+  - KTUILibrary/Protocol (1.0.5)
+  - KTUILibrary/Tabbar (1.0.5):
     - KTFoundation
     - Masonry
-  - KTUILibrary/Toast (1.0.3):
+  - KTUILibrary/Toast (1.0.5):
     - Masonry
-  - KTUILibrary/Webview (1.0.3)
+  - KTUILibrary/Webview (1.0.5):
+    - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
   - SDWebImage (5.12.1):
@@ -54,7 +55,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KTFoundation: 8428d913e636f89554c61e6996935672fb9886a0
-  KTUILibrary: c8e416f8b62c6b9554f9e4c55e77e98d5cac9821
+  KTUILibrary: 517cf4f0ef02b699f0d526210b5f47fae5069fce
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
