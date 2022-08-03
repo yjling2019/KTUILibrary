@@ -76,6 +76,13 @@
     return _darkAttrText;
 }
 
+- (void)setText:(NSString *)text
+{
+	_darkAttrText = nil;
+	_lightAttrText = nil;
+	_text = text;
+}
+
 - (__kindof KTButtonBarButton *)itemGetButton
 {
     return [[KTButtonBarButton alloc] init];

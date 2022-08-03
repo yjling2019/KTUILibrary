@@ -38,7 +38,7 @@ static NSString * const KTButtonBarButtonString = @"KTButtonBarButtonString";
         
 		@weakify(self);
 		[self.KVOControllerNonRetaining observe:self
-										keyPath:@"model"
+										keyPath:@"buttonItem"
 										options:NSKeyValueObservingOptionNew
 										  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
 			@strongify(self);
