@@ -150,6 +150,24 @@ static NSString * const KTButtonBarButtonString = @"KTButtonBarButtonString";
 	}];
 	
 	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.lightAttrText"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		self.enabled = self.buttonItem.enabled;
+		[self setUpImageAndLabel];
+	}];
+	
+	[self.KVOControllerNonRetaining observe:self
+									keyPath:@"buttonItem.darkAttrText"
+									options:NSKeyValueObservingOptionNew
+									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
+		@strongify(self)
+		self.enabled = self.buttonItem.enabled;
+		[self setUpImageAndLabel];
+	}];
+	
+	[self.KVOControllerNonRetaining observe:self
 									keyPath:@"buttonItem.darkImage"
 									options:NSKeyValueObservingOptionNew
 									  block:^(id  _Nullable observer, id  _Nonnull object, NSDictionary<NSString *,id> * _Nonnull change) {
