@@ -117,7 +117,7 @@ static KTImagePicker *ktImagePicker;
 
 #pragma mark - UIImagePickerControllerDelegate
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
-{
+{	
 	[picker dismissViewControllerAnimated:YES completion:nil];
 
 	UIImage *image = info[UIImagePickerControllerEditedImage];
@@ -175,11 +175,6 @@ static KTImagePicker *ktImagePicker;
 		_config = KTImagePickerConfig.new;
 	}
 	return _config;
-}
-
-- (void)dealloc
-{
-	NSLog(@"aaaaa");
 }
 
 @end
