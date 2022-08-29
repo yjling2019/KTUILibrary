@@ -144,6 +144,7 @@ static KTImagePicker *ktImagePicker;
 {
 	[picker dismissViewControllerAnimated:YES completion:nil];
 	
+	__block NSString *errorMsg;
 	dispatch_group_t group = dispatch_group_create();
 	
 	NSMutableArray *images = [NSMutableArray array];
@@ -151,7 +152,9 @@ static KTImagePicker *ktImagePicker;
 		dispatch_group_enter(group);
 		[result.itemProvider loadObjectOfClass:[UIImage class]
 							completionHandler:^(__kindof id<NSItemProviderReading>  _Nullable object, NSError * _Nullable error) {
-			if ([object isKindOfClass:[UIImage class]]) {
+			if (error) {
+				errorMsg = error.localizedDescription;
+			} else if ([object isKindOfClass:[UIImage class]]) {
 				[images addObject:object];
 			}
 			dispatch_group_leave(group);
@@ -159,11 +162,10 @@ static KTImagePicker *ktImagePicker;
 	}
 	
 	dispatch_group_notify(group, dispatch_get_main_queue(), ^{
-		if (images.count > 0 && self.completionBlock) {
-			KTImagePickerResult *rs = KTImagePickerResult.new;
-			rs.images = images;
-			self.completionBlock(rs);
-		}
+		KTImagePickerResult *rs = KTImagePickerResult.new;
+		rs.images = images;
+		rs.errorMsg = errorMsg;
+		self.completionBlock(rs);
 		[self free];
 	});
 }

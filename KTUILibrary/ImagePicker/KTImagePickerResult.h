@@ -12,6 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface KTImagePickerResult : NSObject
 
 @property (nonatomic, strong) NSArray <UIImage *> *images;
+@property (nonatomic, strong) NSString *errorMsg;
 
 @end
 
