@@ -280,6 +280,49 @@
 	return values;
 }
 
+- (nullable NSMutableArray *)kt_valueArrayWithKeyPath:(nonnull NSString *)keyPath
+{
+	if (!keyPath) {
+#if DEBUG
+		NSAssert(NO, @"key can not be nil");
+#endif
+		return nil;
+	}
+	
+	NSArray *paths = [keyPath componentsSeparatedByString:@"."];
+	NSMutableArray *results;
+	
+	for (NSString *path in paths) {
+		NSMutableArray *values = [NSMutableArray new];
+		for (NSObject *obj in (results?:self)) {
+			if ([obj isKindOfClass:[NSDictionary class]]) {
+				NSDictionary *dic = (NSDictionary *)obj;
+				id value = [dic objectForKey:path];
+				if (!value) {
+					continue;
+				}
+				[values addObject:value];
+			} else if ([obj isKindOfClass:[NSArray class]]) {
+				[values addObjectsFromArray:[(NSArray *)obj kt_valueArrayWithKey:path]];
+			} else {
+				SEL selector = NSSelectorFromString(path);
+				if (![obj respondsToSelector:selector]) {
+					continue;
+				}
+				id value = [obj valueForKey:path];
+				if (!value) {
+					continue;
+				}
+				[values addObject:value];
+			}
+		}
+		
+		results = values;
+	}
+	
+	return results;
+}
+
 /// 获取数组元素中key对应的value的集合组成的数据，返回的数组内的元素是不相同
 /// @param key key
 - (NSArray *)kt_uniqueValuesWithKey:(nonnull NSString *)key {
@@ -352,6 +395,24 @@
 		}
 	}];
 	return [array copy];
+}
+
+- (nullable NSArray *)kt_subArrayFromIndex:(NSUInteger)index
+{
+	if (index < self.count) {
+		return [self subarrayWithRange:NSMakeRange(index, self.count-index)];
+
+	}
+	return nil;
+}
+
+- (nonnull NSArray *)kt_subArrayToIndex:(NSUInteger)index
+{
+	if (index < self.count) {
+		return [self subarrayWithRange:NSMakeRange(0, index)];
+	}
+	
+	return [NSArray arrayWithArray:self];
 }
 
 @end

@@ -30,6 +30,14 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)kt_setSelectedRange:(NSRange)range;
 
+/// limit input length. If length less than 1, then no limit
+/// @param length limit text length
+- (void)kt_setLimitTextLength:(NSInteger)length;
+
+/// limit chinese string length. If length less than 1, then no limit
+/// @param length limit string length
+- (void)kt_setLimitChineseStringLength:(NSInteger)length;
+
 @end
 
 NS_ASSUME_NONNULL_END

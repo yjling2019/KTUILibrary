@@ -65,6 +65,12 @@ NS_ASSUME_NONNULL_BEGIN
 								block:(void (^)(NSTimer *timer))block
 							  repeats:(BOOL)repeats;
 
+
+/// resume timer
+- (void)kt_resume;
+/// pause timer
+- (void)kt_pause;
+
 @end
 
 NS_ASSUME_NONNULL_END

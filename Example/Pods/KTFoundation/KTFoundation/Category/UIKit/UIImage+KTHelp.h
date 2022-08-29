@@ -415,6 +415,9 @@ NS_ASSUME_NONNULL_BEGIN
 								saturation:(CGFloat)saturation
 								 maskImage:(nullable UIImage *)maskImage;
 
+//#pragma mark - file size
+//- (CGFloat)kt_fileSize;
+
 @end
 
 NS_ASSUME_NONNULL_END

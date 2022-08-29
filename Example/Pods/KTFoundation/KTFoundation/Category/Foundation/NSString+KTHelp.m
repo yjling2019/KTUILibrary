@@ -220,12 +220,12 @@
 
 - (CGFloat)kt_widthForFont:(UIFont *)font {
     CGSize size = [self kt_sizeForFont:font size:CGSizeMake(HUGE, HUGE) mode:NSLineBreakByWordWrapping];
-    return size.width;
+    return ceil(size.width);
 }
 
 - (CGFloat)kt_heightForFont:(UIFont *)font width:(CGFloat)width {
     CGSize size = [self kt_sizeForFont:font size:CGSizeMake(width, HUGE) mode:NSLineBreakByWordWrapping];
-    return size.height;
+    return ceil(size.height);
 }
 
 - (NSInteger)kt_lineCountForFont:(UIFont *)font width:(CGFloat)width {
@@ -498,6 +498,29 @@
 	return yearString;
 }
 
+- (NSAttributedString *)kt_attributeStringWithFont:(UIFont *)font {
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	[dict setValue:font forKey:NSFontAttributeName];
+	NSAttributedString *str = [[NSAttributedString alloc] initWithString:self attributes:dict];
+	return str;
+}
+
+- (NSAttributedString *)kt_attributeStringWithTextColor:(UIColor *)color {
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	[dict setValue:color forKey:NSForegroundColorAttributeName];
+	NSAttributedString *str = [[NSAttributedString alloc] initWithString:self attributes:dict];
+	return str;
+}
+
+- (NSAttributedString *)kt_attributeStringWithFont:(UIFont *)font textColor:(UIColor *)color {
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	[dict setValue:font forKey:NSFontAttributeName];
+	[dict setValue:color forKey:NSForegroundColorAttributeName];
+	NSAttributedString *str = [[NSAttributedString alloc] initWithString:self attributes:dict];
+	return str;
+
+}
+
 - (NSAttributedString *)kt_highLightedEmailWithColor:(UIColor *)color {
 	return [NSString kt_distinguishWithString:self pattern:kEmailRegex highLightColor:color];
 }
@@ -520,6 +543,61 @@
 		}];
 	}
 	return str.copy;
+}
+
+- (NSInteger)kt_chineseStringLength {
+	NSStringEncoding encoding = CFStringConvertEncodingToNSStringEncoding(kCFStringEncodingGB_18030_2000);
+	NSData *data = [self dataUsingEncoding:encoding];
+	return [data length];
+}
+
+- (BOOL)kt_isChinese {
+	NSString *match = @"(^[u4e00-u9fa5]+$)";
+	NSPredicate *predicate = [NSPredicate predicateWithFormat:@"SELF matches %@", match];
+	return [predicate evaluateWithObject:self];
+}
+
+- (BOOL)kt_isEnglishCharacter {
+	return [self kt_isCapitalLetter] || [self kt_isLowercaseLetter];
+}
+	
+- (BOOL)kt_isCapitalLetter {
+	if (self.length != 1) {
+		return NO;
+	}
+	
+	char commitChar = [self characterAtIndex:0];
+	if ((commitChar > 64) && (commitChar < 91)) {
+		return YES;
+	} else {
+		return NO;
+	}
+}
+
+- (BOOL)kt_isLowercaseLetter {
+	if (self.length != 1) {
+		return NO;
+	}
+	
+	char commitChar = [self characterAtIndex:0];
+	if ((commitChar > 96) && (commitChar < 123)) {
+		return YES;
+	} else {
+		return NO;
+	}
+}
+
+- (BOOL)kt_isNumber {
+	if (self.length < 1) {
+		return NO;
+	}
+	
+	NSRegularExpression *numberRegular = [NSRegularExpression regularExpressionWithPattern:@"[A-Za-z]"
+																				   options:NSRegularExpressionCaseInsensitive error:nil];
+	NSInteger count = [numberRegular numberOfMatchesInString:self
+													 options:NSMatchingReportProgress
+													   range:NSMakeRange(0, self.length)];
+	return (count == self.length);
 }
 
 @end

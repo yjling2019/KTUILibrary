@@ -100,6 +100,9 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (CGRect)kt_convertRect:(CGRect)rect fromViewOrWindow:(nullable UIView *)view;
 
+/// add several subviews
+/// @param views views
+- (void)kt_addSubviews:(NSArray <UIView *> *)views;
 
 @property (nonatomic) CGFloat kt_left;        ///< Shortcut for frame.origin.x.
 @property (nonatomic) CGFloat kt_top;         ///< Shortcut for frame.origin.y
@@ -111,6 +114,53 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic) CGFloat kt_centerY;     ///< Shortcut for center.y
 @property (nonatomic) CGPoint kt_origin;      ///< Shortcut for frame.origin.
 @property (nonatomic) CGSize  kt_size;        ///< Shortcut for frame.size.
+
+@end
+
+
+typedef void (^KTWhenTappedBlock)(void);
+
+@interface UIView (KTGestureBlock) <UIGestureRecognizerDelegate>
+
+/**
+ *  @brief  单次点击事件block调度
+ *
+ *  @param  block 调度函数
+ *
+ */
+- (void)kt_whenTapped:(KTWhenTappedBlock)block;
+
+/**
+ *  @brief  双击事件block调度
+ *
+ *  @param  block 调度函数
+ *
+ */
+- (void)kt_whenDoubleTapped:(KTWhenTappedBlock)block;
+
+/**
+ *  @brief  双指事件block调度
+ *
+ *  @param  block 调度函数
+ *
+ */
+- (void)kt_whenTwoFingerTapped:(KTWhenTappedBlock)block;
+
+/**
+ *  @brief  按下事件block调度
+ *
+ *  @param  block 调度函数
+ *
+ */
+- (void)kt_whenTouchedDown:(KTWhenTappedBlock)block;
+
+/**
+ *  @brief  弹起事件block调度
+ *
+ *  @param  block 调度函数
+ *
+ */
+- (void)kt_whenTouchedUp:(KTWhenTappedBlock)block;
 
 @end
 

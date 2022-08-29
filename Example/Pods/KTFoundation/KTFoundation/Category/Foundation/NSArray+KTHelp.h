@@ -111,6 +111,10 @@ NS_ASSUME_NONNULL_BEGIN
 /// @param key key
 - (nullable NSMutableArray *)kt_valueArrayWithKey:(nonnull NSString *)key;
 
+/// 获取数组元素中key对应的value的集合组成的数据，返回的数组内的元素是可以相同的
+/// @param keyPath keyPath
+- (nullable NSMutableArray *)kt_valueArrayWithKeyPath:(nonnull NSString *)keyPath;
+
 /// 获取数组元素中key对应的value的集合组成的数据，返回的数组内的元素是不相同
 /// @param key key
 - (NSArray *)kt_uniqueValuesWithKey:(nonnull NSString *)key;
@@ -139,6 +143,10 @@ NS_ASSUME_NONNULL_BEGIN
  @return 排序后的数组
  */
 - (nonnull NSArray *)kt_descSortArray;
+
+- (nullable NSArray *)kt_subArrayFromIndex:(NSUInteger)index;
+
+- (nonnull NSArray *)kt_subArrayToIndex:(NSUInteger)index;
 
 @end
 

@@ -299,6 +299,16 @@ static BOOL kt_hexStrToRGBA(NSString *str,
     return nil;
 }
 
++ (instancetype)kt_colorWithHex:(NSUInteger)hexValue
+						  alpha:(CGFloat)alpha
+{
+	CGFloat red, green, blue;
+	red = ((CGFloat)((hexValue >> 16) & 0xFF)) / ((CGFloat)0xFF);
+	green = ((CGFloat)((hexValue >> 8) & 0xFF)) / ((CGFloat)0xFF);
+	blue = ((CGFloat)((hexValue >> 0) & 0xFF)) / ((CGFloat)0xFF);
+	return [UIColor colorWithRed: red green:green blue:blue alpha:alpha];
+}
+
 + (UIColor *)kt_randomColor {
 	CGFloat red = arc4random() % 255 / 255.f;
 	CGFloat green = arc4random() % 255 / 255.f;

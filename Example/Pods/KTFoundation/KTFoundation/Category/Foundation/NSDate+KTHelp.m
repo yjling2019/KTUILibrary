@@ -181,4 +181,80 @@
     return [formatter dateFromString:dateString];
 }
 
+#pragma mark - Date relative
++ (NSDate *)kt_weekFirstDayWithDate:(NSDate *)date
+{
+	NSTimeInterval interval = 0;
+	NSDate *firstDay;
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	[calendar setFirstWeekday:2];
+	BOOL success = [calendar rangeOfUnit:NSCalendarUnitWeekOfYear startDate:&firstDay interval:&interval forDate:date];
+	return success ? firstDay : nil;
+}
+
++ (NSDate *)kt_weekLastDayWithDate:(NSDate *)date
+{
+	double interval = 0;
+	NSDate *firstDay;
+	NSDate *lastDay;
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	[calendar setFirstWeekday:2];
+	BOOL success = [calendar rangeOfUnit:NSCalendarUnitWeekOfYear startDate:&firstDay interval:&interval forDate:date];
+	if (success) {
+		lastDay = [firstDay dateByAddingTimeInterval:interval - 1];
+	}
+	return success ? lastDay : nil;
+}
+
++ (NSDate *)kt_monthFirstDayWithDate:(NSDate *)date
+{
+	NSTimeInterval interval = 0;
+	NSDate *firstDay;
+	BOOL success = [[NSCalendar currentCalendar] rangeOfUnit:NSCalendarUnitMonth startDate:&firstDay interval:&interval forDate:date];
+	return success ? firstDay : nil;
+}
+
++ (NSDate *)kt_monthLastDayWithDate:(NSDate *)date
+{
+	double interval = 0;
+	NSDate *firstDay;
+	NSDate *lastDay;
+	NSCalendar *calendar = [NSCalendar currentCalendar];
+	BOOL success = [calendar rangeOfUnit:NSCalendarUnitMonth startDate:&firstDay interval:&interval forDate:date];
+	if (success) {
+		lastDay = [firstDay dateByAddingTimeInterval:interval - 1];
+	}
+	return success ? lastDay : nil;
+}
+
+- (nullable NSDate *)kt_firstDayInTheWeek
+{
+	return [NSDate kt_weekFirstDayWithDate:self];
+}
+
+- (nullable NSDate *)kt_lastDayInTheWeek
+{
+	return [NSDate kt_weekLastDayWithDate:self];
+}
+
+- (nullable NSDate *)kt_firstDayInTheMonth
+{
+	return [NSDate kt_monthFirstDayWithDate:self];
+}
+
+- (nullable NSDate *)kt_lastDayInTheMonth
+{
+	return [NSDate kt_monthLastDayWithDate:self];
+}
+
+- (NSDate *)kt_yesterday
+{
+	return [self kt_dateByAddingDays:-1];
+}
+
+- (NSDate *)kt_tomorrow
+{
+	return [self kt_dateByAddingDays:1];
+}
+
 @end

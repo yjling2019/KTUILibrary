@@ -2,7 +2,7 @@
 //  UIColor+Help.h
 //  KTUILibrary_Example
 //
-//  Created by 凌永剑 on 2021/12/7.
+//  Created by KOTU on 2021/12/7.
 //  Copyright © 2021 KOTU. All rights reserved.
 //
 

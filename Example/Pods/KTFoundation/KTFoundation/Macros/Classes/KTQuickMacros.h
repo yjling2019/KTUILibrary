@@ -35,16 +35,16 @@
 
 
 #if DEBUG
-#define KTAssertReturn(condition, desc, result)		NSAssert(condition, desc); \
-													if (!condition) { return result; }
-#define KTAssertReturnVoid(condition, desc)			NSAssert(condition, desc); \
-													if (!condition) { return; }
+#define KTAssertReturn(condition, desc, result)		NSAssert((condition), desc); \
+													if (!(condition)) { return result; }
+#define KTAssertReturnVoid(condition, desc)			NSAssert((condition), desc); \
+													if (!(condition)) { return; }
 #define KTAssertReturnNil(condition, desc)			NSAssert(condition, desc); \
-													if (!condition) { return nil; }
+													if (!(condition)) { return nil; }
 #else
-#define KTAssertReturn(condition, desc, result)		if (!condition) { return result; }
-#define KTAssertReturnVoid(condition, desc)			if (!condition) { return; }
-#define KTAssertReturnNil(condition, desc)			if (!condition) { return nil; }
+#define KTAssertReturn(condition, desc, result)		if (!(condition)) { return result; }
+#define KTAssertReturnVoid(condition, desc)			if (!(condition)) { return; }
+#define KTAssertReturnNil(condition, desc)			if (!(condition)) { return nil; }
 #endif
 
 
@@ -53,9 +53,9 @@
 #define KTClassAssertReturnVoid(instance, class_name)               KTAssertReturnVoid([instance isKindOfClass:[class_name class]], @"class error.")
 #define KTClassAssertReturnNil(instance, class_name)                KTAssertReturnNil([instance isKindOfClass:[class_name class]], @"class error.")
 
-#define KTParameterAssertReturn(condition, result)                  KTAssertReturn((condition), @"params error.", result)
-#define KTParameterAssertReturnVoid(condition)                      KTAssertReturnVoid(condition), @"params error.")
-#define KTParameterAssertReturnNil(condition)                       KTParameterAssertReturnNil(condition), @"params error.")
+#define KTParameterAssertReturn(condition, result)                  KTAssertReturn(((condition)), @"params error.", result)
+#define KTParameterAssertReturnVoid(condition)                      KTAssertReturnVoid((condition)), @"params error.")
+#define KTParameterAssertReturnNil(condition)                       KTParameterAssertReturnNil((condition)), @"params error.")
 
 #pragma mark - Debug Helper
 
@@ -199,25 +199,11 @@ KT_EXTERN_C_BEGIN
 
 #define kMinLineHeight (1 / UIScreen.mainScreen.scale)
 
-//iphone  X系列判断
-//#define IS_iPhoneXSeries [KTDeviceUtils isIphone_x_Series]
-//iPhoneX状态栏额外的高度
-//#define iPhoneX_extra_statusHeight [KTDeviceUtils extraStatusBarHeight]
-//安全区域高度
-//#define BottomSafeAreaHeight [KTDeviceUtils bottomSafeAreaHeight]
-
-////状态栏高度
-//#define StatusBarHeight [KTDeviceUtils statusBarHeight]
-////导航栏 + 状态栏高度
-//#define StatusBarAndNavigationBarHeight [KTDeviceUtils statusBarAndNavigationBarHeight]
-////底部标签栏高度
-//#define TabBarHeight [KTDeviceUtils tabBarHeight]
-
 // RGB颜色
 #define RGB(r, g, b) [UIColor colorWithRed:(r)/255.f green:(g)/255.f blue:(b)/255.f alpha:1.f]
 
-// 根据屏幕的宽度自适应，此处UISize如同fontSize，不是结构体CGSize
-#define autoScaleSize(UISize) (UISize * SCREEN_W / 375)// 375为设计图宽度
+// 根据屏幕的宽度自适应高度
+#define autoScaleHeight(height) (SCREEN_W * height / 375)// 375为设计图宽度
 
 //商品列表 商品cell 之间的itemspace
 #define kProductItemSpace 10

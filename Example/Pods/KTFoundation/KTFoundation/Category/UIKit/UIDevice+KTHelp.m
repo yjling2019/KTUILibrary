@@ -331,6 +331,18 @@ static kt_net_interface_counter kt_get_net_interface_counter() {
     return [[NSDate alloc] initWithTimeIntervalSinceNow:(0 - time)];
 }
 
+- (CGFloat)kt_statusBarHeight {
+	if (@available(iOS 12.0, *)) {
+		return [UIApplication sharedApplication].delegate.window.safeAreaInsets.top;
+	} else {
+		if ([UIApplication sharedApplication].delegate.window.safeAreaInsets.bottom > 0) {
+			return [UIApplication sharedApplication].delegate.window.safeAreaInsets.top;
+		} else {
+			return [UIApplication sharedApplication].delegate.window.safeAreaInsets.top + 20;
+		}
+	}
+}
+
 - (int64_t)kt_diskSpace {
     NSError *error = nil;
     NSDictionary *attrs = [[NSFileManager defaultManager] attributesOfFileSystemForPath:NSHomeDirectory() error:&error];

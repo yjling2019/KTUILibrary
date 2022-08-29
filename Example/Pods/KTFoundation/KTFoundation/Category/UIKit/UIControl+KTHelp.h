@@ -13,10 +13,14 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+typedef _Nullable id(^KTControlDataBlock)(void);
+
 /**
  Provides extensions for `UIControl`.
  */
 @interface UIControl (KTHelp)
+
+- (void)kt_addRouterEventWithName:(NSString *)name data:(nullable KTControlDataBlock)data;
 
 /**
  Removes all targets and actions for a particular event (or events)

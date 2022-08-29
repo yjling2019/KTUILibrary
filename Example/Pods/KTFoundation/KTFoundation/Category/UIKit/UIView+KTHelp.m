@@ -11,6 +11,7 @@
 
 #import "UIView+KTHelp.h"
 #import <QuartzCore/QuartzCore.h>
+#import <objc/runtime.h>
 
 @implementation UIView (KTHelp)
 
@@ -168,6 +169,15 @@
     return rect;
 }
 
+- (void)kt_addSubviews:(NSArray <UIView *> *)views {
+	for (UIView *view in views) {
+		if (![view isKindOfClass:[UIView class]]) {
+			continue;
+		}
+		[self addSubview:view];
+	}
+}
+
 - (CGFloat)kt_left {
     return self.frame.origin.x;
 }
@@ -262,6 +272,121 @@
     CGRect frame = self.frame;
     frame.size = size;
     self.frame = frame;
+}
+
+@end
+
+@implementation UIView (KTGestureBlock)
+
+static char kWhenTappedBlockKey;
+static char kWhenDoubleTappedBlockKey;
+static char kWhenTwoFingerTappedBlockKey;
+static char kWhenTouchedDownBlockKey;
+static char kWhenTouchedUpBlockKey;
+
+- (void)runBlockForKey:(void *)blockKey
+{
+	KTWhenTappedBlock block = objc_getAssociatedObject(self, blockKey);
+	if (block) block();
+}
+
+- (void)setBlock:(KTWhenTappedBlock)block forKey:(void *)blockKey
+{
+	self.userInteractionEnabled = YES;
+	objc_setAssociatedObject(self, blockKey, block, OBJC_ASSOCIATION_COPY_NONATOMIC);
+}
+
+- (void)kt_whenTapped:(KTWhenTappedBlock)block
+{
+	UITapGestureRecognizer *gesture = [self addTapGestureRecognizerWithTaps:1 touches:1 selector:@selector(viewWasTapped)];
+	
+	[self addRequiredToDoubleTapsRecognizer:gesture];
+	[self setBlock:block forKey:&kWhenTappedBlockKey];
+}
+
+- (void)kt_whenDoubleTapped:(KTWhenTappedBlock)block
+{
+	UITapGestureRecognizer *gesture = [self addTapGestureRecognizerWithTaps:2 touches:1 selector:@selector(viewWasDoubleTapped)];
+	
+	[self addRequirementToSingleTapsRecognizer:gesture];
+	[self setBlock:block forKey:&kWhenDoubleTappedBlockKey];
+}
+
+- (void)kt_whenTwoFingerTapped:(KTWhenTappedBlock)block
+{
+	[self addTapGestureRecognizerWithTaps:1 touches:2 selector:@selector(viewWasTwoFingerTapped)];
+	[self setBlock:block forKey:&kWhenTwoFingerTappedBlockKey];
+}
+
+- (void)kt_whenTouchedDown:(KTWhenTappedBlock)block
+{
+	[self setBlock:block forKey:&kWhenTouchedDownBlockKey];
+}
+
+- (void)kt_whenTouchedUp:(KTWhenTappedBlock)block
+{
+	[self setBlock:block forKey:&kWhenTouchedUpBlockKey];
+}
+
+- (void)viewWasTapped
+{
+	[self runBlockForKey:&kWhenTappedBlockKey];
+}
+
+- (void)viewWasDoubleTapped
+{
+	[self runBlockForKey:&kWhenDoubleTappedBlockKey];
+}
+
+- (void)viewWasTwoFingerTapped
+{
+	[self runBlockForKey:&kWhenTwoFingerTappedBlockKey];
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[super touchesBegan:touches withEvent:event];
+	[self runBlockForKey:&kWhenTouchedDownBlockKey];
+}
+
+- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event
+{
+	[super touchesEnded:touches withEvent:event];
+	[self runBlockForKey:&kWhenTouchedUpBlockKey];
+}
+
+- (UITapGestureRecognizer *)addTapGestureRecognizerWithTaps:(NSUInteger)taps touches:(NSUInteger)touches selector:(SEL)selector
+{
+	UITapGestureRecognizer *tapGesture = [[UITapGestureRecognizer alloc] initWithTarget:self action:selector];
+	tapGesture.delegate = self;
+	tapGesture.numberOfTapsRequired = taps;
+	tapGesture.numberOfTouchesRequired = touches;
+	[self addGestureRecognizer:tapGesture];
+	return tapGesture;
+}
+
+- (void)addRequirementToSingleTapsRecognizer:(UIGestureRecognizer *)recognizer
+{
+	for (UIGestureRecognizer *gesture in[self gestureRecognizers]) {
+		if ([gesture isKindOfClass:[UITapGestureRecognizer class]]) {
+			UITapGestureRecognizer *tapGesture = (UITapGestureRecognizer *)gesture;
+			if (tapGesture.numberOfTouchesRequired == 1 && tapGesture.numberOfTapsRequired == 1) {
+				[tapGesture requireGestureRecognizerToFail:recognizer];
+			}
+		}
+	}
+}
+
+- (void)addRequiredToDoubleTapsRecognizer:(UIGestureRecognizer *)recognizer
+{
+	for (UIGestureRecognizer *gesture in[self gestureRecognizers]) {
+		if ([gesture isKindOfClass:[UITapGestureRecognizer class]]) {
+			UITapGestureRecognizer *tapGesture = (UITapGestureRecognizer *)gesture;
+			if (tapGesture.numberOfTouchesRequired == 2 && tapGesture.numberOfTapsRequired == 1) {
+				[recognizer requireGestureRecognizerToFail:tapGesture];
+			}
+		}
+	}
 }
 
 @end

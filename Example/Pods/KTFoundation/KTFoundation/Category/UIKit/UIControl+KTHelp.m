@@ -11,6 +11,7 @@
 
 #import "UIControl+KTHelp.h"
 #import <objc/runtime.h>
+#import "UIResponder+KTHelp.h"
 
 static const int block_key;
 
@@ -42,8 +43,55 @@ static const int block_key;
 @end
 
 
+@interface UIControl ()
+
+@property (nonatomic, strong) NSString *kt_routeEventName;
+@property (nonatomic, strong) KTControlDataBlock kt_routeEventData;
+
+@end
 
 @implementation UIControl (KTHelp)
+
+- (NSString *)kt_routeEventName
+{
+	return objc_getAssociatedObject(self, @selector(kt_routeEventName));
+}
+
+- (void)setKt_routeEventName:(NSString *)kt_routeEventName
+{
+	objc_setAssociatedObject(self, @selector(kt_routeEventName), kt_routeEventName, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (id (^)(void))kt_routeEventData
+{
+	return objc_getAssociatedObject(self, @selector(kt_routeEventData));
+}
+
+- (void)setKt_routeEventData:(id (^)(void))kt_routeEventData
+{
+	objc_setAssociatedObject(self, @selector(kt_routeEventData), kt_routeEventData, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+}
+
+- (void)kt_addRouterEventWithName:(NSString *)name data:(nullable KTControlDataBlock)data
+{
+	if (!name) {
+		return;
+	}
+	
+	self.kt_routeEventName = name;
+	self.kt_routeEventData = data;
+	
+	[self addTarget:self action:@selector(kt_routeEventAction) forControlEvents:UIControlEventTouchUpInside];
+}
+
+- (void)kt_routeEventAction
+{
+	NSMutableDictionary *dict = [NSMutableDictionary dictionary];
+	if (self.kt_routeEventData) {
+		[dict setValue:self.kt_routeEventData() forKey:kResponderRouterDataKey];
+	}
+	[self routerEventWithName:self.kt_routeEventName userInfo:dict];
+}
 
 - (void)kt_removeAllTargets {
     [[self allTargets] enumerateObjectsUsingBlock: ^(id object, BOOL *stop) {

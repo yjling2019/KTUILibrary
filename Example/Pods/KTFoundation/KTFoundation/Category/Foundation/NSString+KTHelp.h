@@ -13,10 +13,40 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+#define KTAttributeNameFont						NSFontAttributeName
+#define KTAttributeNameParagraphStyle			NSParagraphStyleAttributeName
+#define KTAttributeNameForegroundColor			NSForegroundColorAttributeName
+#define KTAttributeNameBackgroundColor			NSBackgroundColorAttributeName
+#define KTAttributeNameLigature					NSLigatureAttributeName
+#define KTAttributeNameKern						NSKernAttributeName
+#define KTAttributeNameTracking					NSTrackingAttributeName
+#define KTAttributeNameStrikethroughStyle		NSStrikethroughStyleAttributeName
+#define KTAttributeNameUnderlineStyle			NSUnderlineStyleAttributeName
+#define KTAttributeNameStrokeColor				NSStrokeColorAttributeName
+#define KTAttributeNameStrokeWidth 				NSStrokeWidthAttributeName
+#define KTAttributeNameShadow 					NSShadowAttributeName
+#define KTAttributeNameTextEffect 				NSTextEffectAttributeName
+#define KTAttributeNameAttachment 				NSAttachmentAttributeName
+#define KTAttributeNameLink 					NSLinkAttributeName
+#define KTAttributeNameBaselineOffset 			NSBaselineOffsetAttributeName
+#define KTAttributeNameUnderlineColor 			NSUnderlineColorAttributeName
+#define KTAttributeNameStrikethroughColor		NSStrikethroughColorAttributeName
+#define KTAttributeNameObliqueness				NSObliquenessAttributeName
+#define KTAttributeNameExpansion 				NSExpansionAttributeName
+#define KTAttributeNameWritingDirection 		NSWritingDirectionAttributeName
+#define KTAttributeNameVerticalGlyphForm		NSVerticalGlyphFormAttributeName
+
+
 // email正则
 static NSString * const kEmailRegex = @"[A-Za-z0-9._%+-]+@[A-Za-z0-9.-]+\\.[A-Za-z]{1,}";
 // 邮编正则，必须以数字或者字母开头，且只能包含数字、字母、空格、和连号
 static NSString * const kZipCodeRegex = @"^([A-Za-z]|[0-9])([0-9]|[A-Za-z]|\\s|\\-){0,}";
+// 中文、英文、数字，不支持其他符号
+static NSString * const kLetterNumberChineseRegex = @"^[\u4E00-\u9FA5a-zA-Z0-9\b]+$";
+// 价格折扣正则，一位整数和一位小数，可以不带小数
+static NSString * const kPriceDiscountRegex = @"^[0-9]{1}(\\.[0-9])?$";
+// 价格正则，最多包含两位小数
+static NSString * const kPriceRegex = @"^(([1-9][0-9]*)|(([0]\\.\\d{1,2}|[1-9][0-9]*\\.\\d{1,2})))$";
 
 /**
  Provide hash, encrypt, encode and some common method for 'NSString'.
@@ -440,6 +470,14 @@ static NSString * const kZipCodeRegex = @"^([A-Za-z]|[0-9])([0-9]|[A-Za-z]|\\s|\
 /// 获取当前日期字符串对应的阿拉波日期字符串
 - (NSString *)kt_toArDateString;
 
+/// 中文字符串长度(一个中文计入长度2)
+- (NSInteger)kt_chineseStringLength;
+
+#pragma mark - attribute string
+- (NSAttributedString *)kt_attributeStringWithFont:(UIFont *)font;
+- (NSAttributedString *)kt_attributeStringWithTextColor:(UIColor *)color;
+- (NSAttributedString *)kt_attributeStringWithFont:(UIFont *)font textColor:(UIColor *)color;
+
 /**
  字符串中邮箱高亮
  
@@ -453,6 +491,21 @@ static NSString * const kZipCodeRegex = @"^([A-Za-z]|[0-9])([0-9]|[A-Za-z]|\\s|\
 /// @param pattern 正则
 /// @param color 高亮颜色
 + (NSAttributedString *)kt_distinguishWithString:(NSString *)string pattern:(NSString *)pattern highLightColor:(UIColor *)color;
+
+
+
+#pragma mark - valid
+/// 是否中文字符串
+- (BOOL)kt_isChinese;
+
+/// 是否英文字母
+- (BOOL)kt_isEnglishCharacter;
+/// 是否大写字母
+- (BOOL)kt_isCapitalLetter;
+/// 是否小写字母
+- (BOOL)kt_isLowercaseLetter;
+/// 是否数字
+- (BOOL)kt_isNumber;
 
 @end
 

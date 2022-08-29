@@ -50,6 +50,9 @@ NS_ASSUME_NONNULL_BEGIN
 /// The System's startup time.
 @property (nonatomic, readonly) NSDate *kt_systemUptime;
 
+/// status bar height, contains safe area
+@property (nonatomic, readonly) CGFloat kt_statusBarHeight;
+
 
 #pragma mark - Network Information
 ///=============================================================================

@@ -1,9 +1,9 @@
 //
 //  UIViewController+TDKeyboardHelp.m
-//  FloryDay
+//  KOTU
 //
 //  Created by KOTU on 12/9/17.
-//  Copyright © 2017年 FloryDay. All rights reserved.
+//  Copyright © 2017年 KOTU. All rights reserved.
 //
 
 #import "UIViewController+KTKeyboard.h"
@@ -119,14 +119,14 @@ static const void *kTextFieldTextDidChange = &kTextFieldTextDidChange;
 #pragma mark - setup
 - (void)kt_configKeyboard {
 	self.kt_isKeyboardShow = NO;
-	self.kt_keyboardWillShow = ^{};
-	self.kt_keyboardShowAnimation = ^{};
-	self.kt_keyboardDidShow = ^{};
+	self.kt_keyboardWillShow = ^(NSDictionary *userInfo) {};
+	self.kt_keyboardShowAnimation = ^(NSDictionary *userInfo) {};
+	self.kt_keyboardDidShow = ^(NSDictionary *userInfo) {};
 	
 	self.isKeyboardHide = YES;
-	self.kt_keyboardWillHide = ^{};
-	self.kt_keyboardHideAnimation = ^{};
-	self.kt_keyboardDidHide = ^{};
+	self.kt_keyboardWillHide = ^(NSDictionary *userInfo) {};
+	self.kt_keyboardHideAnimation = ^(NSDictionary *userInfo) {};
+	self.kt_keyboardDidHide = ^(NSDictionary *userInfo) {};
 	
 	self.kt_textFieldTextDidChange = ^(UITextField *textField) {};
 }
@@ -156,11 +156,15 @@ static const void *kTextFieldTextDidChange = &kTextFieldTextDidChange;
         NSValue * frameBegin = notification.userInfo[UIKeyboardFrameEndUserInfoKey];
         self.kt_keyboardHeight = frameBegin.CGRectValue.size.height;
         if (self.kt_keyboardWillShow) {
-            self.kt_keyboardWillShow();
+            self.kt_keyboardWillShow(notification.userInfo);
         }
         self.isKeyboardHide = NO;
         self.kt_isKeyboardShow = YES;
-        [UIView animateWithDuration:self.kt_keyboardAnimationDuration animations:self.kt_keyboardShowAnimation];
+		[UIView animateWithDuration:self.kt_keyboardAnimationDuration animations:^{
+			if (self.kt_keyboardShowAnimation) {
+				self.kt_keyboardShowAnimation(notification.userInfo);
+			}
+		}];
     };
     dispatch_async(dispatch_get_main_queue(), ^{
         if (block) {
@@ -172,7 +176,7 @@ static const void *kTextFieldTextDidChange = &kTextFieldTextDidChange;
 - (void)kt_keyboardDidShowWithNotification:(NSNotification *)notification {
     void(^block)(void) = ^ {
         if (self.kt_keyboardDidShow) {
-            self.kt_keyboardDidShow();
+            self.kt_keyboardDidShow(notification.userInfo);
         }
     };
     
@@ -189,11 +193,15 @@ static const void *kTextFieldTextDidChange = &kTextFieldTextDidChange;
         self.kt_keyboardAnimationDuration = animationDuration.doubleValue;
         self.kt_keyboardHeight = 0;
         if (self.kt_keyboardWillHide) {
-            self.kt_keyboardWillHide();
+            self.kt_keyboardWillHide(notification.userInfo);
         }
         self.kt_isKeyboardShow = NO;
         self.isKeyboardHide = YES;
-        [UIView animateWithDuration:self.kt_keyboardAnimationDuration animations:self.kt_keyboardHideAnimation];
+        [UIView animateWithDuration:self.kt_keyboardAnimationDuration animations:^{
+			if (self.kt_keyboardHideAnimation) {
+				self.kt_keyboardHideAnimation(notification.userInfo);
+			}
+		}];;
     };
     
     dispatch_async(dispatch_get_main_queue(), ^{
@@ -206,7 +214,7 @@ static const void *kTextFieldTextDidChange = &kTextFieldTextDidChange;
 - (void)kt_keyboardDidHideWithNotification:(NSNotification *)notification {
     void(^block)(void) = ^ {
         if (self.kt_keyboardDidHide) {
-            self.kt_keyboardDidHide();
+            self.kt_keyboardDidHide(notification.userInfo);
         }
     };
     

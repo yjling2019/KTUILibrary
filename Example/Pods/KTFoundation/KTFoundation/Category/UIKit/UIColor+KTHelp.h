@@ -179,6 +179,9 @@ extern void KT_HSL2HSB(CGFloat h, CGFloat s, CGFloat l,
  */
 + (nullable UIColor *)kt_colorWithHexString:(NSString *)hexStr;
 
+//  Creates and returns a color object from hex value.
++ (instancetype)kt_colorWithHex:(NSUInteger)hexValue alpha:(CGFloat)alpha;
+
 /// create a random color
 + (UIColor *)kt_randomColor;
 

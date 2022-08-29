@@ -13,6 +13,8 @@
 
 NS_ASSUME_NONNULL_BEGIN
 
+static NSString * const kNotificationUserInfoDataKey = @"data";
+
 /**
  Provide some method for `NSNotificationCenter`
  to post notification in different thread.

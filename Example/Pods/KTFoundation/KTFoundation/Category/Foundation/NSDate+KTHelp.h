@@ -183,6 +183,30 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (nullable NSDate *)kt_dateWithISOFormatString:(NSString *)dateString;
 
+#pragma mark - Date relative
+// 获取日期date对应周的第一天日期
++ (nullable NSDate *)kt_weekFirstDayWithDate:(NSDate *)date;
+// 获取日期date对应周的最后一天日期
++ (nullable NSDate *)kt_weekLastDayWithDate:(NSDate *)date;
+// 获取日期date对应月的第一天日期
++ (nullable NSDate *)kt_monthFirstDayWithDate:(NSDate *)date;
+// 获取日期date对应月的最后一天日期
++ (nullable NSDate *)kt_monthLastDayWithDate:(NSDate *)date;
+
+// 获取当前周的第一天
+- (nullable NSDate *)kt_firstDayInTheWeek;
+// 获取当前周的最后一天
+- (nullable NSDate *)kt_lastDayInTheWeek;
+// 获取当前月的第一天
+- (nullable NSDate *)kt_firstDayInTheMonth;
+// 获取当前月的最后一天
+- (nullable NSDate *)kt_lastDayInTheMonth;
+
+/// get yesterday
+- (NSDate *)kt_yesterday;
+/// get tomorrow
+- (NSDate *)kt_tomorrow;
+
 @end
 
 NS_ASSUME_NONNULL_END
