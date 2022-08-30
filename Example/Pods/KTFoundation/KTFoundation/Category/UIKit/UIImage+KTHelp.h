@@ -415,8 +415,26 @@ NS_ASSUME_NONNULL_BEGIN
 								saturation:(CGFloat)saturation
 								 maskImage:(nullable UIImage *)maskImage;
 
-//#pragma mark - file size
-//- (CGFloat)kt_fileSize;
+#pragma mark - Image Compress
+/*
+ *  压缩图片方法(先压缩质量再压缩尺寸)
+ */
+- (NSData *)kt_compressWithLengthLimit:(NSUInteger)maxLength;
+
+/*
+ *  压缩图片方法(压缩质量)
+ */
+- (NSData *)kt_compressQualityWithLengthLimit:(NSInteger)maxLength;
+
+/*
+ *  压缩图片方法(压缩质量二分法)
+ */
+- (NSData *)kt_compressMidQualityWithLengthLimit:(NSInteger)maxLength;
+
+/*
+ *  压缩图片方法(压缩尺寸)
+ */
+- (NSData *)kt_compressBySizeWithLengthLimit:(NSUInteger)maxLength;
 
 @end
 

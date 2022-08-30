@@ -1,52 +1,52 @@
 PODS:
-  - KTFoundation (1.0.3):
-    - KTFoundation/Category (= 1.0.3)
-    - KTFoundation/Device (= 1.0.3)
-    - KTFoundation/Macros (= 1.0.3)
-    - KTFoundation/Store (= 1.0.3)
-  - KTFoundation/Category (1.0.3):
+  - KTFoundation (1.0.4):
+    - KTFoundation/Category (= 1.0.4)
+    - KTFoundation/Device (= 1.0.4)
+    - KTFoundation/Macros (= 1.0.4)
+    - KTFoundation/Store (= 1.0.4)
+  - KTFoundation/Category (1.0.4):
     - KTFoundation/Macros
-  - KTFoundation/Device (1.0.3)
-  - KTFoundation/Macros (1.0.3)
-  - KTFoundation/Store (1.0.3):
+  - KTFoundation/Device (1.0.4)
+  - KTFoundation/Macros (1.0.4)
+  - KTFoundation/Store (1.0.4):
     - MMKV
-  - KTUILibrary (1.0.6):
-    - KTUILibrary/EdgesLabel (= 1.0.6)
-    - KTUILibrary/EdgesTextField (= 1.0.6)
-    - KTUILibrary/ImageLabel (= 1.0.6)
-    - KTUILibrary/ImagePicker (= 1.0.6)
-    - KTUILibrary/Navigation (= 1.0.6)
-    - KTUILibrary/Protocol (= 1.0.6)
-    - KTUILibrary/Tabbar (= 1.0.6)
-    - KTUILibrary/Toast (= 1.0.6)
-    - KTUILibrary/Webview (= 1.0.6)
-  - KTUILibrary/EdgesLabel (1.0.6)
-  - KTUILibrary/EdgesTextField (1.0.6)
-  - KTUILibrary/ImageLabel (1.0.6):
+  - KTUILibrary (1.0.7):
+    - KTUILibrary/EdgesLabel (= 1.0.7)
+    - KTUILibrary/EdgesTextField (= 1.0.7)
+    - KTUILibrary/ImageLabel (= 1.0.7)
+    - KTUILibrary/ImagePicker (= 1.0.7)
+    - KTUILibrary/Navigation (= 1.0.7)
+    - KTUILibrary/Protocol (= 1.0.7)
+    - KTUILibrary/Tabbar (= 1.0.7)
+    - KTUILibrary/Toast (= 1.0.7)
+    - KTUILibrary/Webview (= 1.0.7)
+  - KTUILibrary/EdgesLabel (1.0.7)
+  - KTUILibrary/EdgesTextField (1.0.7)
+  - KTUILibrary/ImageLabel (1.0.7):
     - KTFoundation/Macros (~> 1.0.3)
     - Masonry
-  - KTUILibrary/ImagePicker (1.0.6):
-    - KTFoundation/Category (~> 1.0.3)
-  - KTUILibrary/Navigation (1.0.6):
+  - KTUILibrary/ImagePicker (1.0.7):
+    - KTFoundation/Category (~> 1.0.4)
+  - KTUILibrary/Navigation (1.0.7):
     - KTFoundation
     - KVOController
     - Masonry
-  - KTUILibrary/Protocol (1.0.6)
-  - KTUILibrary/Tabbar (1.0.6):
+  - KTUILibrary/Protocol (1.0.7)
+  - KTUILibrary/Tabbar (1.0.7):
     - KTFoundation
     - Masonry
-  - KTUILibrary/Toast (1.0.6):
+  - KTUILibrary/Toast (1.0.7):
     - Masonry
-  - KTUILibrary/Webview (1.0.6):
+  - KTUILibrary/Webview (1.0.7):
     - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
   - MMKV (1.2.14):
     - MMKVCore (~> 1.2.14)
   - MMKVCore (1.2.14)
-  - SDWebImage (5.12.1):
-    - SDWebImage/Core (= 5.12.1)
-  - SDWebImage/Core (5.12.1)
+  - SDWebImage (5.13.2):
+    - SDWebImage/Core (= 5.13.2)
+  - SDWebImage/Core (5.13.2)
 
 DEPENDENCIES:
   - KTUILibrary (from `../`)
@@ -55,11 +55,10 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - KTFoundation
-    - MMKV
-    - MMKVCore
-  trunk:
     - KVOController
     - Masonry
+    - MMKV
+    - MMKVCore
     - SDWebImage
 
 EXTERNAL SOURCES:
@@ -67,13 +66,13 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KTFoundation: 615769ef3a06eaf86bde18373785f10a323f9c9f
-  KTUILibrary: 8dab834b6eb2d481201d7d867f28ecbc4e699b90
+  KTFoundation: 404ae637a9ce34b994d9ed6fdd5048441a41ec2d
+  KTUILibrary: 7a63b6748a50353261f64afb9abccff56ce65820
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
   MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
-  SDWebImage: 4dc3e42d9ec0c1028b960a33ac6b637bb432207b
+  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
 
 PODFILE CHECKSUM: 87e28ad89235f68e343b0dee84dcf43164225b15
 

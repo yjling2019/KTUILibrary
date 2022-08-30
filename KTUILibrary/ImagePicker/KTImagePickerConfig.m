@@ -15,6 +15,8 @@
 	if (self) {
 		_selectionLimit = 0;
 		_mode = KTImagePickerModeCamera | KTImagePickerModeLibrary;
+		_autoCompress = YES;
+		_compressMaxSize = 300 * 1024;
 	}
 	return self;
 }

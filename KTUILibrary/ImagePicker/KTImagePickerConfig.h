@@ -17,8 +17,15 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KTImagePickerConfig : NSObject
 
+// default KTImagePickerModeCamera|KTImagePickerModeLibrary
 @property (nonatomic, assign) KTImagePickerMode mode;
+// default 0
 @property (nonatomic, assign) NSInteger selectionLimit;
+
+// default YES
+@property (nonatomic, assign) BOOL autoCompress;
+// default 300kb
+@property (nonatomic, assign) NSUInteger compressMaxSize;
 
 @end
 

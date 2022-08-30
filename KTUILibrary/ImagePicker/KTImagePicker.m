@@ -10,6 +10,7 @@
 #import <MobileCoreServices/MobileCoreServices.h>
 #import <KTFoundation/KTMacros.h>
 #import <KTFoundation/UIWindow+KTHelp.h>
+#import <KTFoundation/UIImage+KTHelp.h>
 #import <KTFoundation/UIAlertController+KTHelp.h>
 #import <UniformTypeIdentifiers/UTCoreTypes.h>
 
@@ -127,6 +128,11 @@ static KTImagePicker *ktImagePicker;
 		image = info[UIImagePickerControllerOriginalImage];
 	}
 	
+	if (self.config.autoCompress) {
+		NSData *data = [image kt_compressWithLengthLimit:self.config.compressMaxSize];
+		image = [UIImage imageWithData:data];
+	}
+	
 	if (image && self.completionBlock) {
 		KTImagePickerResult *rs = KTImagePickerResult.new;
 		rs.images = @[image];
@@ -158,21 +164,27 @@ static KTImagePicker *ktImagePicker;
 				if (error) {
 					errorMsg = error.localizedDescription;
 				} else if ([object isKindOfClass:[UIImage class]]) {
-					[images addObject:object];
+					UIImage *image = (UIImage *)object;
+					if (self.config.autoCompress) {
+						NSData *data = [image kt_compressWithLengthLimit:self.config.compressMaxSize];
+						image = [UIImage imageWithData:data];
+					}
+					[images addObject:image];
 				}
 				dispatch_group_leave(group);
 			}];
 		} else {
-			NSArray *supportedRepresentations = @[[UTTypeRAWImage identifier],
-												  [UTTypeTIFF identifier],
-												  [UTTypeBMP identifier],
-												  [UTTypePNG identifier],
-												  [UTTypeJPEG identifier],
-												  [UTTypeWebP identifier],
-												  [UTTypeHEIC identifier],
-												  [UTTypeHEIF identifier],
+			NSArray *supportedRepresentations = @[
+													[UTTypeRAWImage identifier],
+													[UTTypeTIFF identifier],
+													[UTTypeBMP identifier],
+													[UTTypePNG identifier],
+													[UTTypeJPEG identifier],
+													[UTTypeWebP identifier],
+													[UTTypeHEIC identifier],
+													[UTTypeHEIF identifier],
 												];
-			
+
 			for (NSString *representation in supportedRepresentations) {
 				if ([result.itemProvider hasItemConformingToTypeIdentifier:representation]) {
 					dispatch_group_enter(group);
@@ -181,6 +193,10 @@ static KTImagePicker *ktImagePicker;
 							errorMsg = error.localizedDescription;
 						} else {
 							UIImage *image = [UIImage imageWithData:data];
+							if (self.config.autoCompress) {
+								NSData *data = [image kt_compressWithLengthLimit:self.config.compressMaxSize];
+								image = [UIImage imageWithData:data];
+							}
 							if (image) {
 								[images addObject:image];
 							}

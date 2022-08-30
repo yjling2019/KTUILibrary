@@ -57,7 +57,7 @@ Pod::Spec.new do |s|
   
   s.subspec 'ImagePicker' do |sp|
 	sp.source_files = 'KTUILibrary/ImagePicker/**/*.{h,m}'
-	sp.dependency 'KTFoundation/Category', '~> 1.0.3'
+	sp.dependency 'KTFoundation/Category', '~> 1.0.4'
   end
   
   s.subspec 'Toast' do |sp|
