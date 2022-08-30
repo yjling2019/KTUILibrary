@@ -13,8 +13,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface KTImagePicker : NSObject
 
-+ (void)showPickerWithConfigurationBlock:(void(^)(KTImagePickerConfig *config))configurationBlock
-						 completionBlock:(void(^)(KTImagePickerResult *result))completionBlock;
++ (void)showPickerWithConfigurationBlock:(void(^ __nullable)(KTImagePickerConfig *config))configurationBlock
+						 completionBlock:(void(^ __nullable)(KTImagePickerResult *result))completionBlock;
 
 @end
 
