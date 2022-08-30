@@ -11,6 +11,7 @@
 #import <KTFoundation/KTMacros.h>
 #import <KTFoundation/UIWindow+KTHelp.h>
 #import <KTFoundation/UIAlertController+KTHelp.h>
+#import <UniformTypeIdentifiers/UTCoreTypes.h>
 
 static KTImagePicker *ktImagePicker;
 
@@ -108,6 +109,7 @@ static KTImagePicker *ktImagePicker;
 		PHPickerConfiguration *config = [[PHPickerConfiguration alloc] init];
 		config.selectionLimit = self.config.selectionLimit;
 		config.filter = [PHPickerFilter imagesFilter];
+		config.preferredAssetRepresentationMode = PHPickerConfigurationAssetRepresentationModeCurrent;
 
 		PHPickerViewController *imagePickerVC = [[PHPickerViewController alloc] initWithConfiguration:config];
 		imagePickerVC.delegate = self;
@@ -149,16 +151,45 @@ static KTImagePicker *ktImagePicker;
 	
 	NSMutableArray *images = [NSMutableArray array];
 	for (PHPickerResult *result in results) {
-		dispatch_group_enter(group);
-		[result.itemProvider loadObjectOfClass:[UIImage class]
-							completionHandler:^(__kindof id<NSItemProviderReading>  _Nullable object, NSError * _Nullable error) {
-			if (error) {
-				errorMsg = error.localizedDescription;
-			} else if ([object isKindOfClass:[UIImage class]]) {
-				[images addObject:object];
+		if ([result.itemProvider canLoadObjectOfClass:UIImage.class]) {
+			dispatch_group_enter(group);
+			[result.itemProvider loadObjectOfClass:[UIImage class]
+								 completionHandler:^(__kindof id<NSItemProviderReading>  _Nullable object, NSError * _Nullable error) {
+				if (error) {
+					errorMsg = error.localizedDescription;
+				} else if ([object isKindOfClass:[UIImage class]]) {
+					[images addObject:object];
+				}
+				dispatch_group_leave(group);
+			}];
+		} else {
+			NSArray *supportedRepresentations = @[[UTTypeRAWImage identifier],
+												  [UTTypeTIFF identifier],
+												  [UTTypeBMP identifier],
+												  [UTTypePNG identifier],
+												  [UTTypeJPEG identifier],
+												  [UTTypeWebP identifier],
+												  [UTTypeHEIC identifier],
+												  [UTTypeHEIF identifier],
+												];
+			
+			for (NSString *representation in supportedRepresentations) {
+				if ([result.itemProvider hasItemConformingToTypeIdentifier:representation]) {
+					dispatch_group_enter(group);
+					[result.itemProvider loadDataRepresentationForTypeIdentifier:[UTTypeWebP identifier] completionHandler:^(NSData * _Nullable data, NSError * _Nullable error) {
+						if (error) {
+							errorMsg = error.localizedDescription;
+						} else {
+							UIImage *image = [UIImage imageWithData:data];
+							if (image) {
+								[images addObject:image];
+							}
+						}
+						dispatch_group_leave(group);
+					}];
+				}
 			}
-			dispatch_group_leave(group);
-		}];
+		}
 	}
 	
 	dispatch_group_notify(group, dispatch_get_main_queue(), ^{
