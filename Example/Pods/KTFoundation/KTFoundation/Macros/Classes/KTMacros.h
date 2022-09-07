@@ -9,3 +9,4 @@
 #import "KTSingle.h"
 #import "KTQuickMacros.h"
 #import "KTScope.h"
+#import "KTValidProtocol.h"
