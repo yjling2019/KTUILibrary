@@ -10,34 +10,34 @@ PODS:
   - KTFoundation/Macros (1.0.4)
   - KTFoundation/Store (1.0.4):
     - MMKV
-  - KTUILibrary (1.0.7):
-    - KTUILibrary/EdgesLabel (= 1.0.7)
-    - KTUILibrary/EdgesTextField (= 1.0.7)
-    - KTUILibrary/ImageLabel (= 1.0.7)
-    - KTUILibrary/ImagePicker (= 1.0.7)
-    - KTUILibrary/Navigation (= 1.0.7)
-    - KTUILibrary/Protocol (= 1.0.7)
-    - KTUILibrary/Tabbar (= 1.0.7)
-    - KTUILibrary/Toast (= 1.0.7)
-    - KTUILibrary/Webview (= 1.0.7)
-  - KTUILibrary/EdgesLabel (1.0.7)
-  - KTUILibrary/EdgesTextField (1.0.7)
-  - KTUILibrary/ImageLabel (1.0.7):
+  - KTUILibrary (1.0.10):
+    - KTUILibrary/EdgesLabel (= 1.0.10)
+    - KTUILibrary/EdgesTextField (= 1.0.10)
+    - KTUILibrary/ImageLabel (= 1.0.10)
+    - KTUILibrary/ImagePicker (= 1.0.10)
+    - KTUILibrary/Navigation (= 1.0.10)
+    - KTUILibrary/Protocol (= 1.0.10)
+    - KTUILibrary/Tabbar (= 1.0.10)
+    - KTUILibrary/Toast (= 1.0.10)
+    - KTUILibrary/Webview (= 1.0.10)
+  - KTUILibrary/EdgesLabel (1.0.10)
+  - KTUILibrary/EdgesTextField (1.0.10)
+  - KTUILibrary/ImageLabel (1.0.10):
     - KTFoundation/Macros (~> 1.0.3)
     - Masonry
-  - KTUILibrary/ImagePicker (1.0.7):
+  - KTUILibrary/ImagePicker (1.0.10):
     - KTFoundation/Category (~> 1.0.4)
-  - KTUILibrary/Navigation (1.0.7):
+  - KTUILibrary/Navigation (1.0.10):
     - KTFoundation
     - KVOController
     - Masonry
-  - KTUILibrary/Protocol (1.0.7)
-  - KTUILibrary/Tabbar (1.0.7):
+  - KTUILibrary/Protocol (1.0.10)
+  - KTUILibrary/Tabbar (1.0.10):
     - KTFoundation
     - Masonry
-  - KTUILibrary/Toast (1.0.7):
+  - KTUILibrary/Toast (1.0.10):
     - Masonry
-  - KTUILibrary/Webview (1.0.7):
+  - KTUILibrary/Webview (1.0.10):
     - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
@@ -67,7 +67,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KTFoundation: 404ae637a9ce34b994d9ed6fdd5048441a41ec2d
-  KTUILibrary: 7a63b6748a50353261f64afb9abccff56ce65820
+  KTUILibrary: 84b56d09b4dd83eeaaa3eebe30c49d4dae4a73ea
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd

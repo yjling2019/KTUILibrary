@@ -32,7 +32,6 @@
 #import "KTNavigationBarContentView.h"
 #import "KTEmptyNavigationBar.h"
 #import "KTNavigationBar.h"
-#import "KTUILaibraryProtocol.h"
 #import "KTViewContainerProtocol.h"
 #import "KTViewControllerProtocol.h"
 #import "KTTabBarController.h"
