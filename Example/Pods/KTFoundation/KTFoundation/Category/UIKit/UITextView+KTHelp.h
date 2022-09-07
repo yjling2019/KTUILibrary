@@ -13,6 +13,7 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, readonly) UITextView *kt_placeholderView;
 
+
 /// set place holder text for the textview
 /// @param string place holder text
 - (void)kt_setPlaceHolder:(NSString *)string;

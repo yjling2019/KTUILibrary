@@ -1,6 +1,6 @@
 {
   "name": "KTUILibrary",
-  "version": "1.0.8",
+  "version": "1.0.7",
   "summary": "KOTU's UI Library.",
   "description": "KOTU's UI Library.",
   "homepage": "https://github.com/yjling2019/KTUILibrary",
@@ -13,16 +13,13 @@
   },
   "source": {
     "git": "https://github.com/yjling2019/KTUILibrary.git",
-    "tag": "1.0.8"
+    "tag": "1.0.7"
   },
   "platforms": {
     "ios": "9.0"
   },
   "user_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
-  },
-  "pod_target_xcconfig": {
-    "EXCLUDED_ARCHS[sdk=iphonesimulator*]": "arm64"
+    "CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES": "YES"
   },
   "subspecs": [
     {

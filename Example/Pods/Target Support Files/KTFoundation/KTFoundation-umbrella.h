@@ -24,7 +24,6 @@
 #import "NSObject+KTHelpForKVO.h"
 #import "NSString+KTHelp.h"
 #import "NSTimer+KTHelp.h"
-#import "KTFoundationCategory.h"
 #import "CALayer+KTHelp.h"
 #import "KTCGUtilities.h"
 #import "UIAlertController+KTHelp.h"
@@ -56,7 +55,6 @@
 #import "KTScope.h"
 #import "KTSingle.h"
 #import "KTValidProtocol.h"
-#import "KTSandBoxManager.h"
 #import "KTStoreTool.h"
 
 FOUNDATION_EXPORT double KTFoundationVersionNumber;
