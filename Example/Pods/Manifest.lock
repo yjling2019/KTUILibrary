@@ -1,14 +1,16 @@
 PODS:
-  - KTFoundation (1.0.4):
-    - KTFoundation/Category (= 1.0.4)
-    - KTFoundation/Device (= 1.0.4)
-    - KTFoundation/Macros (= 1.0.4)
-    - KTFoundation/Store (= 1.0.4)
-  - KTFoundation/Category (1.0.4):
+  - KTFoundation (1.0.6):
+    - KTFoundation/Category (= 1.0.6)
+    - KTFoundation/Device (= 1.0.6)
+    - KTFoundation/Macros (= 1.0.6)
+    - KTFoundation/Sandbox (= 1.0.6)
+    - KTFoundation/Store (= 1.0.6)
+  - KTFoundation/Category (1.0.6):
     - KTFoundation/Macros
-  - KTFoundation/Device (1.0.4)
-  - KTFoundation/Macros (1.0.4)
-  - KTFoundation/Store (1.0.4):
+  - KTFoundation/Device (1.0.6)
+  - KTFoundation/Macros (1.0.6)
+  - KTFoundation/Sandbox (1.0.6)
+  - KTFoundation/Store (1.0.6):
     - MMKV
   - KTUILibrary (1.0.10):
     - KTUILibrary/EdgesLabel (= 1.0.10)
@@ -29,6 +31,7 @@ PODS:
     - KTFoundation/Category (~> 1.0.4)
   - KTUILibrary/Navigation (1.0.10):
     - KTFoundation
+    - KTFoundation/Sandbox (~> 1.0.6)
     - KVOController
     - Masonry
   - KTUILibrary/Protocol (1.0.10)
@@ -44,11 +47,12 @@ PODS:
   - MMKV (1.2.14):
     - MMKVCore (~> 1.2.14)
   - MMKVCore (1.2.14)
-  - SDWebImage (5.13.2):
-    - SDWebImage/Core (= 5.13.2)
-  - SDWebImage/Core (5.13.2)
+  - SDWebImage (5.13.3):
+    - SDWebImage/Core (= 5.13.3)
+  - SDWebImage/Core (5.13.3)
 
 DEPENDENCIES:
+  - KTFoundation (~> 1.0.6)
   - KTUILibrary (from `../`)
   - SDWebImage
 
@@ -66,14 +70,14 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  KTFoundation: 404ae637a9ce34b994d9ed6fdd5048441a41ec2d
-  KTUILibrary: 84b56d09b4dd83eeaaa3eebe30c49d4dae4a73ea
+  KTFoundation: 17e61af1cab0926063eb3fb41fefd733fd9ccf4b
+  KTUILibrary: f3f4ce8d075e5a7a9119e5e7740da954503f5916
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
   MMKVCore: 89f5c8a66bba2dcd551779dea4d412eeec8ff5bb
-  SDWebImage: 72f86271a6f3139cc7e4a89220946489d4b9a866
+  SDWebImage: af5bbffef2cde09f148d826f9733dcde1a9414cd
 
-PODFILE CHECKSUM: 87e28ad89235f68e343b0dee84dcf43164225b15
+PODFILE CHECKSUM: bf6d237c29a40a00d7f6441652f4341c2d9cee4b
 
 COCOAPODS: 1.11.3

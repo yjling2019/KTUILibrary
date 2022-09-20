@@ -25,6 +25,11 @@
     {
       "name": "Navigation",
       "source_files": "KTUILibrary/Navigation/**/*.{h,m}",
+      "resource_bundles": {
+        "KTUILibrary_Navigation": [
+          "KTUILibrary/Assets/*.{xcassets}"
+        ]
+      },
       "dependencies": {
         "KVOController": [
 
@@ -34,6 +39,9 @@
         ],
         "KTFoundation": [
 
+        ],
+        "KTFoundation/Sandbox": [
+          "~> 1.0.6"
         ]
       }
     },

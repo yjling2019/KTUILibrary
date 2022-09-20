@@ -6,6 +6,7 @@
 //
 
 #import "NavigationController.h"
+#import <KTFoundation/KTSandBoxManager.h>
 
 @interface NavigationController ()
 @property (strong, nonatomic) UIImage *customBackImage;
@@ -54,7 +55,7 @@
 - (UIImage *)customBackImage
 {
     if (!_customBackImage) {
-        _customBackImage = [[UIImage imageNamed:@"Navigation_Back_Black_No_Dark"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _customBackImage = [[KTSandBoxManager imageNamed:@"Navigation_Back_Black_No_Dark" inPod:@"KTUILibrary_Navigation"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return _customBackImage;
 }

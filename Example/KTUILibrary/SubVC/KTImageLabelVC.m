@@ -11,6 +11,7 @@
 #import "UIColor+Help.h"
 #import <Masonry/Masonry.h>
 #import <SDWebImage/UIImageView+WebCache.h>
+#import <KTFoundation/KTSandBoxManager.h>
 
 @interface KTImageLabelVC ()
 
@@ -29,7 +30,7 @@
     {
         KTImageLabel *label = [[KTImageLabel alloc] init];
         label.text(@"KTImageLabelContentImagePositionLeading")
-        .contentImage([UIImage imageNamed:@"Navigation_Back_Black_No_Dark"])
+        .contentImage([KTSandBoxManager imageNamed:@"Navigation_Back_Black_No_Dark" inPod:@"KTUILibrary_Navigation"])
         .contentImagePosition(KTImageLabelContentImagePositionLeading)
         .contentSpace(@10)
         .contentImageSize(CGSizeMake(44, 44))
@@ -53,7 +54,7 @@
     {
         KTImageLabel *label = [[KTImageLabel alloc] init];
         label.text(@"KTImageLabelContentImagePositionLeading_without_height")
-        .contentImage([UIImage imageNamed:@"Navigation_Back_Black_No_Dark"])
+        .contentImage([KTSandBoxManager imageNamed:@"Navigation_Back_Black_No_Dark" inPod:@"KTUILibrary_Navigation"])
         .contentImagePosition(KTImageLabelContentImagePositionLeading)
         .contentSpace(@10)
         .contentImageSize(CGSizeMake(80, 80))

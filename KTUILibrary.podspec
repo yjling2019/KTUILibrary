@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTUILibrary'
-  s.version          = '1.0.10'
+  s.version          = '1.0.11'
   s.summary          = 'KOTU\'s UI Library.'
 
 # This description is used to generate tags and improve search results.
@@ -30,9 +30,13 @@ Pod::Spec.new do |s|
   
   s.subspec 'Navigation' do |sp|
 	  sp.source_files = 'KTUILibrary/Navigation/**/*.{h,m}'
+	  sp.resource_bundles = {
+		  'KTUILibrary_Navigation' => ['KTUILibrary/Assets/*.{xcassets}']
+	  }
 	  sp.dependency 'KVOController'
 	  sp.dependency 'Masonry'
 	  sp.dependency 'KTFoundation'
+	  sp.dependency 'KTFoundation/Sandbox', '~> 1.0.6'
   end
   
   s.subspec 'Tabbar' do |sp|

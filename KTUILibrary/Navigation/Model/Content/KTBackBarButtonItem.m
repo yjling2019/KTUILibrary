@@ -8,14 +8,15 @@
 
 #import "KTBackBarButtonItem.h"
 #import <UIKit/UIKit.h>
+#import <KTFoundation/KTSandBoxManager.h>
 
 @implementation KTBackBarButtonItem
 
 + (instancetype)backBarButtonItemTarget:(nullable id)target
                                  action:(nullable SEL)action
 {
-    UIImage *lightImage = [UIImage imageNamed:@"Navigation_Back_White_No_Dark"];
-    UIImage *darkImage = [UIImage imageNamed:@"Navigation_Back_Black_No_Dark"];
+	UIImage *lightImage = [KTSandBoxManager imageNamed:@"Navigation_Back_White_No_Dark" inPod:@"KTUILibrary_Navigation"];
+    UIImage *darkImage = [KTSandBoxManager imageNamed:@"Navigation_Back_Black_No_Dark" inPod:@"KTUILibrary_Navigation"];
     KTBackBarButtonItem *item =
     [[KTBackBarButtonItem alloc] initWithText:nil
                                     darkImage:darkImage

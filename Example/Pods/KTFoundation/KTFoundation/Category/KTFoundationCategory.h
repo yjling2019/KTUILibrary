@@ -1,14 +1,11 @@
-#ifdef __OBJC__
-#import <UIKit/UIKit.h>
-#else
-#ifndef FOUNDATION_EXPORT
-#if defined(__cplusplus)
-#define FOUNDATION_EXPORT extern "C"
-#else
-#define FOUNDATION_EXPORT extern
-#endif
-#endif
-#endif
+//
+//  KTFoundationCategory.h
+//  KTFoundation
+//
+//  Created by KOTU on 2022/9/1.
+//
+
+#import <Foundation/Foundation.h>
 
 #import "KTDataHelper.h"
 #import "NSArray+KTHelp.h"
@@ -24,9 +21,10 @@
 #import "NSObject+KTHelpForKVO.h"
 #import "NSString+KTHelp.h"
 #import "NSTimer+KTHelp.h"
-#import "KTFoundationCategory.h"
+
 #import "CALayer+KTHelp.h"
 #import "KTCGUtilities.h"
+
 #import "UIAlertController+KTHelp.h"
 #import "UIApplication+KTHelp.h"
 #import "UIBarButtonItem+KTHelp.h"
@@ -48,17 +46,4 @@
 #import "UIView+KTHelp.h"
 #import "UIViewController+KTKeyboard.h"
 #import "UIWindow+KTHelp.h"
-#import "KTDeviceMacros.h"
-#import "KTDeviceUtils.h"
-#import "KTMacros.h"
-#import "KTMetamacros.h"
-#import "KTQuickMacros.h"
-#import "KTScope.h"
-#import "KTSingle.h"
-#import "KTValidProtocol.h"
-#import "KTSandBoxManager.h"
-#import "KTStoreTool.h"
-
-FOUNDATION_EXPORT double KTFoundationVersionNumber;
-FOUNDATION_EXPORT const unsigned char KTFoundationVersionString[];
 
