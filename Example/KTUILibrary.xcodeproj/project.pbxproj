@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5D8E799628F3FF6E00DC9A75 /* KTSaveImageVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8E799528F3FF6E00DC9A75 /* KTSaveImageVC.m */; };
 		5DCEE7A7275F8AD200C705AE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5DCEE78D275F8AD200C705AE /* InfoPlist.strings */; };
 		5DCEE7AA275F8AD200C705AE /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5DCEE794275F8AD200C705AE /* Images.xcassets */; };
 		5DCEE7AB275F8AD200C705AE /* KTUILibrary-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 5DCEE795275F8AD200C705AE /* KTUILibrary-Info.plist */; };
@@ -44,6 +45,8 @@
 /* Begin PBXFileReference section */
 		0685D1175F881F62107AC576 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		4D2FAE2566183C783A0E1FCF /* Pods_KTUILibrary_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KTUILibrary_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5D8E799428F3FF6E00DC9A75 /* KTSaveImageVC.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KTSaveImageVC.h; sourceTree = "<group>"; };
+		5D8E799528F3FF6E00DC9A75 /* KTSaveImageVC.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KTSaveImageVC.m; sourceTree = "<group>"; };
 		5DCEE78E275F8AD200C705AE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5DCEE793275F8AD200C705AE /* KTUILibrary-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "KTUILibrary-Prefix.pch"; sourceTree = "<group>"; };
 		5DCEE794275F8AD200C705AE /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -169,6 +172,8 @@
 				5DCEE7A5275F8AD200C705AE /* KTImageLabelVC.m */,
 				5DCEE7A6275F8AD200C705AE /* KTEdgesLabelVC.h */,
 				5DCEE7A2275F8AD200C705AE /* KTEdgesLabelVC.m */,
+				5D8E799428F3FF6E00DC9A75 /* KTSaveImageVC.h */,
+				5D8E799528F3FF6E00DC9A75 /* KTSaveImageVC.m */,
 			);
 			path = SubVC;
 			sourceTree = "<group>";
@@ -413,6 +418,7 @@
 			files = (
 				5DCEE7AE275F8AD200C705AE /* KTViewController.m in Sources */,
 				5DCEE7AF275F8AD200C705AE /* KTAppDelegate.m in Sources */,
+				5D8E799628F3FF6E00DC9A75 /* KTSaveImageVC.m in Sources */,
 				5DCEE7B6275F8E7600C705AE /* UIColor+Help.m in Sources */,
 				5DCEE7AD275F8AD200C705AE /* main.m in Sources */,
 				5DCEE7B2275F8AD200C705AE /* KTImageLabelVC.m in Sources */,

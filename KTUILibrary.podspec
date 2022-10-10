@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'KTUILibrary'
-  s.version          = '1.0.11'
+  s.version          = '1.0.12'
   s.summary          = 'KOTU\'s UI Library.'
 
 # This description is used to generate tags and improve search results.
@@ -61,6 +61,11 @@ Pod::Spec.new do |s|
   
   s.subspec 'ImagePicker' do |sp|
 	sp.source_files = 'KTUILibrary/ImagePicker/**/*.{h,m}'
+	sp.dependency 'KTFoundation/Category', '~> 1.0.4'
+  end
+  
+  s.subspec 'ImageSaver' do |sp|
+	sp.source_files = 'KTUILibrary/ImageSaver/**/*.{h,m}'
 	sp.dependency 'KTFoundation/Category', '~> 1.0.4'
   end
   

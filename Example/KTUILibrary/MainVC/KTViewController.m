@@ -35,6 +35,7 @@
         @[@"ImageLabel" , @"KTImageLabelVC"],
         @[@"EdgesLabel" , @"KTEdgesLabelVC"],
         @[@"EdgeTextField" , @"KTEdgesTextFieldVC"],
+		@[@"imageSave", @"KTSaveImageVC"],
     ];
 
     [self.view addSubview:self.tableView];

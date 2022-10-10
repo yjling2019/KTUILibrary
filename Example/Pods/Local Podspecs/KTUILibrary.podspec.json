@@ -1,6 +1,6 @@
 {
   "name": "KTUILibrary",
-  "version": "1.0.10",
+  "version": "1.0.12",
   "summary": "KOTU's UI Library.",
   "description": "KOTU's UI Library.",
   "homepage": "https://github.com/yjling2019/KTUILibrary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yjling2019/KTUILibrary.git",
-    "tag": "1.0.10"
+    "tag": "1.0.12"
   },
   "platforms": {
     "ios": "9.0"
@@ -80,6 +80,15 @@
     {
       "name": "ImagePicker",
       "source_files": "KTUILibrary/ImagePicker/**/*.{h,m}",
+      "dependencies": {
+        "KTFoundation/Category": [
+          "~> 1.0.4"
+        ]
+      }
+    },
+    {
+      "name": "ImageSaver",
+      "source_files": "KTUILibrary/ImageSaver/**/*.{h,m}",
       "dependencies": {
         "KTFoundation/Category": [
           "~> 1.0.4"

@@ -16,6 +16,8 @@
 #import "KTImagePicker.h"
 #import "KTImagePickerConfig.h"
 #import "KTImagePickerResult.h"
+#import "KTImageSaver.h"
+#import "KTImageSaverConfig.h"
 #import "KTBackButtonHandlerProtocol.h"
 #import "KTNavigationController.h"
 #import "KTNavigationControllerProtocol.h"

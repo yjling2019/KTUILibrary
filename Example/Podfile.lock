@@ -12,35 +12,38 @@ PODS:
   - KTFoundation/Sandbox (1.0.6)
   - KTFoundation/Store (1.0.6):
     - MMKV
-  - KTUILibrary (1.0.10):
-    - KTUILibrary/EdgesLabel (= 1.0.10)
-    - KTUILibrary/EdgesTextField (= 1.0.10)
-    - KTUILibrary/ImageLabel (= 1.0.10)
-    - KTUILibrary/ImagePicker (= 1.0.10)
-    - KTUILibrary/Navigation (= 1.0.10)
-    - KTUILibrary/Protocol (= 1.0.10)
-    - KTUILibrary/Tabbar (= 1.0.10)
-    - KTUILibrary/Toast (= 1.0.10)
-    - KTUILibrary/Webview (= 1.0.10)
-  - KTUILibrary/EdgesLabel (1.0.10)
-  - KTUILibrary/EdgesTextField (1.0.10)
-  - KTUILibrary/ImageLabel (1.0.10):
+  - KTUILibrary (1.0.12):
+    - KTUILibrary/EdgesLabel (= 1.0.12)
+    - KTUILibrary/EdgesTextField (= 1.0.12)
+    - KTUILibrary/ImageLabel (= 1.0.12)
+    - KTUILibrary/ImagePicker (= 1.0.12)
+    - KTUILibrary/ImageSaver (= 1.0.12)
+    - KTUILibrary/Navigation (= 1.0.12)
+    - KTUILibrary/Protocol (= 1.0.12)
+    - KTUILibrary/Tabbar (= 1.0.12)
+    - KTUILibrary/Toast (= 1.0.12)
+    - KTUILibrary/Webview (= 1.0.12)
+  - KTUILibrary/EdgesLabel (1.0.12)
+  - KTUILibrary/EdgesTextField (1.0.12)
+  - KTUILibrary/ImageLabel (1.0.12):
     - KTFoundation/Macros (~> 1.0.3)
     - Masonry
-  - KTUILibrary/ImagePicker (1.0.10):
+  - KTUILibrary/ImagePicker (1.0.12):
     - KTFoundation/Category (~> 1.0.4)
-  - KTUILibrary/Navigation (1.0.10):
+  - KTUILibrary/ImageSaver (1.0.12):
+    - KTFoundation/Category (~> 1.0.4)
+  - KTUILibrary/Navigation (1.0.12):
     - KTFoundation
     - KTFoundation/Sandbox (~> 1.0.6)
     - KVOController
     - Masonry
-  - KTUILibrary/Protocol (1.0.10)
-  - KTUILibrary/Tabbar (1.0.10):
+  - KTUILibrary/Protocol (1.0.12)
+  - KTUILibrary/Tabbar (1.0.12):
     - KTFoundation
     - Masonry
-  - KTUILibrary/Toast (1.0.10):
+  - KTUILibrary/Toast (1.0.12):
     - Masonry
-  - KTUILibrary/Webview (1.0.10):
+  - KTUILibrary/Webview (1.0.12):
     - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
@@ -71,7 +74,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KTFoundation: 17e61af1cab0926063eb3fb41fefd733fd9ccf4b
-  KTUILibrary: f3f4ce8d075e5a7a9119e5e7740da954503f5916
+  KTUILibrary: b83f742326ee889103f1e8086fbfdc672c54d576
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
