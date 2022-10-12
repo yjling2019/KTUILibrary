@@ -42,11 +42,13 @@
 			if (status == PHAuthorizationStatusNotDetermined) {
 				[PHPhotoLibrary requestAuthorizationForAccessLevel:PHAccessLevelAddOnly
 														   handler:^(PHAuthorizationStatus status) {
-					if (status == PHAuthorizationStatusAuthorized) {
-						[self saveImages:images withConfig:config completion:completionBlock];
-					} else if (status == PHAuthorizationStatusDenied) {
-						[self showAccessAlert];
-					}
+					dispatch_async(dispatch_get_main_queue(), ^{
+						if (status == PHAuthorizationStatusAuthorized) {
+							[self saveImages:images withConfig:config completion:completionBlock];
+						} else if (status == PHAuthorizationStatusDenied) {
+							[self showAccessAlert];
+						}
+					});
 				}];
 			} else if (status == PHAuthorizationStatusAuthorized) {
 				[self saveImages:images withConfig:config completion:completionBlock];
@@ -58,11 +60,13 @@
 			PHAuthorizationStatus status = [PHPhotoLibrary authorizationStatus];
 			if (status == PHAuthorizationStatusNotDetermined) {
 				[PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-					if (status == PHAuthorizationStatusAuthorized) {
-						[self saveImages:images withConfig:config completion:completionBlock];
-					} else if (status == PHAuthorizationStatusDenied) {
-						[self showAccessAlert];
-					}
+					dispatch_async(dispatch_get_main_queue(), ^{
+						if (status == PHAuthorizationStatusAuthorized) {
+							[self saveImages:images withConfig:config completion:completionBlock];
+						} else if (status == PHAuthorizationStatusDenied) {
+							[self showAccessAlert];
+						}
+					});
 				}];
 			} else if (status == PHAuthorizationStatusAuthorized) {
 				[self saveImages:images withConfig:config completion:completionBlock];

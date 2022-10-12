@@ -1,6 +1,6 @@
 {
   "name": "KTUILibrary",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "summary": "KOTU's UI Library.",
   "description": "KOTU's UI Library.",
   "homepage": "https://github.com/yjling2019/KTUILibrary",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/yjling2019/KTUILibrary.git",
-    "tag": "1.0.12"
+    "tag": "1.0.13"
   },
   "platforms": {
     "ios": "9.0"
