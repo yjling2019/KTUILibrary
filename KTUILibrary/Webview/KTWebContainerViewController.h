@@ -56,6 +56,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)configWebViewCookies:(nonnull NSDictionary *)cookieDic forKey:(NSString *)key;
 
+#pragma mark - script
+// default YES
+@property (nonatomic, assign) BOOL useMobileAdpateScript;
+- (void)addUserScript:(NSString *)script;
+
 #pragma mark - webView状态回调
 @property (nonatomic, copy) void (^redirectAction)(WKWebView *webView);
 

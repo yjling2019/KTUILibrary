@@ -17,6 +17,8 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 @property (strong, nonatomic) WKWebView *webView;
 @property (strong, nonatomic) UIProgressView *progressView;
 
+@property (nonatomic, strong) NSMutableArray *scripts;
+
 @end
 
 @implementation KTWebContainerViewController
@@ -38,6 +40,7 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 - (instancetype)initWithCompleteURL:(NSString *)URL title:(NSString *)title
 {
     if (self = [super init]) {
+		self.useMobileAdpateScript = YES;
         self.urlString = URL;
         self.titleString = title;
     }
@@ -48,6 +51,7 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 - (instancetype)initWithHTMLString:(NSString *)HTMLString title:(NSString *)title
 {
     if (self = [super init]) {
+		self.useMobileAdpateScript = YES;
         self.htmlString = HTMLString;
         self.titleString = title;
     }
@@ -63,15 +67,39 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     [self configureProgressView];
 }
 
+- (void)addUserScript:(NSString *)script
+{
+	if (!script) {
+		return;
+	}
+	
+	if (!self.webView) {
+		@synchronized (self) {
+			[self.scripts addObject:script];
+		}
+	} else {
+		WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:script injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+		[self.webView.configuration.userContentController addUserScript:wkUScript];
+	}
+}
+
 #pragma mark - 初始化webview
 - (void)initWebView
 {
-	//js脚本
-	NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
-	//注入
-	WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
 	WKUserContentController *wkUController = [[WKUserContentController alloc] init];
-	[wkUController addUserScript:wkUScript];
+
+	if (self.useMobileAdpateScript) {
+		//js脚本 - 自适应手机屏幕
+		NSString *jScript = @"var meta = document.createElement('meta'); meta.setAttribute('name', 'viewport'); meta.setAttribute('content', 'width=device-width'); document.getElementsByTagName('head')[0].appendChild(meta);";
+		//注入
+		WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:jScript injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+		[wkUController addUserScript:wkUScript];
+	}
+	
+	for (NSString *script in self.scripts) {
+		WKUserScript *wkUScript = [[WKUserScript alloc] initWithSource:script injectionTime:WKUserScriptInjectionTimeAtDocumentEnd forMainFrameOnly:YES];
+		[wkUController addUserScript:wkUScript];
+	}
 	
     WKWebViewConfiguration *conf = [[WKWebViewConfiguration alloc] init];
 	conf.userContentController = wkUController;
@@ -287,6 +315,15 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     } else {
         return t;
     }
+}
+
+#pragma mark - lazy load
+- (NSMutableArray *)scripts
+{
+	if (!_scripts) {
+		_scripts = [NSMutableArray array];
+	}
+	return _scripts;
 }
 
 #pragma mark - dealloc
