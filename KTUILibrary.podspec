@@ -24,7 +24,7 @@ Pod::Spec.new do |s|
   s.author           = { 'KOTU' => 'yjling2019@gmail.com' }
   s.source           = { :git => 'https://github.com/yjling2019/KTUILibrary.git', :tag => s.version.to_s }
 
-  s.ios.deployment_target = '9.0'
+  s.ios.deployment_target = '11.0'
   
   s.user_target_xcconfig = { 'CLANG_ALLOW_NON_MODULAR_INCLUDES_IN_FRAMEWORK_MODULES' => 'YES' }
   
