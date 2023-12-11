@@ -18,12 +18,19 @@ NS_ASSUME_NONNULL_BEGIN
 /// title需要被替换的字符串
 @property (nonatomic, copy) NSString *titleReplacingString;
 
+@optional
+
 - (void)alertPanelWithMessage:(NSString *)message
                viewController:(KTWebContainerViewController *)viewController;
 
 - (void)confirmPanelWithMessage:(NSString *)message
                  viewController:(KTWebContainerViewController *)viewController
               completionHandler:(void (^)(BOOL))completionHandler;
+
+- (void)addAllScriptMessageHandler:(KTWebContainerViewController *)viewController;
+
+- (void)removeAllScriptMessageHandler:(KTWebContainerViewController *)viewController;
+
 
 @end
 

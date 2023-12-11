@@ -9,7 +9,7 @@
 #import "KTWebContainerViewController.h"
 #import <Masonry/Masonry.h>
 
-static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
+//static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 
 @interface KTWebContainerViewController () <WKNavigationDelegate, WKUIDelegate>
 
@@ -23,11 +23,11 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 
 @implementation KTWebContainerViewController
 
-#pragma mark - 设置help
-+ (void)setUpHelp:(id<KTWebViewControllerHelpProtocol>)help
-{
-	globalHelp = help;
-}
+//#pragma mark - 设置help
+//+ (void)setUpHelp:(id<KTWebViewControllerHelpProtocol>)help
+//{
+//	globalHelp = help;
+//}
 
 #pragma mark - 初始化
 //跳转第三方网站
@@ -65,6 +65,18 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     [self initWebView];
     [self configWebView];
     [self configureProgressView];
+}
+
+- (void)viewWillAppear:(BOOL)animated 
+{
+	[super viewWillAppear:animated];
+	[self.helper addAllScriptMessageHandler:self];
+}
+
+- (void)viewWillDisappear:(BOOL)animated
+{
+	[super viewWillDisappear:animated];
+	[self.helper removeAllScriptMessageHandler:self];
 }
 
 - (void)addUserScript:(NSString *)script
@@ -112,11 +124,18 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     self.webView = [[WKWebView alloc] initWithFrame:[UIScreen mainScreen].bounds configuration:conf];
     self.webView.navigationDelegate = self;
     self.webView.UIDelegate = self;
-    
+	self.webView.scrollView.bounces = NO;
+	self.webView.scrollView.showsVerticalScrollIndicator = NO;
+	self.webView.scrollView.showsHorizontalScrollIndicator = NO;
+
     [self.view addSubview:self.webView];
     [self.webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.edges.mas_equalTo(0);
     }];
+	
+	if (@available(iOS 11.0, *)) {
+		self.webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+	}
     
     [self.webView addObserver:self forKeyPath:@"estimatedProgress" options:NSKeyValueObservingOptionNew context:nil];
 }
@@ -124,12 +143,6 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 // 配置webview
 - (void)configWebView
 {
-    self.automaticallyAdjustsScrollViewInsets = NO;
-    
-    if (@available(iOS 11.0, *)) {
-        self.webView.scrollView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
-    }
-    
     if (self.urlString) {
         NSURLRequest *request = [[NSURLRequest alloc] initWithURL:[NSURL URLWithString:self.urlString]];
         [self.webView loadRequest:request];
@@ -142,8 +155,8 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 - (void)configureProgressView
 {
     self.progressView = [[UIProgressView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 1.5)];
-    if ([globalHelp respondsToSelector:@selector(progressTintColor)]) {
-        UIColor *progressTintColor = globalHelp.progressTintColor;
+    if ([self.helper respondsToSelector:@selector(progressTintColor)]) {
+        UIColor *progressTintColor = self.helper.progressTintColor;
 #if DEBUG
         NSAssert(progressTintColor, @"需要设置进度条颜色");
 #endif
@@ -262,8 +275,8 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 #pragma mark - WKUIDelegate
 - (void)webView:(WKWebView *)webView runJavaScriptAlertPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(void))completionHandler
 {
-    if ([globalHelp respondsToSelector:@selector(alertPanelWithMessage:viewController:)]) {
-        [globalHelp alertPanelWithMessage:message viewController:self];
+    if ([self.helper respondsToSelector:@selector(alertPanelWithMessage:viewController:)]) {
+        [self.helper alertPanelWithMessage:message viewController:self];
     }
     if (completionHandler) {
         completionHandler();
@@ -272,8 +285,8 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
 
 - (void)webView:(WKWebView *)webView runJavaScriptConfirmPanelWithMessage:(NSString *)message initiatedByFrame:(WKFrameInfo *)frame completionHandler:(void (^)(BOOL))completionHandler
 {
-    if ([globalHelp respondsToSelector:@selector(confirmPanelWithMessage:viewController:completionHandler:)]) {
-        [globalHelp confirmPanelWithMessage:message viewController:self completionHandler:completionHandler];
+    if ([self.helper respondsToSelector:@selector(confirmPanelWithMessage:viewController:completionHandler:)]) {
+        [self.helper confirmPanelWithMessage:message viewController:self completionHandler:completionHandler];
     }
 }
 
@@ -297,8 +310,8 @@ static id<KTWebViewControllerHelpProtocol> globalHelp = nil;
     }
 	
     NSString *string = @"";
-    if ([globalHelp respondsToSelector:@selector(titleReplacingString)]) {
-        string = globalHelp.titleReplacingString;
+    if ([self.helper respondsToSelector:@selector(titleReplacingString)]) {
+        string = self.helper.titleReplacingString;
         if (!string) {
             string = @"";
         }

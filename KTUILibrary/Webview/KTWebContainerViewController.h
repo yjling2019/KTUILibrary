@@ -21,6 +21,8 @@ NS_ASSUME_NONNULL_BEGIN
  */
 @property (nonatomic, copy) BOOL (^navigationBackInterceptBlock) (void);
 
+@property (nonatomic, strong) id <KTWebViewControllerHelpProtocol> helper;
+
 /**
  控制页面跳转逻辑
  */

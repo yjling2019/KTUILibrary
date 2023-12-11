@@ -12,38 +12,38 @@ PODS:
   - KTFoundation/Sandbox (1.0.6)
   - KTFoundation/Store (1.0.6):
     - MMKV
-  - KTUILibrary (1.0.13):
-    - KTUILibrary/EdgesLabel (= 1.0.13)
-    - KTUILibrary/EdgesTextField (= 1.0.13)
-    - KTUILibrary/ImageLabel (= 1.0.13)
-    - KTUILibrary/ImagePicker (= 1.0.13)
-    - KTUILibrary/ImageSaver (= 1.0.13)
-    - KTUILibrary/Navigation (= 1.0.13)
-    - KTUILibrary/Protocol (= 1.0.13)
-    - KTUILibrary/Tabbar (= 1.0.13)
-    - KTUILibrary/Toast (= 1.0.13)
-    - KTUILibrary/Webview (= 1.0.13)
-  - KTUILibrary/EdgesLabel (1.0.13)
-  - KTUILibrary/EdgesTextField (1.0.13)
-  - KTUILibrary/ImageLabel (1.0.13):
+  - KTUILibrary (1.0.14):
+    - KTUILibrary/EdgesLabel (= 1.0.14)
+    - KTUILibrary/EdgesTextField (= 1.0.14)
+    - KTUILibrary/ImageLabel (= 1.0.14)
+    - KTUILibrary/ImagePicker (= 1.0.14)
+    - KTUILibrary/ImageSaver (= 1.0.14)
+    - KTUILibrary/Navigation (= 1.0.14)
+    - KTUILibrary/Protocol (= 1.0.14)
+    - KTUILibrary/Tabbar (= 1.0.14)
+    - KTUILibrary/Toast (= 1.0.14)
+    - KTUILibrary/Webview (= 1.0.14)
+  - KTUILibrary/EdgesLabel (1.0.14)
+  - KTUILibrary/EdgesTextField (1.0.14)
+  - KTUILibrary/ImageLabel (1.0.14):
     - KTFoundation/Macros (~> 1.0.3)
     - Masonry
-  - KTUILibrary/ImagePicker (1.0.13):
+  - KTUILibrary/ImagePicker (1.0.14):
     - KTFoundation/Category (~> 1.0.4)
-  - KTUILibrary/ImageSaver (1.0.13):
+  - KTUILibrary/ImageSaver (1.0.14):
     - KTFoundation/Category (~> 1.0.4)
-  - KTUILibrary/Navigation (1.0.13):
+  - KTUILibrary/Navigation (1.0.14):
     - KTFoundation
     - KTFoundation/Sandbox (~> 1.0.6)
     - KVOController
     - Masonry
-  - KTUILibrary/Protocol (1.0.13)
-  - KTUILibrary/Tabbar (1.0.13):
+  - KTUILibrary/Protocol (1.0.14)
+  - KTUILibrary/Tabbar (1.0.14):
     - KTFoundation
     - Masonry
-  - KTUILibrary/Toast (1.0.13):
+  - KTUILibrary/Toast (1.0.14):
     - Masonry
-  - KTUILibrary/Webview (1.0.13):
+  - KTUILibrary/Webview (1.0.14):
     - Masonry
   - KVOController (1.2.0)
   - Masonry (1.1.0)
@@ -74,7 +74,7 @@ EXTERNAL SOURCES:
 
 SPEC CHECKSUMS:
   KTFoundation: 17e61af1cab0926063eb3fb41fefd733fd9ccf4b
-  KTUILibrary: 789d97d0227f6cc92ca051d2582e213cb1796c07
+  KTUILibrary: c5def8b950c2859aeef8cf6e7ff9f8046e43c2ec
   KVOController: d72ace34afea42468329623b3379ab3cd1d286b6
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MMKV: 9c4663aa7ca255d478ff10f2f5cb7d17c1651ccd
@@ -83,4 +83,4 @@ SPEC CHECKSUMS:
 
 PODFILE CHECKSUM: bf6d237c29a40a00d7f6441652f4341c2d9cee4b
 
-COCOAPODS: 1.11.3
+COCOAPODS: 1.12.1

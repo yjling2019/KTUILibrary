@@ -2460,8 +2460,8 @@
 		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1240;
-				LastUpgradeCheck = 1240;
+				LastSwiftUpdateCheck = 1300;
+				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -2965,6 +2965,23 @@
 			};
 			name = Release;
 		};
+		1630C1C6940B7934BDE1E6F5F41B5F4B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9E34B887A4865FE5E7CB1A07B6DE36EB /* KTUILibrary.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KTUILibrary";
+				IBSC_MODULE = KTUILibrary;
+				INFOPLIST_FILE = "Target Support Files/KTUILibrary/ResourceBundle-KTUILibrary_Navigation-KTUILibrary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = KTUILibrary_Navigation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		3B412C925DFE7563C205B0F26AA78858 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 7E7830DADF1698F08DEC478EF1603B74 /* Pods-KTUILibrary_Example.release.xcconfig */;
@@ -3030,38 +3047,6 @@
 				VERSION_INFO_PREFIX = "";
 			};
 			name = Debug;
-		};
-		5087B7663A5361997D9A4ACC580B2AA1 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 94568CFF93B8C948EC6BBBE4815161BE /* KTUILibrary.debug.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KTUILibrary";
-				IBSC_MODULE = KTUILibrary;
-				INFOPLIST_FILE = "Target Support Files/KTUILibrary/ResourceBundle-KTUILibrary_Navigation-KTUILibrary-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = KTUILibrary_Navigation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Debug;
-		};
-		69223555904EFED0E7CA8837911BE14B /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9E34B887A4865FE5E7CB1A07B6DE36EB /* KTUILibrary.release.xcconfig */;
-			buildSettings = {
-				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KTUILibrary";
-				IBSC_MODULE = KTUILibrary;
-				INFOPLIST_FILE = "Target Support Files/KTUILibrary/ResourceBundle-KTUILibrary_Navigation-KTUILibrary-Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
-				PRODUCT_NAME = KTUILibrary_Navigation;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				WRAPPER_EXTENSION = bundle;
-			};
-			name = Release;
 		};
 		6D71CF3372201FE29F82A61A7B025834 /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -3351,6 +3336,23 @@
 			};
 			name = Debug;
 		};
+		C4D49CD8EA60B707B3ED57C11277EE4E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 94568CFF93B8C948EC6BBBE4815161BE /* KTUILibrary.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGNING_ALLOWED = NO;
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/KTUILibrary";
+				IBSC_MODULE = KTUILibrary;
+				INFOPLIST_FILE = "Target Support Files/KTUILibrary/ResourceBundle-KTUILibrary_Navigation-KTUILibrary-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				PRODUCT_NAME = KTUILibrary_Navigation;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		DAB682A957C2C3D6EE62B5C6E65F0F27 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4EF03ABC2D9CF91C0513BE0C21182333 /* MMKV.debug.xcconfig */;
@@ -3614,8 +3616,8 @@
 		6477AB403B7141758FC7ECEB0E807A2B /* Build configuration list for PBXNativeTarget "KTUILibrary-KTUILibrary_Navigation" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5087B7663A5361997D9A4ACC580B2AA1 /* Debug */,
-				69223555904EFED0E7CA8837911BE14B /* Release */,
+				C4D49CD8EA60B707B3ED57C11277EE4E /* Debug */,
+				1630C1C6940B7934BDE1E6F5F41B5F4B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
